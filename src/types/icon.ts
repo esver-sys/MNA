@@ -1,14 +1,4 @@
-export type IconName = 
-  | 'menu'
-  | 'user'
-  | 'settings'
-  | 'home'
-  | 'search'
-  | 'close'
-  | 'arrow-right'
-  | 'arrow-down'
-  | 'sun'
-  | 'moon'
+
 
 // 图标尺寸类型
 export type IconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | number
@@ -27,7 +17,7 @@ export type IconColor =
 
 // 图标组件属性类型
 export interface IconProps {
-  name: IconName
+  name: string
   size?: IconSize
   color?: IconColor
   className?: string

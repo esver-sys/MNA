@@ -1,7 +1,8 @@
 import React from 'react'
 
-export default function ComponentLayout() {
+export default function ComponentLayout({ children }: { children: React.ReactNode }) {
+
   return (
-    <div>ComponentLayout</div>
+    <div>{children}</div>
   )
 }

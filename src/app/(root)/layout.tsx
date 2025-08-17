@@ -1,3 +1,4 @@
+import ComponentLayout from "@/layouts";
 import React from "react";
 
 export default async function LocaleLayout({
@@ -5,5 +6,9 @@ export default async function LocaleLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <ComponentLayout>
+      {children}
+    </ComponentLayout>
+  );
 }

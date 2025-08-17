@@ -1,0 +1,12 @@
+[
+  {
+    "title": "首页",
+    "icon": "home",
+    "path": "/"
+  },
+  {
+    "title": "列表",
+    "icon": "list",
+    "path": "/list"
+  }
+]
