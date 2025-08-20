@@ -1,0 +1,811 @@
+[
+    {
+        "name": "theme_info",
+        "theme_author": "LF",
+        "theme_documentation_url": "https://test-wshop-themes-doc.lfsz.codefriend.top/",
+        "theme_name": "布鲁克林",
+        "theme_support_url": "https://test-wshop-themes-doc.lfsz.codefriend.top/",
+        "theme_version": "MIX_VERSION"
+    },
+    {
+        "name": "风格",
+        "key": "style",
+        "settings": [
+            {
+                "default": 0,
+                "id": "radius__image",
+                "label": "图片圆角度数",
+                "max": 40,
+                "min": 0,
+                "step": 1,
+                "type": "range",
+                "unit": "px"
+            },
+            {
+                "default": 0,
+                "id": "radius__button",
+                "label": "按钮圆角度数",
+                "max": 40,
+                "min": 0,
+                "step": 1,
+                "type": "range",
+                "unit": "px"
+            },
+            {
+                "default": "bright",
+                "id": "cart__color_mode",
+                "info": "导航抽屉、购物车抽屉风格",
+                "label": "抽屉风格",
+                "type": "select",
+                "options": [
+                    {
+                        "label": "明亮风格",
+                        "value": "bright"
+                    },
+                    {
+                        "label": "深色风格",
+                        "value": "dark"
+                    }
+                ]
+            },
+            {
+                "type": "header",
+                "content": "商品卡片风格"
+            },
+            {
+                "id": "product_card__style",
+                "default": "background",
+                "label": "背景样式",
+                "type": "select",
+                "options": [
+                    {
+                        "label": "卡片背景",
+                        "value": "background"
+                    },
+                    {
+                        "label": "无边框",
+                        "value": "no-border"
+                    }
+                ]
+            },
+            {
+                "id": "product_card__image_ratio",
+                "default": "1_1",
+                "label": "卡片比例",
+                "type": "select",
+                "options": [
+                    {
+                        "label": "原始比例",
+                        "value": "original"
+                    },
+                    {
+                        "label": "1:1",
+                        "value": "1_1"
+                    },
+                    {
+                        "label": "4:3",
+                        "value": "4_3"
+                    },
+                    {
+                        "label": "3:4",
+                        "value": "3_4"
+                    }
+                ]
+            },
+            {
+                "id": "product_card__image_fill_style",
+                "default": "adaptive",
+                "label": "卡片填充方式",
+                "type": "select",
+                "options": [
+                    {
+                        "label": "自适应",
+                        "value": "adaptive"
+                    },
+                    {
+                        "label": "填充",
+                        "value": "filling"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "颜色",
+        "key": "color",
+        "settings": [
+            {
+                "type": "header",
+                "content": "文本"
+            },
+            {
+                "default": "#222222",
+                "id": "color__heading",
+                "label": "标题",
+                "type": "color"
+            },
+            {
+                "default": "#222222",
+                "id": "color__subheading",
+                "label": "副标题",
+                "type": "color"
+            },
+            {
+                "default": "#333333",
+                "id": "color__body",
+                "label": "正文",
+                "type": "color"
+            },
+            {
+                "default": "#ff0000",
+                "id": "color__price",
+                "label": "现价",
+                "type": "color"
+            },
+            {
+                "default": "#000000",
+                "id": "color__regular_price",
+                "label": "原价",
+                "type": "color"
+            },
+            {
+                "default": "#C90D0D",
+                "id": "color__discount_price",
+                "label": "折扣价格",
+                "type": "color"
+            },
+            {
+                "type": "header",
+                "content": "折扣标签"
+            },
+            {
+                "default": "#FFFFFF",
+                "id": "color__discount_tag",
+                "label": "折扣标签文本",
+                "type": "color"
+            },
+            {
+                "default": "#C90D0D",
+                "id": "bg__discount_tag",
+                "label": "折扣标签背景",
+                "type": "color"
+            },
+            {
+                "type": "header",
+                "content": "按钮"
+            },
+            {
+                "default": "#ffffff",
+                "id": "color__primary_contrast",
+                "label": "主按钮文本",
+                "type": "color"
+            },
+            {
+                "default": "#c90d0d",
+                "id": "color__primary",
+                "label": "主按钮背景",
+                "type": "color"
+            },
+            {
+                "default": "#c90d0d",
+                "id": "color__secondary",
+                "label": "次按钮文本&边框",
+                "type": "color"
+            },
+            {
+                "type": "header",
+                "content": "商品卡片"
+            },
+            {
+                "default": "#f9f1e6",
+                "id": "color__background_product",
+                "label": "背景颜色",
+                "type": "color"
+            },
+            {
+                "type": "header",
+                "content": "页面"
+            },
+            {
+                "default": "#ffffff",
+                "id": "color__background_page",
+                "label": "背景颜色",
+                "type": "color"
+            }
+        ]
+    },
+    {
+        "name": "字体",
+        "key": "font",
+        "settings": [
+            {
+                "content": "标题",
+                "type": "header"
+            },
+            {
+                "default": "OpenSans-Regular",
+                "id": "font__heading_family",
+                "label": "标题字体",
+                "type": "font_picker"
+            },
+            {
+                "id": "font__heading_size",
+                "label": "标题字号",
+                "type": "range",
+                "min": 22,
+                "max": 60,
+                "unit": "px",
+                "default": 30
+            },
+            {
+                "id": "font__heading_spacing",
+                "label": "标题字间距",
+                "type": "select",
+                "default": "0",
+                "options": [
+                    {
+                        "label": "-75",
+                        "value": "-75"
+                    },
+                    {
+                        "label": "-50",
+                        "value": "-50"
+                    },
+                    {
+                        "label": "-25",
+                        "value": "-25"
+                    },
+                    {
+                        "label": "-10",
+                        "value": "-10"
+                    },
+                    {
+                        "label": "0",
+                        "value": "0"
+                    },
+                    {
+                        "label": "10",
+                        "value": "10"
+                    },
+                    {
+                        "label": "25",
+                        "value": "25"
+                    },
+                    {
+                        "label": "50",
+                        "value": "50"
+                    },
+                    {
+                        "label": "75",
+                        "value": "75"
+                    },
+                    {
+                        "label": "100",
+                        "value": "100"
+                    },
+                    {
+                        "label": "150",
+                        "value": "150"
+                    },
+                    {
+                        "label": "200",
+                        "value": "200"
+                    },
+                    {
+                        "label": "250",
+                        "value": "250"
+                    },
+                ]
+            },
+            {
+                "id": "line__heading_hight",
+                "label": "标题行高",
+                "type": "range",
+                "min": 0.8,
+                "max": 2,
+                "default": 1.2
+            },
+            {
+                "content": "全局文字",
+                "type": "header"
+            },
+            {
+                "default": "Lato-Regular",
+                "id": "font__global_family",
+                "label": "全局文字字体",
+                "type": "font_picker"
+            },
+            {
+                "id": "font__global_size",
+                "label": "全局文字字号",
+                "type": "range",
+                "min": 12,
+                "max": 20,
+                "unit": "px",
+                "default": 14
+            },
+            {
+                "id": "font__global_spacing",
+                "label": "全局文字间距",
+                "type": "select",
+                "default": "0",
+                "options": [
+                    {
+                        "label": "-75",
+                        "value": "-75"
+                    },
+                    {
+                        "label": "-50",
+                        "value": "-50"
+                    },
+                    {
+                        "label": "-25",
+                        "value": "-25"
+                    },
+                    {
+                        "label": "-10",
+                        "value": "-10"
+                    },
+                    {
+                        "label": "0",
+                        "value": "0"
+                    },
+                    {
+                        "label": "10",
+                        "value": "10"
+                    },
+                    {
+                        "label": "25",
+                        "value": "25"
+                    },
+                    {
+                        "label": "50",
+                        "value": "50"
+                    },
+                    {
+                        "label": "75",
+                        "value": "75"
+                    },
+                    {
+                        "label": "100",
+                        "value": "100"
+                    },
+                    {
+                        "label": "150",
+                        "value": "150"
+                    },
+                    {
+                        "label": "200",
+                        "value": "200"
+                    },
+                    {
+                        "label": "250",
+                        "value": "250"
+                    },
+                ]
+            },
+            {
+                "id": "line__global_hight",
+                "label": "全局文字行高",
+                "type": "range",
+                "min": 1,
+                "max": 2,
+                "default": 1.5
+            },
+            {
+                "content": "导航",
+                "type": "header"
+            },
+            {
+                "label": "导航字体",
+                "id": "font__navigation_family",
+                "type": "select",
+                "default": "global-font",
+                "options": [
+                    {
+                        "label": "全局文字",
+                        "value": "global-font"
+                    },
+                    {
+                        "label": "导航",
+                        "value": "navigation-font"
+                    }
+                ]
+            },
+            {
+                "id": "font__navigation_size",
+                "label": "导航字号",
+                "type": "range",
+                "min": 12,
+                "max": 40,
+                "unit": "px",
+                "default": 16
+            },
+            {
+                "id": "font__global_capital",
+                "type": "checkbox",
+                "label": "字体全大写",
+                "default": false
+            }
+        ]
+    },
+    {
+        "name": "网站图标",
+        "key": "icon",
+        "settings": [
+            {
+                "id": "favicon",
+                "info": "Favicon 为网站的缩略标识，会展示在浏览器标签、收藏夹，建议尺寸为 32x32px，大小限制：≤8M，最大像素 20MP。",
+                "label": "网站图标",
+                "type": "image_picker"
+            }
+        ]
+    },
+    {
+        "name": "分享",
+        "key": "share",
+        "settings": [
+            {
+                "type": "header",
+                "content": "社交分享选项"
+            },
+            {
+                "type": "checkbox",
+                "id": "share__facebook",
+                "label": "Facebook"
+            },
+            {
+                "type": "checkbox",
+                "id": "share__twitter",
+                "label": "Twitter"
+            },
+            {
+                "type": "checkbox",
+                "id": "share__pinterest",
+                "label": "Pinterest"
+            },
+            {
+                "type": "header",
+                "content": "展示风格选项"
+            },
+            {
+                "type": "image_picker_v2",
+                "id": "share__default_image",
+                "label": "默认分享背景图片",
+                "info": "当你在社交媒体上分享店铺或商品链接时，我们将使用该背景图。"
+            },
+            {
+                "type": "checkbox",
+                "id": "share__default_image_first",
+                "label": "分享商品时优先使用背景图片"
+            },
+            {
+                "type": "select",
+                "id": "share__style",
+                "options": [
+                    {
+                        "value": "default",
+                        "label": "默认"
+                    },
+                    {
+                        "value": "expand",
+                        "label": "按钮展开"
+                    },
+                    {
+                        "value": "right",
+                        "label": "固定右侧"
+                    }
+                ],
+                "default": "default",
+                "label": "显示样式"
+            }
+        ]
+    },
+    {
+        "name": "购物车",
+        "key": "cart",
+        "settings": [
+            {
+                "default": "page",
+                "id": "cart__open_type",
+                "label": "打开方式",
+                "type": "select",
+                "options": [
+                    {
+                        "label": "页面进入",
+                        "value": "page"
+                    },
+                    {
+                        "label": "抽屉",
+                        "value": "drawer"
+                    }
+                ]
+            },
+            {
+                "default": "open",
+                "id": "cart__added_action",
+                "label": "点击加购按钮流程",
+                "type": "select",
+                "options": [
+                    {
+                        "label": "加购商品并跳到购物车",
+                        "value": "open"
+                    },
+                    {
+                        "label": "加购商品，不跳到购物车",
+                        "value": "none"
+                    }
+                ]
+            },
+            {
+                "id": "cart__show_note",
+                "label": "显示留言框",
+                "type": "checkbox"
+            },
+            {
+                "type": "text",
+                "id": "cart__btn_text",
+                "label": "按钮名称",
+                "default": "CONTINUE SHOPPING",
+                "placeholder": "请输入按钮名称"
+            },
+            {
+                "type": "url_v2",
+                "id": "cart__btn_link",
+                "label": "按钮链接",
+                "placeholder": "请选择链接",
+                "default": "/"
+            },
+            {
+                "id": "cart__btn_text_color",
+                "default": "#FFFFFF",
+                "label": "按钮文本颜色",
+                "type": "color"
+            },
+            {
+                "id": "cart__btn_bg_color",
+                "default": "#C90D0D",
+                "label": "按钮背景颜色",
+                "type": "color"
+            }
+        ]
+    },
+    {
+        "name": "货币",
+        "key": "currency",
+        "settings": [
+            {
+                "default": "global",
+                "id": "currency__exchange",
+                "label": "货币换算",
+                "options": [
+                    {
+                        "label": "关闭",
+                        "value": "off"
+                    },
+                    {
+                        "label": "页头",
+                        "value": "menu"
+                    },
+                    {
+                        "label": "全局切换",
+                        "value": "global"
+                    }
+                ],
+                "type": "select"
+            },
+            {
+                "default": "DEFAULT",
+                "id": "currency__default",
+                "label": "默认货币",
+                "info": "当货币换算关闭时，默认货币不生效",
+                "options": [
+                    {
+                        "label": "根据IP自动检测",
+                        "value": "DEFAULT"
+                    },
+                    {
+                        "label": "美元",
+                        "value": "USD"
+                    },
+                    {
+                        "label": "英镑",
+                        "value": "GBP"
+                    },
+                    {
+                        "label": "欧元",
+                        "value": "EUR"
+                    },
+                    {
+                        "label": "加拿大元",
+                        "value": "CAD"
+                    },
+                    {
+                        "label": "澳大利亚元",
+                        "value": "AUD"
+                    },
+                    {
+                        "label": "印度卢比",
+                        "value": "INR"
+                    },
+                    {
+                        "label": "日元",
+                        "value": "JPY"
+                    },
+                    {
+                        "label": "阿根廷比索",
+                        "value": "ARS"
+                    },
+                    {
+                        "label": "巴西雷亚尔",
+                        "value": "BRL"
+                    },
+                    {
+                        "label": "人民币",
+                        "value": "CNY"
+                    },
+                    {
+                        "label": "韩元",
+                        "value": "KRW"
+                    },
+                    {
+                        "label": "墨西哥比索",
+                        "value": "MXN"
+                    },
+                    {
+                        "label": "新西兰元",
+                        "value": "NZD"
+                    },
+                    {
+                        "label": "俄罗斯卢布",
+                        "value": "RUB"
+                    },
+                    {
+                        "label": "乌拉圭比索",
+                        "value": "UYU"
+                    },
+                    {
+                        "label": "关闭",
+                        "value": "off"
+                    }
+                ],
+                "type": "select"
+            },
+            {
+                "default": true,
+                "id": "currency__cart__show_tip",
+                "label": "在购物车页显示货币换算提示",
+                "info": "当货币换算关闭时，换算提示不生效",
+                "type": "checkbox"
+            },
+            {
+                "default": true,
+                "id": "currency__show_code",
+                "label": "显示货币代码",
+                "type": "checkbox",
+                "info": "购物车和结账价格将始终显示货币代码。示例：USD $1.00"
+            }
+        ]
+    },
+    {
+        "name": "网站语言",
+        "key": "language",
+        "settings": [
+            {
+                "id": "i18n__enable_switch",
+                "info": "启用后用户可在页头或页尾切换店铺语言",
+                "label": "启用语言切换",
+                "type": "checkbox"
+            },
+            {
+                "id": "i18n__language_switcher_position",
+                "label": "语言选择器显示位置",
+                "type": "select",
+                "default": "footer",
+                "options": [
+                    {
+                        "label": "页头",
+                        "value": "header"
+                    },
+                    {
+                        "label": "页尾",
+                        "value": "footer"
+                    }
+                ]
+            },
+            {
+                "type": "checkbox",
+                "info": "启用后会根据用户的浏览器语言自动设置店铺语言",
+                "id": "i18n__enable_browser_lang",
+                "label": "根据浏览器语言自动检测"
+            }
+        ]
+    },
+    {
+        "name": "商品",
+        "key": "product",
+        "settings": [
+            {
+                "id": "discount_tag__enable",
+                "label": "开启折扣标签",
+                "default": true,
+                "type": "checkbox"
+            },
+            {
+                "id": "discount_tag__text_style",
+                "label": "折扣显示样式",
+                "default": "percentage",
+                "type": "select",
+                "options": [
+                    {
+                        "label": "百分比",
+                        "value": "percentage"
+                    },
+                    {
+                        "label": "金额",
+                        "value": "amount"
+                    }
+                ]
+            },
+            {
+                "default": "none",
+                "id": "product_card__buy_btn_style",
+                "label": "购买按钮",
+                "options": [
+                    {
+                        "label": "不显示",
+                        "value": "none"
+                    },
+                    {
+                        "label": "鼠标悬停时显示，在移动设备始终显示",
+                        "value": "hover"
+                    },
+                    {
+                        "label": "始终显示",
+                        "value": "always"
+                    }
+                ],
+                "type": "select"
+            },
+            {
+                "default": "SELECT OPTION",
+                "id": "product_card__buy_btn_text",
+                "label": "购买按钮文案",
+                "placeholder": "请输入购买按钮文案",
+                "type": "text"
+            },
+            {
+                "default": "popup",
+                "id": "product_card__buy_btn_type",
+                "label": "点击按钮流程",
+                "options": [
+                    {
+                        "label": "打开快速购买弹窗",
+                        "value": "popup"
+                    },
+                    {
+                        "label": "加购商品并跳到购物车",
+                        "value": "add"
+                    },
+                    {
+                        "label": "跳到商品详情页",
+                        "value": "link"
+                    }
+                ],
+                "type": "select"
+            }
+        ]
+    },
+    {
+        "name": "扩展",
+        "key": "builtin",
+        "settings": [
+            {
+                "id": "builtin__back_top__enable",
+                "label": "回到顶部按钮",
+                "default": true,
+                "type": "checkbox"
+            }
+        ]
+    }
+]
