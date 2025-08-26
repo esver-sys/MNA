@@ -1,0 +1,15 @@
+[data-theme="dark"] {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --card: #1a1a1a;
+  --card-foreground: #ededed;
+  --primary: #60a5fa;
+  --primary-foreground: #1e293b;
+  --secondary: #1e293b;
+  --secondary-foreground: #f1f5f9;
+  --muted: #262626;
+  --muted-foreground: #a1a1aa;
+  --border: #374151;
+  --input: #1a1a1a;
+  --ring: #60a5fa;
+}

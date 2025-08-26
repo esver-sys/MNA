@@ -1,29 +1,33 @@
-'use client'
+"use client";
 
-import { useTransition } from 'react'
+import React, { useTransition } from "react";
+import { useLocale } from "next-intl";
+import { setUserLocale } from "@/i18n/service";
+import { Icon } from "./icons";
 
-import { setUserLocale } from '@/i18n/service'
-import { defaultLocale } from '@/i18n/config';
-
-export default function LocaleSwitcher({ defaultValue = defaultLocale }) {
+export default function LocaleSwitcher() {
+  const locale = useLocale();
   const [isPending, startTransition] = useTransition();
 
-  function onChange(locale: string) {
-
+  const handleToggleLocale = () => {
+    const newLocale = locale === "zh" ? "en" : "zh";
     startTransition(() => {
-      setUserLocale(locale);
+      setUserLocale(newLocale);
     });
-  }
+  };
 
   return (
-    <select
-      className="bg-transparent"
-      disabled={isPending}
-      defaultValue={defaultValue}
-      onChange={e => onChange(e.target.value)}
+    <div
+      className="flex items-center justify-center mx-2.5 rounded-full p-2 hover:bg-black/20 duration-150 cursor-pointer transition-colors"
+      title={`${locale === "zh" ? "English" : "中文"}`}
+      onClick={handleToggleLocale}
+      style={{ opacity: isPending ? 0.6 : 1 }}
     >
-      <option className="bg-gray-600" value='en'>English</option>
-      <option className="bg-gray-600" value='zh'>中文</option>
-    </select>
-  )
+      {locale === "zh" ? (
+        <Icon name="zh" size={24} />
+      ) : (
+        <Icon name="en" size={24} />
+      )}
+    </div>
+  );
 }
