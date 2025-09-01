@@ -1,0 +1,10 @@
+// 页面配置
+{
+  "name": "列表",
+  "path": "/list",
+  "component": "@/app/[root]/list/page",
+  "icon": "icon-list",
+  "title": "列表页面",
+  "description": "各种列表页面的集合",
+  "keywords": ["列表", "数据"]
+}

@@ -1,0 +1,7 @@
+// 页面配置
+{
+  "name": "首页",
+  "path": "/home",
+  "component": "@/app/[root]/home/page",
+  "icon": "icon-home"
+}

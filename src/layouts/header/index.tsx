@@ -33,7 +33,7 @@ function ActionBar() {
 
 export default function LayoutHeader() {
   return (
-    <div className="h-full w-full flex justify-center items-center px-16">
+    <div className="h-full w-full flex justify-center items-center px-16 bg-[#c8dfff]">
       <PcLogo />
       <ActionBar />
     </div>

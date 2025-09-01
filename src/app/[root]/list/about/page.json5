@@ -1,0 +1,7 @@
+// 页面配置
+{
+  "name": "关于",
+  "path": "/list/about",
+  "component": "@/app/[root]/list/about/page",
+  "icon": "icon-text",
+}

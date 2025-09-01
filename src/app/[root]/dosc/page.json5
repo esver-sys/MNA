@@ -1,0 +1,7 @@
+// 页面配置
+{
+  "name": "文档",
+  "path": "/dosc",
+  "component": "@/app/[root]/dosc/page",
+  "icon": "icon-dosc"
+}

@@ -1,0 +1,7 @@
+// 页面配置
+{
+  "name": "分类",
+  "path": "/categorize",
+  "component": "@/app/[root]/categorize/page",
+  "icon": "icon-category"
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "name": "分类",
+    "path": "/categorize",
+    "component": "@/app/[root]/categorize/page",
+    "icon": "icon-category",
+    "meta": {
+      "title": "分类",
+      "description": "",
+      "keywords": [],
+      "auth": true,
+      "cache": true
+    },
+    "_source": {
+      "filePath": "src\\app\\[root]\\categorize\\page.json5",
+      "relativePath": "src\\app\\[root]\\categorize\\page.json5"
+    }
+  },
+  {
+    "name": "文档",
+    "path": "/dosc",
+    "component": "@/app/[root]/dosc/page",
+    "icon": "icon-dosc",
+    "meta": {
+      "title": "文档",
+      "description": "",
+      "keywords": [],
+      "auth": true,
+      "cache": true
+    },
+    "_source": {
+      "filePath": "src\\app\\[root]\\dosc\\page.json5",
+      "relativePath": "src\\app\\[root]\\dosc\\page.json5"
+    }
+  },
+  {
+    "name": "首页",
+    "path": "/",
+    "component": "@/app/[root]/home/page",
+    "icon": "icon-home",
+    "meta": {
+      "title": "首页",
+      "description": "",
+      "keywords": [],
+      "auth": true,
+      "cache": true
+    },
+    "_source": {
+      "filePath": "src\\app\\[root]\\home\\page.json5",
+      "relativePath": "src\\app\\[root]\\home\\page.json5"
+    }
+  },
+  {
+    "name": "list",
+    "path": "/list",
+    "component": "@/app/[root]/list/page",
+    "icon": null,
+    "meta": {
+      "title": "list",
+      "description": "list页面",
+      "keywords": [
+        "list"
+      ],
+      "auth": true,
+      "cache": true
+    },
+    "children": [
+      {
+        "name": "关于",
+        "path": "/list/about",
+        "component": "@/app/[root]/list/about/page",
+        "icon": "icon-text",
+        "meta": {
+          "title": "关于",
+          "description": "",
+          "keywords": [],
+          "auth": true,
+          "cache": true
+        },
+        "_source": {
+          "filePath": "src\\app\\[root]\\list\\about\\page.json5",
+          "relativePath": "src\\app\\[root]\\list\\about\\page.json5"
+        }
+      },
+      {
+        "name": "链接",
+        "path": "/list/links",
+        "component": "@/app/[root]/list/links/page",
+        "icon": "icon-text",
+        "meta": {
+          "title": "链接",
+          "description": "",
+          "keywords": [],
+          "auth": true,
+          "cache": true
+        },
+        "_source": {
+          "filePath": "src\\app\\[root]\\list\\links\\page.json5",
+          "relativePath": "src\\app\\[root]\\list\\links\\page.json5"
+        }
+      }
+    ],
+    "_source": {
+      "filePath": "auto-generated",
+      "relativePath": "auto-generated"
+    }
+  },
+  {
+    "name": "测试",
+    "path": "/text",
+    "component": "@/app/[root]/text/page",
+    "icon": "icon-text",
+    "meta": {
+      "title": "测试",
+      "description": "",
+      "keywords": [],
+      "auth": true,
+      "cache": true
+    },
+    "_source": {
+      "filePath": "src\\app\\[root]\\text\\page.json5",
+      "relativePath": "src\\app\\[root]\\text\\page.json5"
+    }
+  },
+  {
+    "name": "登录",
+    "path": "/login",
+    "component": "@/app/(auth)/login/page",
+    "icon": "icon-login",
+    "meta": {
+      "title": "登录",
+      "description": "",
+      "keywords": [],
+      "auth": true,
+      "cache": true
+    },
+    "_source": {
+      "filePath": "src\\app\\(auth)\\login\\page.json5",
+      "relativePath": "src\\app\\(auth)\\login\\page.json5"
+    }
+  }
+]

@@ -1,0 +1,7 @@
+// 页面配置
+{
+  "name": "登录",
+  "path": "/login",
+  "component": "@/app/(auth)/login/page",
+  "icon": "icon-login"
+}

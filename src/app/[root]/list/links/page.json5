@@ -1,0 +1,7 @@
+// 页面配置
+{
+  "name": "链接",
+  "path": "/list/links",
+  "component": "@/app/[root]/list/links/page",
+  "icon": "icon-text"
+}

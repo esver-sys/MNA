@@ -3,15 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack -p 3124",
+    "start": "next dev --turbopack -p 3124",
+    "dev": "npm run extract-routes && next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "extract-routes": "node scripts/extract-routes.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^7.3.1",
+    "json5": "^2.2.3",
     "next": "15.4.6",
     "next-intl": "^4.3.4",
     "react": "19.1.0",

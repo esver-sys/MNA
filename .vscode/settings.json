@@ -1,6 +1,11 @@
 {
     "i18n-ally.localesPaths": [
+        "public/lang",
         "src/i18n",
         "src/messages"
-    ]
+    ],
+    "cSpell.words": [
+        "turbopack"
+    ],
+    "i18n-ally.displayLanguage": "zh",
 }
