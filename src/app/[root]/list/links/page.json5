@@ -3,5 +3,6 @@
   "name": "链接",
   "path": "/list/links",
   "component": "@/app/[root]/list/links/page",
-  "icon": "icon-text"
+  "icon": "icon-link",
+  "rank": 1
 }

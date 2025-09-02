@@ -1,7 +1,0 @@
-// 页面配置
-{
-  "name": "测试",
-  "path": "/text",
-  "component": "@/app/[root]/text/page",
-  "icon": "icon-text"
-}

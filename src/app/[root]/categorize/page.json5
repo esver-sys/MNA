@@ -3,5 +3,6 @@
   "name": "分类",
   "path": "/categorize",
   "component": "@/app/[root]/categorize/page",
-  "icon": "icon-category"
+  "icon": "icon-category",
+  "rank": 2
 }

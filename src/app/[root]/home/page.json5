@@ -3,5 +3,6 @@
   "name": "首页",
   "path": "/home",
   "component": "@/app/[root]/home/page",
-  "icon": "icon-home"
+  "icon": "icon-home",
+  "rank": 1
 }

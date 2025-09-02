@@ -24,29 +24,28 @@
   overflow: hidden;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* 添加类至base 图层 */
+@layer base {
+
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  transition-property: all;
-  transition-duration: 0.3s;
+/* 添加类至components 图层 复杂类 */
+@layer components {
+  .layout-aside {
+    background-color: var(--color-bg-aside);
+    color: var(--color-text);
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: var(--shadow-aside);
+  }
+  .layout-header {
+    background-color: var(--color-bg-header);
+    color: var(--color-text);
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: var(--shadow-header);
+  }
+  .layout-main {
+    background-color: var(--color-bg-main);
+    color: var(--color-text);
+    transition: background-color 0.2s ease-in-out;
+  }
 }
-

@@ -1,15 +1,11 @@
 [data-theme="dark"] {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --card: #1a1a1a;
-  --card-foreground: #ededed;
-  --primary: #60a5fa;
-  --primary-foreground: #1e293b;
-  --secondary: #1e293b;
-  --secondary-foreground: #f1f5f9;
-  --muted: #262626;
-  --muted-foreground: #a1a1aa;
-  --border: #374151;
-  --input: #1a1a1a;
-  --ring: #60a5fa;
+  --color-bg-header: #1e293b;
+  --color-bg-aside: #0f172a;
+  --color-bg-main: #020617;
+  
+
+  --shadow-header: 0 2px 8px rgba(0, 0, 0, 0.6);
+  --shadow-aside: 2px 0 8px rgba(0, 0, 0, 0.5);
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-btn: 0 2px 6px rgba(0, 0, 0, 0.3);
 }

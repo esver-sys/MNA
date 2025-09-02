@@ -1,3 +1,4 @@
+import { Icon } from "@/components/icons";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import ThemeToggle from "@/components/ThemeToggle";
 import setting from "@/config/setting.json";
@@ -8,7 +9,7 @@ import React from "react";
 function PcLogo() {
   return (
     <div className="flex items-center h-full gap-2 flex-1">
-      <Image src="/logo.png" alt={setting.name} width={42} height={42} />
+      <Icon name="logo" className="w-10 h-10" />
       <span className="tracking-wide text-2xl font-semibold">
         {setting.name}
       </span>
@@ -33,7 +34,7 @@ function ActionBar() {
 
 export default function LayoutHeader() {
   return (
-    <div className="h-full w-full flex justify-center items-center px-16 bg-[#c8dfff]">
+    <div className="h-full w-full flex justify-center items-center px-14">
       <PcLogo />
       <ActionBar />
     </div>

@@ -1,9 +1,28 @@
 [
   {
+    "name": "首页",
+    "path": "/",
+    "component": "@/app/[root]/home/page",
+    "icon": "icon-home",
+    "rank": 1,
+    "meta": {
+      "title": "首页",
+      "description": "",
+      "keywords": [],
+      "auth": true,
+      "cache": true
+    },
+    "_source": {
+      "filePath": "src\\app\\[root]\\home\\page.json5",
+      "relativePath": "src\\app\\[root]\\home\\page.json5"
+    }
+  },
+  {
     "name": "分类",
     "path": "/categorize",
     "component": "@/app/[root]/categorize/page",
     "icon": "icon-category",
+    "rank": 2,
     "meta": {
       "title": "分类",
       "description": "",
@@ -21,6 +40,7 @@
     "path": "/dosc",
     "component": "@/app/[root]/dosc/page",
     "icon": "icon-dosc",
+    "rank": 3,
     "meta": {
       "title": "文档",
       "description": "",
@@ -34,59 +54,32 @@
     }
   },
   {
-    "name": "首页",
-    "path": "/",
-    "component": "@/app/[root]/home/page",
-    "icon": "icon-home",
-    "meta": {
-      "title": "首页",
-      "description": "",
-      "keywords": [],
-      "auth": true,
-      "cache": true
-    },
-    "_source": {
-      "filePath": "src\\app\\[root]\\home\\page.json5",
-      "relativePath": "src\\app\\[root]\\home\\page.json5"
-    }
-  },
-  {
-    "name": "list",
+    "name": "列表",
     "path": "/list",
     "component": "@/app/[root]/list/page",
-    "icon": null,
+    "icon": "icon-category",
+    "rank": 4,
     "meta": {
-      "title": "list",
-      "description": "list页面",
+      "title": "列表页面",
+      "description": "各种列表页面的集合",
       "keywords": [
-        "list"
+        "列表",
+        "数据"
       ],
       "auth": true,
       "cache": true
     },
+    "_source": {
+      "filePath": "src\\app\\[root]\\list\\page.json5",
+      "relativePath": "src\\app\\[root]\\list\\page.json5"
+    },
     "children": [
-      {
-        "name": "关于",
-        "path": "/list/about",
-        "component": "@/app/[root]/list/about/page",
-        "icon": "icon-text",
-        "meta": {
-          "title": "关于",
-          "description": "",
-          "keywords": [],
-          "auth": true,
-          "cache": true
-        },
-        "_source": {
-          "filePath": "src\\app\\[root]\\list\\about\\page.json5",
-          "relativePath": "src\\app\\[root]\\list\\about\\page.json5"
-        }
-      },
       {
         "name": "链接",
         "path": "/list/links",
         "component": "@/app/[root]/list/links/page",
-        "icon": "icon-text",
+        "icon": "icon-link",
+        "rank": 1,
         "meta": {
           "title": "链接",
           "description": "",
@@ -98,29 +91,25 @@
           "filePath": "src\\app\\[root]\\list\\links\\page.json5",
           "relativePath": "src\\app\\[root]\\list\\links\\page.json5"
         }
+      },
+      {
+        "name": "关于",
+        "path": "/list/about",
+        "component": "@/app/[root]/list/about/page",
+        "icon": "icon-about",
+        "meta": {
+          "title": "关于",
+          "description": "",
+          "keywords": [],
+          "auth": true,
+          "cache": true
+        },
+        "_source": {
+          "filePath": "src\\app\\[root]\\list\\about\\page.json5",
+          "relativePath": "src\\app\\[root]\\list\\about\\page.json5"
+        }
       }
-    ],
-    "_source": {
-      "filePath": "auto-generated",
-      "relativePath": "auto-generated"
-    }
-  },
-  {
-    "name": "测试",
-    "path": "/text",
-    "component": "@/app/[root]/text/page",
-    "icon": "icon-text",
-    "meta": {
-      "title": "测试",
-      "description": "",
-      "keywords": [],
-      "auth": true,
-      "cache": true
-    },
-    "_source": {
-      "filePath": "src\\app\\[root]\\text\\page.json5",
-      "relativePath": "src\\app\\[root]\\text\\page.json5"
-    }
+    ]
   },
   {
     "name": "登录",

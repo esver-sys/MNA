@@ -14,14 +14,16 @@ export default function ComponentLayout({
   return (
     <div id="root">
       <div className="w-full h-full relative">
-        <div className="h-[64px] w-full shadow-2xs absolute left-0 top-0">
+        <div className="h-[64px] w-full absolute left-0 top-0 layout-header">
           <LayoutHeader></LayoutHeader>
         </div>
-        <div className="h-full w-[256px] shadow-2xs absolute left-0 top-[64px]">
+        <div className="h-full w-[256px] absolute left-0 top-[64px] layout-aside">
           <LayoutAside></LayoutAside>
         </div>
-        <div className="content p-6 absolute left-[256px] top-[64px] w-[calc(100%-256px)] h-[calc(100%-64px)]">
-          {children}
+        <div className="content absolute left-[256px] layout-main top-[64px] w-[calc(100%-256px)] h-[calc(100%-64px)]">
+          <div className="h-full w-full">
+            {children}
+          </div>
         </div>
       </div>
     </div>

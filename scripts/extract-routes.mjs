@@ -126,6 +126,7 @@ function buildRouteTree(dir, basePath = '', rootDir = '') {
           path: routeConfig.path || currentPath,
           component: routeConfig.component,
           icon: routeConfig.icon || null,
+          rank: routeConfig.rank,
           meta: {
             title: routeConfig.title || routeConfig.name,
             description: routeConfig.description || '',
@@ -153,6 +154,7 @@ function buildRouteTree(dir, basePath = '', rootDir = '') {
           path: currentPath,
           component: `@/app/[root]${currentPath}/page`,
           icon: null,
+          rank: undefined,
           meta: {
             title: item,
             description: `${item}页面`,
@@ -171,6 +173,30 @@ function buildRouteTree(dir, basePath = '', rootDir = '') {
       }
     }
   }
+  
+  // 根据rank字段进行排序：从小到大，未定义则排列至最后
+  routes.sort((a, b) => {
+    const rankA = a.rank;
+    const rankB = b.rank;
+    
+    // 如果两个都未定义rank，保持原有顺序
+    if (rankA === undefined && rankB === undefined) {
+      return 0;
+    }
+    
+    // 如果a未定义rank，b有定义，a排在后面
+    if (rankA === undefined && rankB !== undefined) {
+      return 1;
+    }
+    
+    // 如果b未定义rank，a有定义，a排在前面
+    if (rankA !== undefined && rankB === undefined) {
+      return -1;
+    }
+    
+    // 两个都有定义rank，按数值大小排序
+    return rankA - rankB;
+  });
   
   return routes;
 }
@@ -294,6 +320,7 @@ function main() {
       path: "/",
       component: "@/app/[root]/home/page",
       icon: "icon-home",
+      rank: 0,
       meta: {
         title: "首页",
         description: "应用首页",

@@ -3,5 +3,5 @@
   "name": "关于",
   "path": "/list/about",
   "component": "@/app/[root]/list/about/page",
-  "icon": "icon-text",
+  "icon": "icon-about",
 }
