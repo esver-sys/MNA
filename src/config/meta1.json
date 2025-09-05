@@ -1,0 +1,1703 @@
+[
+    {
+        "key": "color",
+        "title": "颜色",
+        "type": "global",
+        "_props": [
+            {
+                "key": "button",
+                "title": "按钮",
+                "value": [
+                    {
+                        "key": "mainButtonBackgroundColor",
+                        "title": "主按钮颜色",
+                        "target": "color",
+                        "value": "#00AB4C"
+                    },
+                    {
+                        "key": "mainButtonTextColor",
+                        "title": "主按钮文本颜色",
+                        "target": "color",
+                        "value": "#ffffff"
+                    },
+                    {
+                        "key": "mainButtonBoxShadow",
+                        "title": "主按钮阴影",
+                        "target": "Boolean",
+                        "value": true
+                    },
+                    {
+                        "key": "buttonSecured",
+                        "title": "安全支付提示",
+                        "target": "Boolean",
+                        "value": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "language",
+        "title": "页面语言",
+        "type": "global",
+        "_props": [
+            {
+                "key": "locale",
+                "title": "页面语言",
+                "target": "select",
+                "data": [
+                    {
+                        "name": "英语",
+                        "value": "en"
+                    },
+                    {
+                        "name": "德语",
+                        "value": "de"
+                    },
+                    {
+                        "name": "西班牙语",
+                        "value": "es"
+                    }
+                ],
+                "value": "en"
+            }
+        ]
+    },
+    {
+        "key": "currency",
+        "title": "货币",
+        "type": "global",
+        "_props": [
+            {
+                "key": "currency",
+                "title": "货币",
+                "target": "select",
+                "data": [
+                    {
+                        "name": "美元（USD）",
+                        "value": "USD"
+                    },
+                    {
+                        "name": "欧元（EUR）",
+                        "value": "EUR"
+                    },
+                    {
+                        "name": "英镑 （GBP）",
+                        "value": "GBP"
+                    },
+                    {
+                        "name": "加拿大元 （CAD）",
+                        "value": "CAD"
+                    },
+                    {
+                        "name": "澳大利亚元 （AUD）",
+                        "value": "AUD"
+                    },
+                    {
+                        "name": "印度卢比 （INR）",
+                        "value": "INR"
+                    },
+                    {
+                        "name": "日元 （JPY）",
+                        "value": "JPY"
+                    },
+                    {
+                        "name": "阿根廷比索 （ARS）",
+                        "value": "ARS"
+                    },
+                    {
+                        "name": "巴西雷亚尔 （BRL）",
+                        "value": "BRL"
+                    },
+                    {
+                        "name": "人民币 （CNY）",
+                        "value": "CNY"
+                    },
+                    {
+                        "name": "韩元 （KRW）",
+                        "value": "KRW"
+                    },
+                    {
+                        "name": "墨西哥比索 （MXN）",
+                        "value": "MXN"
+                    },
+                    {
+                        "name": "新西兰元 （NZD）",
+                        "value": "NZD"
+                    },
+                    {
+                        "name": "俄罗斯卢布 （RUB）",
+                        "value": "RUB"
+                    },
+                    {
+                        "name": "乌拉圭比索 （UYU）",
+                        "value": "UYU"
+                    }
+                ],
+                "value": "USD"
+            }
+        ]
+    },
+    {
+        "key": "script",
+        "title": "自定义代码",
+        "fixedTop": true,
+        "_props": [
+            {
+                "key": "facebookPixel",
+                "title": "Facebook 像素",
+                "value": [
+                    {
+                        "key": "pixelScript",
+                        "title": "Facebook Pixel 像素代码",
+                        "target": "textarea"
+                    },
+                    {
+                        "key": "enableCApi",
+                        "title": "启用 Conversion API",
+                        "target": "Boolean",
+                        "value": true
+                    },
+                    {
+                        "key": "pixelId",
+                        "title": "Facebook Pixel ID",
+                        "relative": "enableCApi",
+                        "target": "String",
+                        "value": "1570010507727266"
+                    }
+                ]
+            },
+            {
+                "key": "scriptText",
+                "title": "自定义代码",
+                "target": "textarea",
+                "value": "console.log(\"test\")"
+            }
+        ]
+    },
+    {
+        "key": "recentPurchased",
+        "title": "最近售卖弹窗",
+        "fixedTop": true,
+        "_props": [
+            {
+                "key": "enable",
+                "title": "显示最近售卖弹窗",
+                "target": "Boolean",
+                "value": true
+            }
+        ]
+    },
+    {
+        "key": "conversionAssistant",
+        "title": "转化助手",
+        "fixedTop": true,
+        "_props": [
+            {
+                "key": "stock",
+                "title": "库存紧张",
+                "value": [
+                    {
+                        "key": "showStock",
+                        "title": "显示库存紧张",
+                        "target": "Boolean",
+                        "value": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "header",
+        "title": "页头",
+        "fixedTop": true,
+        "_props": [
+            {
+                "key": "topText",
+                "title": "公告栏",
+                "value": [
+                    {
+                        "key": "text",
+                        "target": "textarea",
+                        "value": "Your 50% OFF Discount Has Been Applied!Your 50% OFF Discount Has Been Applied!Your 50% OFF Discount Has Been Applied!"
+                    },
+                    {
+                        "key": "color",
+                        "type": "style",
+                        "target": "color",
+                        "title": "文本颜色",
+                        "value": "#7ed321"
+                    },
+                    {
+                        "key": "backgroundColor",
+                        "type": "style",
+                        "target": "color",
+                        "title": "背景颜色",
+                        "value": "#000000"
+                    },
+                    {
+                        "key": "sticky",
+                        "title": "滚动时固定位置",
+                        "target": "Boolean",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "key": "navbar",
+                "title": "Logo",
+                "value": [
+                    {
+                        "key": "logo",
+                        "target": "image",
+                        "description": "建议尺寸：375 x 40px，≤8M",
+                        "value": "https://cdn.wshopon.com/image/33667208bb4731cdd4cb7817899cd610dab70802.png"
+                    },
+                    {
+                        "key": "logoLayout",
+                        "title": "导航风格",
+                        "target": "select",
+                        "value": 0,
+                        "data": [
+                            {
+                                "name": "Logo居中",
+                                "value": 0
+                            },
+                            {
+                                "name": "Logo居左",
+                                "value": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "order",
+        "title": "下单模块",
+        "_props": [
+            {
+                "key": "moduleTitle",
+                "title": "模块名称",
+                "target": "String",
+                "max_length": 255,
+                "value": "SELECT PACKAGE"
+            },
+            {
+                "key": "selectMode",
+                "title": "加购模式",
+                "target": "select",
+                "value": 1,
+                "data": [
+                    {
+                        "name": "套餐推荐 - 平铺",
+                        "value": 1
+                    },
+                    {
+                        "name": "套餐推荐 - 卡片",
+                        "value": 2
+                    },
+                    {
+                        "name": "折扣冲击",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "key": "selectMode1",
+                "title": "加购模式1",
+                "target": "select",
+                "value": 1,
+                "data": [
+                    {
+                        "name": "套餐推荐 - 平铺",
+                        "value": 1
+                    },
+                    {
+                        "name": "套餐推荐 - 卡片",
+                        "value": 2
+                    },
+                    {
+                        "name": "折扣冲击",
+                        "value": 3
+                    }
+                ]
+            },
+            {
+                "key": "checkoutMode",
+                "title": "结账模式",
+                "target": "select",
+                "value": 1,
+                "data": [
+                    {
+                        "name": "单页模式",
+                        "value": 1
+                    },
+                    {
+                        "name": "跳转商城结账页模式",
+                        "value": 2
+                    }
+                ]
+            },
+            {
+                "key": "packageSetting",
+                "title": "套餐信息",
+                "relative": "selectMode",
+                "relativeValue": 3,
+                "value": [
+                    {
+                        "key": "showPackagePrice",
+                        "title": "显示套餐价格",
+                        "target": "Boolean",
+                        "value": false
+                    },
+                    {
+                        "key": "showPackageImage",
+                        "title": "显示套餐图片",
+                        "target": "Boolean",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "key": "packages",
+                "title": "套餐",
+                "target": "packages",
+                "relative": "selectMode",
+                "relativeValue": 3,
+                "ignoreTransformValue": true,
+                "fields": [
+                    {
+                        "key": "cardTitle",
+                        "title": "套餐推荐标题",
+                        "target": "String",
+                        "max_length": 255,
+                        "value": "RECOMMENDED DEAL"
+                    },
+                    {
+                        "key": "titleBackgroundColor",
+                        "title": "推荐标题背景颜色",
+                        "target": "color",
+                        "value": "#F4B838"
+                    },
+                    {
+                        "key": "titleTextColor",
+                        "title": "推荐标题文本颜色",
+                        "target": "color",
+                        "value": "#ffffff"
+                    },
+                    {
+                        "key": "cardBackgroundColor",
+                        "title": "卡片背景颜色",
+                        "target": "color",
+                        "value": "#FAECCE"
+                    },
+                    {
+                        "key": "commentRate",
+                        "title": "评论星级",
+                        "target": "select",
+                        "data": [
+                            {
+                                "name": "无",
+                                "value": 0
+                            },
+                            {
+                                "name": "5星",
+                                "value": 5
+                            },
+                            {
+                                "name": "4.5星",
+                                "value": 4.5
+                            },
+                            {
+                                "name": "4星",
+                                "value": 4
+                            },
+                            {
+                                "name": "3星",
+                                "value": 3
+                            },
+                            {
+                                "name": "2星",
+                                "value": 2
+                            },
+                            {
+                                "name": "1星",
+                                "value": 1
+                            }
+                        ],
+                        "value": 5
+                    },
+                    {
+                        "key": "commentText",
+                        "title": "评论数量",
+                        "target": "String",
+                        "max_length": 255,
+                        "value": "19.5K Reviews"
+                    },
+                    {
+                        "key": "buttonText",
+                        "target": "String",
+                        "title": "按钮",
+                        "max_length": 40,
+                        "value": "ORDER NOW"
+                    },
+                    {
+                        "key": "customButtonStyle",
+                        "target": "Boolean",
+                        "title": "自定义按钮样式",
+                        "value": false
+                    },
+                    {
+                        "key": "buttonBackgroundColor",
+                        "title": "按钮颜色",
+                        "relativeField": "customButtonStyle",
+                        "target": "color",
+                        "value": "#F4B838"
+                    },
+                    {
+                        "key": "buttonTextColor",
+                        "title": "按钮文本颜色",
+                        "relativeField": "customButtonStyle",
+                        "target": "color",
+                        "value": "#ffffff"
+                    },
+                    {
+                        "key": "buttonBoxShadow",
+                        "title": "按钮阴影",
+                        "relativeField": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": false
+                    },
+                    {
+                        "key": "buttonSecured",
+                        "title": "安全支付提示",
+                        "relativeField": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": false
+                    }
+                ],
+                "value": [
+                    {
+                        "cardTitle": "RECOMMENDED DEAL",
+                        "titleBackgroundColor": "#F4B838",
+                        "titleTextColor": "#ffffff",
+                        "cardBackgroundColor": "#FAECCE",
+                        "commentRate": 5,
+                        "commentText": "19.5K Reviews",
+                        "buttonText": "ORDER NOW",
+                        "customButtonStyle": false,
+                        "buttonBackgroundColor": "#F4B838",
+                        "buttonTextColor": "#ffffff",
+                        "buttonBoxShadow": false,
+                        "buttonSecured": false,
+                        "key": "b0198a8-0",
+                        "index": 0,
+                        "quantity": 1,
+                        "image": "",
+                        "recommend_sale": false,
+                        "pos": "0-4-0"
+                    },
+                    {
+                        "cardTitle": "RECOMMENDED DEAL",
+                        "titleBackgroundColor": "#C9BF43",
+                        "titleTextColor": "#ffffff",
+                        "cardBackgroundColor": "#F5F1C0",
+                        "commentRate": 5,
+                        "commentText": "19.5K Reviews",
+                        "buttonText": "ORDER NOW",
+                        "customButtonStyle": false,
+                        "buttonBackgroundColor": "#C9BF43",
+                        "buttonTextColor": "#ffffff",
+                        "buttonBoxShadow": false,
+                        "buttonSecured": false,
+                        "key": "3dafdff-1",
+                        "index": 1,
+                        "quantity": 2,
+                        "image": "",
+                        "recommend_sale": false,
+                        "pos": "0-4-1"
+                    },
+                    {
+                        "cardTitle": "RECOMMENDED DEAL",
+                        "titleBackgroundColor": "#C9BF43",
+                        "titleTextColor": "#ffffff",
+                        "cardBackgroundColor": "#F5F1C0",
+                        "commentRate": 5,
+                        "commentText": "19.5K Reviews",
+                        "buttonText": "ORDER NOW",
+                        "customButtonStyle": false,
+                        "buttonBackgroundColor": "#C9BF43",
+                        "buttonTextColor": "#ffffff",
+                        "buttonBoxShadow": false,
+                        "buttonSecured": false,
+                        "key": "f539708-2",
+                        "index": 2,
+                        "quantity": 3,
+                        "image": "",
+                        "recommend_sale": false,
+                        "pos": "0-4-2"
+                    },
+                    {
+                        "cardTitle": "RECOMMENDED DEAL",
+                        "titleBackgroundColor": "#F4B838",
+                        "titleTextColor": "#ffffff",
+                        "cardBackgroundColor": "#FAECCE",
+                        "commentRate": 5,
+                        "commentText": "19.5K Reviews",
+                        "buttonText": "ORDER NOW",
+                        "customButtonStyle": false,
+                        "buttonBackgroundColor": "#F4B838",
+                        "buttonTextColor": "#ffffff",
+                        "buttonBoxShadow": false,
+                        "buttonSecured": false,
+                        "key": "8a52488-3",
+                        "index": 3,
+                        "quantity": 4,
+                        "image": "",
+                        "recommend_sale": true,
+                        "pos": "0-4-3"
+                    }
+                ]
+            },
+            {
+                "key": "pay",
+                "title": "支付图标",
+                "target": "image",
+                "value": [
+                    {
+                        "key": "logo1",
+                        "title": "图标",
+                        "description": "建议尺寸：78 x 34",
+                        "value": "https://cdn.wshopon.com/image/1cae7c0f647f44650a4513a5e5f52c8b77be8f43.png"
+                    },
+                    {
+                        "key": "logo2",
+                        "title": "图标",
+                        "description": "建议尺寸：78 x 34",
+                        "value": "https://cdn.wshopon.com/image/1307649a9be1bb8b0a73fdf62ff09bf21333e35f.png"
+                    }
+                ]
+            },
+            {
+                "key": "auth",
+                "title": "数字认证图标",
+                "target": "image",
+                "value": [
+                    {
+                        "key": "logo3",
+                        "title": "图标",
+                        "description": "建议尺寸：78 x 34",
+                        "value": "https://cdn.wshopon.com/image/1307649a9be1bb8b0a73fdf62ff09bf21333e35f.png"
+                    },
+                    {
+                        "key": "logo4",
+                        "title": "图标",
+                        "description": "建议尺寸：78 x 34",
+                        "value": "https://cdn.wshopon.com/image/2dbee31beb0bdf8c31fb784c105ef777bef74c17.png"
+                    },
+                    {
+                        "key": "logo5",
+                        "title": "图标",
+                        "description": "建议尺寸：78 x 34",
+                        "value": "https://cdn.wshopon.com/image/c922309b1876595c3b338867b4c435496015bf40.png"
+                    },
+                    {
+                        "key": "logo6",
+                        "title": "图标",
+                        "description": "建议尺寸：78 x 34",
+                        "value": "https://cdn.wshopon.com/image/5f09207723fd4ed4d2513c3c1fbc747591b52f27.png"
+                    }
+                ]
+            },
+            {
+                "key": "button",
+                "title": "结账按钮",
+                "value": [
+                    {
+                        "key": "buttonText",
+                        "target": "String",
+                        "max_length": 40,
+                        "value": "CHECK OUT"
+                    },
+                    {
+                        "key": "customButtonStyle",
+                        "target": "Boolean",
+                        "title": "自定义按钮样式",
+                        "value": false
+                    },
+                    {
+                        "key": "buttonBackgroundColor",
+                        "title": "按钮颜色",
+                        "relative": "customButtonStyle",
+                        "target": "color",
+                        "value": "#00AB4C"
+                    },
+                    {
+                        "key": "buttonTextColor",
+                        "title": "按钮文本颜色",
+                        "relative": "customButtonStyle",
+                        "target": "color",
+                        "value": "#ffffff"
+                    },
+                    {
+                        "key": "buttonBoxShadow",
+                        "title": "按钮阴影",
+                        "relative": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": false
+                    },
+                    {
+                        "key": "buttonSecured",
+                        "title": "安全支付提示",
+                        "relative": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "key": "creditCardOrderButton",
+                "title": "信用卡下单按钮",
+                "value": [
+                    {
+                        "key": "orderButtonText",
+                        "disable": true,
+                        "target": "String",
+                        "value": "COMPLETE PURCHASE"
+                    },
+                    {
+                        "key": "customOrderButtonStyle",
+                        "target": "Boolean",
+                        "title": "自定义按钮样式",
+                        "value": false
+                    },
+                    {
+                        "key": "orderButtonBackgroundColor",
+                        "title": "按钮颜色",
+                        "relative": "customOrderButtonStyle",
+                        "target": "color",
+                        "value": "#00AB4C"
+                    },
+                    {
+                        "key": "orderButtonTextColor",
+                        "title": "按钮文本颜色",
+                        "relative": "customOrderButtonStyle",
+                        "target": "color",
+                        "value": "#ffffff"
+                    },
+                    {
+                        "key": "orderButtonBoxShadow",
+                        "title": "按钮阴影",
+                        "relative": "customOrderButtonStyle",
+                        "target": "Boolean",
+                        "value": false
+                    },
+                    {
+                        "key": "orderButtonSecured",
+                        "title": "安全支付提示",
+                        "target": "Boolean",
+                        "relative": "customOrderButtonStyle",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "key": "serviceGuarantees",
+                "title": "服务保证",
+                "value": [
+                    {
+                        "key": "serviceGuaranteesIcon",
+                        "title": "图标",
+                        "target": "image",
+                        "description": "建议尺寸：108 x 108",
+                        "value": "https://cdn.wshopon.com/image/1cae7c0f647f44650a4513a5e5f52c8b77be8f43.png"
+                    },
+                    {
+                        "key": "serviceGuaranteesTitle",
+                        "title": "标题",
+                        "target": "String",
+                        "value": "30 DAY GUARANTEE",
+                        "description": "请输入标题",
+                        "max_length": 255
+                    },
+                    {
+                        "key": "serviceGuaranteesContent",
+                        "title": "内容",
+                        "target": "textarea",
+                        "value": "",
+                        "description": "请输入内容",
+                        "max_length": 255
+                    }
+                ]
+            },
+            {
+                "key": "skuModeEnableMultipleSelection",
+                "title": "支持多选规格",
+                "target": "Boolean",
+                "value": true
+            },
+            {
+                "key": "skuModeShowShippingInsurance",
+                "title": "显示运费险",
+                "description": "需要安装和配置“运费险”插件，费率跟随插件配置",
+                "target": "Boolean",
+                "value": true
+            },
+            {
+                "key": "skuModeShippingInsuranceTip",
+                "title": "运费险提示",
+
+                "target": "textarea",
+                "value": "",
+                "max_length": 255
+            },
+            {
+                "key": "skuModeLogisticsMatchingRule",
+                "title": "物流方案匹配规则",
+                "target": "select",
+                "value": "lowest_price",
+                "data": [
+                    {
+                        "name": "自动匹配价格最低的物流方案",
+                        "value": "lowest_price"
+                    },
+                    {
+                        "name": "自动匹配价格最高的物流方案",
+                        "value": "highest_price"
+                    }
+                ]
+            },
+            {
+                "key": "skuModePaymentTip",
+                "title": "支付提示",
+                "target": "String",
+                "max_length": 255
+            },
+            {
+                "key": "skuModePaymentSecurity",
+                "title": "支付安全说明",
+                "value": [
+                    {
+                        "key": "skuModePaymentSecurityTitle",
+                        "title": "标题",
+                        "target": "String",
+                        "max_length": 255
+                    },
+                    {
+                        "key": "skuModePaymentSecurityContent",
+                        "title": "内容",
+                        "target": "rich-text",
+                        "max_length": 3000
+                    }
+                ]
+            },
+            {
+                "key": "skuModeSupportedPayment",
+                "title": "支持的支付方式",
+                "value": [
+                    {
+                        "key": "skuModeSupportedPaymentTitle",
+                        "title": "标题",
+                        "target": "String",
+                        "max_length": 255,
+                        "value": "支持的支付方式"
+                    },
+                    {
+                        "key": "skuModeSupportedPaymentContent",
+                        "title": "图标",
+                        "target": "image"
+                    }
+                ]
+            },
+            {
+                "key": "skuModeServiceGuarantee",
+                "title": "服务保证",
+                "value": [
+                    {
+                        "key": "skuModeServiceGuaranteeIcon",
+                        "title": "图标",
+                        "target": "image"
+                    },
+                    {
+                        "key": "skuModeServiceGuaranteeTitle",
+                        "title": "标题",
+                        "target": "String"
+                    },
+                    {
+                        "key": "skuModeServiceGuaranteeContent",
+                        "title": "内容",
+                        "target": "textarea"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "faqs",
+        "title": "FAQs",
+        "_props": [
+            {
+                "key": "show",
+                "title": "样式",
+                "target": "select",
+                "value": true,
+                "data": [
+                    {
+                        "name": "折叠",
+                        "value": false
+                    },
+                    {
+                        "name": "展开",
+                        "value": true
+                    }
+                ]
+            },
+            {
+                "key": "faqs",
+                "title": "FAQs",
+                "ignoreTransformValue": true,
+                "target": "card",
+                "item_title": "卡片",
+                "max_length": 20,
+                "fields": [
+                    {
+                        "key": "title",
+                        "title": "问题",
+                        "target": "textarea",
+                        "max_length": 255
+                    },
+                    {
+                        "key": "value",
+                        "title": "回答",
+                        "target": "rich-text",
+                        "max_length": 1000
+                    }
+                ],
+                "value": [
+                    {
+                        "key": "191795a6c67",
+                        "title": "额企鹅请问王企鹅",
+                        "value": "<p><img src=\"https://cdn.wshopon.com/image/9e20575de760abe902df5010c052335d0d6a7071.jpeg\" alt=\"dsdssd\" width=\"30\" height=\"38\" /><img src=\"https://cdn.wshopon.com/image/98787ffbf9749c1ad939ccfceb071a3c2a537cb0.png\" alt=\"\" width=\"1500\" height=\"160\" /><img class=\" ls-is-cached lazyloaded\" style=\"box-sizing: border-box; margin: revert; padding: revert; vertical-align: middle; border-style: none; max-width: 100%; list-style-type: revert; text-decoration-line: revert; color: #2f2f2f; line-height: revert; font-size: 14px; font-family: Mulish-Regular; background-color: #ffffff; height: auto !important;\" src=\"https://cdn.wshopon.com/image/66a6128f55f201a545918e877e48aafaf9c8b43f.webp\" alt=\"\" width=\"675\" height=\"900\" data-src=\"https://cdn.wshopon.com/image/66a6128f55f201a545918e877e48aafaf9c8b43f.webp\" /><span style=\"color: #2f2f2f; font-family: Mulish-Regular; font-size: 14px; background-color: #ffffff;\">asdasdasdasdadasda<img src=\"https://cdn.wshopon.com/image/4b6c623c511ed8a6f15fc8c199147d3a2ed7e88b.jpeg\" alt=\"\" /></span></p>",
+                        "pos": "0-1-0"
+                    },
+                    {
+                        "key": "191d9ac48fd",
+                        "title": "3123123213",
+                        "value": "<p><img src=\"https://cdn.wshopon.com/image/98787ffbf9749c1ad939ccfceb071a3c2a537cb0.png\" alt=\"\" width=\"1500\" height=\"160\" />1231<span style=\"color: #000000;\">23123123123123</span>1231<img src=\"https://cdn.wshopon.com/image/0296c8ef97835afbdecb27bbd05822574726dd1d.png\" />23123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123123<img src=\"https://cdn.wshopon.com/image/b174e647ccbf70fa28a0077d55bbfb3458d8fbf5.png\" alt=\"\" /><img src=\"https://cdn.wshopon.com/image/2dbce82b14724ad11fdd1244612c2f4443c16df9.png\" /><img src=\"https://cdn.wshopon.com/image/e04808b208dfaf161ea930c021888e0f2ae93307.jpeg\" alt=\"212121\" width=\"640\" height=\"800\" /></p>",
+                        "pos": "0-1-1"
+                    },
+                    {
+                        "key": "191decab078",
+                        "title": "dadasds",
+                        "value": "<p><img src=\"https://cdn.wshopon.com/image/7f18d763ba8b9a0f7f8584051f12335f13bc8c10.png\" /><img src=\"https://cdn.wshopon.com/image/7f18d763ba8b9a0f7f8584051f12335f13bc8c10.png\" /><img src=\"https://cdn.wshopon.com/image/34bbe9bf22d66ef66911256cf91bfd7a7c6ae86d.jpeg\" alt=\"\" width=\"500\" height=\"625\" /></p>",
+                        "pos": "0-1-2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "835b638-95af43f",
+        "title": "文本",
+        "tag": "Text",
+        "_props": [
+            {
+                "key": "display",
+                "title": "显示方式",
+                "value": [
+                    {
+                        "key": "align",
+                        "title": "对齐方式",
+                        "target": "select",
+                        "data": [
+                            {
+                                "name": "居中对齐",
+                                "value": "center"
+                            },
+                            {
+                                "name": "左对齐",
+                                "value": "left"
+                            }
+                        ],
+                        "value": "center"
+                    }
+                ]
+            },
+            {
+                "key": "heading",
+                "title": "标题",
+                "target": "String",
+                "max_length": 100,
+                "value": "Talk about your brandTalk about your brandTalk about your brandTalk about your brand"
+            },
+            {
+                "key": "content",
+                "title": "文本内容",
+                "target": "rich-text",
+                "max_length": 1000,
+                "hasImage": false,
+                "value": ""
+            },
+            {
+                "key": "abstract",
+                "title": "摘要提示",
+                "target": "String",
+                "max_length": 50,
+                "value": "Summa问问ry Tips"
+            },
+            {
+                "key": "button",
+                "title": "按钮",
+                "sub_title": "（点击定位到商品选择）",
+                "value": [
+                    {
+                        "key": "buttonText",
+                        "target": "String",
+                        "placeholder": "请输入按钮文本",
+                        "max_length": 40,
+                        "value": "MORE IN问问FO"
+                    },
+                    {
+                        "key": "customButtonStyle",
+                        "target": "Boolean",
+                        "title": "自定义按钮样式",
+                        "value": true
+                    },
+                    {
+                        "key": "buttonBackgroundColor",
+                        "title": "按钮颜色",
+                        "relative": "customButtonStyle",
+                        "target": "color",
+                        "value": "#9b9b9b"
+                    },
+                    {
+                        "key": "buttonTextColor",
+                        "title": "按钮文本颜色",
+                        "relative": "customButtonStyle",
+                        "target": "color",
+                        "value": "#7ed321"
+                    },
+                    {
+                        "key": "buttonBoxShadow",
+                        "title": "按钮阴影",
+                        "relative": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": true
+                    },
+                    {
+                        "key": "buttonSecured",
+                        "title": "安全支付提示",
+                        "relative": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "2d8f2bc-35bb8d0",
+        "title": "商品评论",
+        "tag": "Comment",
+        "_props": [
+            {
+                "key": "layout",
+                "title": "样式布局",
+                "target": "select",
+                "value": 1,
+                "data": [
+                    {
+                        "name": "网格布局",
+                        "value": 0
+                    },
+                    {
+                        "name": "滑动布局",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "key": "data",
+                "title": "商品评论",
+                "target": "card",
+                "ignoreTransformValue": true,
+                "item_title": "评论",
+                "max_length": 20,
+                "fields": [
+                    {
+                        "key": "avatar",
+                        "title": "头像",
+                        "target": "image",
+                        "max_size": 8,
+                        "accept": [
+                            "jpeg",
+                            "png"
+                        ],
+                        "description": "建议尺寸：100 x 100px，≤8M"
+                    },
+                    {
+                        "key": "name",
+                        "title": "姓名",
+                        "max_length": 50,
+                        "target": "String"
+                    },
+                    {
+                        "key": "star",
+                        "title": "评论星级",
+                        "target": "star",
+                        "value": 5
+                    },
+                    {
+                        "key": "zans",
+                        "title": "点赞数",
+                        "target": "Number",
+                        "min": 0,
+                        "max": 9999999,
+                        "placeholder": "请输入点赞数",
+                        "style": {
+                            "width": "100%"
+                        }
+                    },
+                    {
+                        "key": "images",
+                        "title": "图片",
+                        "sub_title": "（最多上传2张）",
+                        "target": "image",
+                        "max_length": 2,
+                        "max_size": 8,
+                        "description": "建议尺寸：400 x 400px，≤8M"
+                    },
+                    {
+                        "key": "text",
+                        "title": "评论",
+                        "max_length": 1000,
+                        "target": "textarea"
+                    }
+                ],
+                "value": [
+                    {
+                        "key": "196435bc84e",
+                        "avatar": "https://cdn.wshopon.com/image/0afbc54fdf8308c2bd94e2d9fbd7f69a8d4889ae.png",
+                        "name": "问问我",
+                        "star": 5,
+                        "zans": 12,
+                        "images": [
+                            "https://cdn.wshopon.com/image/1307649a9be1bb8b0a73fdf62ff09bf21333e35f.png",
+                            "https://cdn.wshopon.com/image/1cae7c0f647f44650a4513a5e5f52c8b77be8f43.png"
+                        ],
+                        "text": "啊洒洒水",
+                        "pos": "0-1-0"
+                    },
+                    {
+                        "key": "196435c6e6e",
+                        "avatar": "https://cdn.wshopon.com/image/1cae7c0f647f44650a4513a5e5f52c8b77be8f43.png",
+                        "name": "1212",
+                        "star": 5,
+                        "zans": 23,
+                        "images": [
+                            "https://cdn.wshopon.com/image/79a04148ec6f879fd8ea67387eaddebaf08820ad.jpeg",
+                            "https://cdn.wshopon.com/image/9ed560d6ad875ce7b9a9c714a480a8e622703533.jpeg"
+                        ],
+                        "pos": "0-1-1"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "81f7778-35df236",
+        "title": "图片",
+        "tag": "Image",
+        "_props": [
+            {
+                "key": "title",
+                "title": "标题",
+                "target": "String",
+                "max_length": 100,
+                "value": "Beautiful pictures"
+            },
+            {
+                "key": "display",
+                "title": "显示",
+                "value": [
+                    {
+                        "key": "disableGap",
+                        "target": "Boolean",
+                        "title": "无间距",
+                        "value": false
+                    },
+                    {
+                        "key": "column",
+                        "title": "每行显示个数",
+                        "target": "select",
+                        "value": 4,
+                        "data": [
+                            {
+                                "name": "1",
+                                "value": 1
+                            },
+                            {
+                                "name": "2",
+                                "value": 2
+                            },
+                            {
+                                "name": "3",
+                                "value": 3
+                            },
+                            {
+                                "name": "4",
+                                "value": 4
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "button",
+                "title": "按钮",
+                "sub_title": "（点击定位到商品选择）",
+                "value": [
+                    {
+                        "key": "buttonText",
+                        "target": "String",
+                        "placeholder": "请输入按钮文本",
+                        "max_length": 40,
+                        "value": "MORE INFO"
+                    },
+                    {
+                        "key": "customButtonStyle",
+                        "target": "Boolean",
+                        "title": "自定义按钮样式",
+                        "value": false
+                    },
+                    {
+                        "key": "buttonBackgroundColor",
+                        "title": "按钮颜色",
+                        "relative": "customButtonStyle",
+                        "target": "color",
+                        "value": "#00AB4C"
+                    },
+                    {
+                        "key": "buttonTextColor",
+                        "title": "按钮文本颜色",
+                        "relative": "customButtonStyle",
+                        "target": "color",
+                        "value": "#ffffff"
+                    },
+                    {
+                        "key": "buttonBoxShadow",
+                        "title": "按钮阴影",
+                        "relative": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": false
+                    },
+                    {
+                        "key": "buttonSecured",
+                        "title": "安全支付提示",
+                        "relative": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": false
+                    }
+                ]
+            },
+            {
+                "key": "images",
+                "title": "图片",
+                "target": "card",
+                "max_length": 20,
+                "ignoreTransformValue": true,
+                "item_title": "图片",
+                "fields": [
+                    {
+                        "key": "pcSrc",
+                        "title": "电脑端图片",
+                        "target": "image",
+                        "max_size": 8,
+                        "accept": [
+                            "jpeg",
+                            "png",
+                            "gif"
+                        ],
+                        "descriptionRelative": "column",
+                        "description": {
+                            "1": "建议尺寸：1440 x 720px，≤8M",
+                            "2": "建议尺寸：750 x 750px，≤8M",
+                            "3": "建议尺寸：750 x 750px，≤8M",
+                            "4": "建议尺寸：750 x 750px，≤8M"
+                        }
+                    },
+                    {
+                        "key": "mobileSrc",
+                        "title": "手机端图片",
+                        "target": "image",
+                        "max_size": 8,
+                        "accept": [
+                            "jpeg",
+                            "png",
+                            "gif"
+                        ],
+                        "description": "建议尺寸：750 x 750px，≤8M\n            如未设置将使用电脑端图片显示"
+                    }
+                ],
+                "value": [
+                    {
+                        "key": "196435dff66",
+                        "pcSrc": "https://cdn.wshopon.com/image/79a04148ec6f879fd8ea67387eaddebaf08820ad.jpeg",
+                        "mobileSrc": "https://cdn.wshopon.com/image/33667208bb4731cdd4cb7817899cd610dab70802.png",
+                        "pos": "0-3-0"
+                    },
+                    {
+                        "key": "196435e4475",
+                        "pos": "0-3-1"
+                    },
+                    {
+                        "key": "196435e4625",
+                        "pcSrc": "https://cdn.wshopon.com/image/d0a4118da5d5c30941ff20ab49c0897ab19aef7d.jpeg",
+                        "pos": "0-3-2"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "507c458-35e785e",
+        "title": "图片文字",
+        "tag": "ImageText",
+        "_props": [
+            {
+                "key": "layout",
+                "title": "布局",
+                "target": "select",
+                "value": 1,
+                "data": [
+                    {
+                        "name": "左图右文",
+                        "value": 0
+                    },
+                    {
+                        "name": "左文右图",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "key": "align",
+                "title": "文字对齐方式",
+                "target": "select",
+                "value": "left",
+                "data": [
+                    {
+                        "name": "左对齐",
+                        "value": "left"
+                    },
+                    {
+                        "name": "居中对齐",
+                        "value": "center"
+                    },
+                    {
+                        "name": "右对齐",
+                        "value": "right"
+                    }
+                ]
+            },
+            {
+                "key": "imageSet",
+                "title": "图片",
+                "value": [
+                    {
+                        "key": "imageLayout",
+                        "target": "radio",
+                        "value": 0,
+                        "data": [
+                            {
+                                "name": "填充",
+                                "value": 0
+                            },
+                            {
+                                "name": "居中",
+                                "value": 1
+                            }
+                        ]
+                    },
+                    {
+                        "key": "image",
+                        "target": "image",
+                        "max_size": 8,
+                        "description": "建议尺寸：720 x 720px，≤8M",
+                        "value": "https://cdn.wshopon.com/image/9ed560d6ad875ce7b9a9c714a480a8e622703533.jpeg"
+                    }
+                ]
+            },
+            {
+                "key": "abstract",
+                "title": "摘要",
+                "sub_title": "（请输入英文）",
+                "target": "textarea",
+                "value": "Image with text",
+                "max_length": 255
+            },
+            {
+                "key": "heading",
+                "title": "标题",
+                "sub_title": "（请输入英文）",
+                "target": "textarea",
+                "value": "Image with text",
+                "max_length": 255
+            },
+            {
+                "key": "content",
+                "title": "描述",
+                "sub_title": "（请输入英文）",
+                "target": "rich-text",
+                "max_length": 1000,
+                "value": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+            },
+            {
+                "key": "button",
+                "title": "按钮",
+                "sub_title": "（点击定位到商品选择）",
+                "value": [
+                    {
+                        "key": "buttonText",
+                        "target": "String",
+                        "placeholder": "请输入按钮文本",
+                        "max_length": 40,
+                        "value": "MORE INFO"
+                    },
+                    {
+                        "key": "customButtonStyle",
+                        "target": "Boolean",
+                        "title": "自定义按钮样式",
+                        "value": false
+                    },
+                    {
+                        "key": "buttonBackgroundColor",
+                        "title": "按钮颜色",
+                        "relative": "customButtonStyle",
+                        "target": "color",
+                        "value": "#00AB4C"
+                    },
+                    {
+                        "key": "buttonTextColor",
+                        "title": "按钮文本颜色",
+                        "relative": "customButtonStyle",
+                        "target": "color",
+                        "value": "#ffffff"
+                    },
+                    {
+                        "key": "buttonBoxShadow",
+                        "title": "按钮阴影",
+                        "relative": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": false
+                    },
+                    {
+                        "key": "buttonSecured",
+                        "title": "安全支付提示",
+                        "relative": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "2561038-35ead85",
+        "title": "宣传图",
+        "tag": "Banner",
+        "_props": [
+            {
+                "key": "image",
+                "title": "图片",
+                "target": "image",
+                "value": [
+                    {
+                        "key": "web",
+                        "title": "电脑端图片",
+                        "target": "image",
+                        "description": "建议尺寸：1440 x 150",
+                        "value": "https://cdn.wshopon.com/image/37ccb566b6d13cb850ef1f985aace76b8379eeee.jpeg"
+                    },
+                    {
+                        "key": "mobile",
+                        "title": "手机端图片",
+                        "target": "image",
+                        "description": "建议尺寸：375 x 80",
+                        "value": "https://cdn.wshopon.com/image/0afbc54fdf8308c2bd94e2d9fbd7f69a8d4889ae.png"
+                    }
+                ]
+            },
+            {
+                "key": "toOrder",
+                "title": "点击定位到商品选择",
+                "target": "Boolean",
+                "value": false
+            }
+        ]
+    },
+    {
+        "key": "4430a56-35f158e",
+        "title": "倒计时",
+        "tag": "Countdown",
+        "_props": [
+            {
+                "key": "infos",
+                "title": "提示文本",
+                "value": [
+                    {
+                        "key": "beforeInfo",
+                        "title": "倒计时前",
+                        "target": "String",
+                        "placeholder": "请输入倒计时前文本",
+                        "max_length": 255,
+                        "value": "Hurry up! Sale Ends in"
+                    },
+                    {
+                        "key": "afterInfo",
+                        "title": "倒计时后",
+                        "placeholder": "请输入倒计时后文本",
+                        "max_length": 255,
+                        "target": "String"
+                    },
+                    {
+                        "key": "infoColor",
+                        "title": "文本颜色",
+                        "target": "color",
+                        "value": "#FFFFFF"
+                    }
+                ]
+            },
+            {
+                "key": "background",
+                "title": "背景",
+                "value": [
+                    {
+                        "key": "backgroundStyle",
+                        "title": "背景样式",
+                        "value": "backgroundImage",
+                        "target": "radio",
+                        "data": [
+                            {
+                                "name": "使用颜色",
+                                "value": "backgroundColor"
+                            },
+                            {
+                                "name": "使用图片",
+                                "value": "backgroundImage"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "backgroundColor",
+                        "title": "背景颜色",
+                        "value": "#000000",
+                        "target": "color",
+                        "relative": "backgroundStyle"
+                    },
+                    {
+                        "key": "backgroundImage",
+                        "relative": "backgroundStyle",
+                        "value": [
+                            {
+                                "key": "backgroundImageWeb",
+                                "title": "电脑端图片",
+                                "target": "image",
+                                "description": "建议尺寸：1440 x 66px，≤8M",
+                                "value": "https://cdn.wshopon.com/image/0afbc54fdf8308c2bd94e2d9fbd7f69a8d4889ae.png"
+                            },
+                            {
+                                "key": "backgroundImageMobile",
+                                "title": "手机端图片",
+                                "target": "image",
+                                "description": "375 x 50px，≤8M，如未设置将使用电脑端图片显示",
+                                "value": "https://cdn.wshopon.com/image/5f09207723fd4ed4d2513c3c1fbc747591b52f27.png"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "setting",
+                "title": "倒计时时间",
+                "value": [
+                    {
+                        "title": "持续时间",
+                        "pos": "0-2-0"
+                    },
+                    {
+                        "key": "countdownNum",
+                        "value": 1,
+                        "min": 1,
+                        "max": 999,
+                        "defaultValue": 1,
+                        "target": "Number"
+                    },
+                    {
+                        "key": "countdownUnit",
+                        "target": "select",
+                        "value": "hours",
+                        "data": [
+                            {
+                                "name": "小时",
+                                "value": "hours"
+                            },
+                            {
+                                "name": "分钟",
+                                "value": "minutes"
+                            }
+                        ]
+                    },
+                    {
+                        "key": "countdownTextColor",
+                        "title": "文本颜色",
+                        "target": "color",
+                        "value": "#000000"
+                    },
+                    {
+                        "key": "countdownBackgroundColor",
+                        "title": "背景颜色",
+                        "target": "color",
+                        "value": "#FFFFFF"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "quickOrder",
+        "title": "快捷下单",
+        "fixedBottom": true,
+        "_props": [
+            {
+                "key": "enable",
+                "title": "显示快捷下单",
+                "target": "Boolean",
+                "value": true
+            },
+            {
+                "key": "button",
+                "title": "按钮",
+                "sub_title": "（点击定位到商品选择）",
+                "value": [
+                    {
+                        "key": "buttonText",
+                        "target": "String",
+                        "title": "按钮文本",
+                        "max_length": 40,
+                        "value": "ORDER NOW"
+                    },
+                    {
+                        "key": "customButtonStyle",
+                        "target": "Boolean",
+                        "title": "自定义按钮样式",
+                        "value": false
+                    },
+                    {
+                        "key": "buttonBackgroundColor",
+                        "title": "按钮颜色",
+                        "relative": "customButtonStyle",
+                        "target": "color",
+                        "value": "#00AB4C"
+                    },
+                    {
+                        "key": "buttonTextColor",
+                        "title": "按钮文本颜色",
+                        "relative": "customButtonStyle",
+                        "target": "color",
+                        "value": "#ffffff"
+                    },
+                    {
+                        "key": "buttonBoxShadow",
+                        "title": "按钮阴影",
+                        "relative": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": false
+                    },
+                    {
+                        "key": "buttonSecured",
+                        "title": "安全支付提示",
+                        "relative": "customButtonStyle",
+                        "target": "Boolean",
+                        "value": false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "key": "footer",
+        "title": "页脚",
+        "fixedBottom": true,
+        "_props": [
+            {
+                "key": "footerBgColor",
+                "title": "背景颜色",
+                "target": "color",
+                "value": "#4B4B4B"
+            },
+            {
+                "key": "footerColor",
+                "title": "文本颜色",
+                "target": "color",
+                "value": "#DEDEDE"
+            },
+            {
+                "key": "menu",
+                "title": "菜单栏",
+                "target": "card",
+                "ignoreTransformValue": true,
+                "item_title": "菜单目录",
+                "fields": [
+                    {
+                        "key": "title",
+                        "title": "文本",
+                        "target": "String"
+                    },
+                    {
+                        "key": "value",
+                        "title": "链接",
+                        "target": "String"
+                    }
+                ],
+                "value": [
+                    {
+                        "key": "footerTeams",
+                        "title": "Terms & Conditions",
+                        "value": "3232323",
+                        "pos": "0-0-0"
+                    },
+                    {
+                        "key": "footerPrivate",
+                        "title": "Privacy Policy",
+                        "value": "23232323",
+                        "pos": "0-0-1"
+                    },
+                    {
+                        "key": "footerContact",
+                        "title": "Contact Us",
+                        "value": "",
+                        "pos": "0-0-2"
+                    },
+                    {
+                        "key": "19179606dc7",
+                        "title": "2323232323",
+                        "pos": "0-0-3"
+                    },
+                    {
+                        "key": "19179607069",
+                        "title": "232323",
+                        "pos": "0-0-4"
+                    }
+                ]
+            },
+            {
+                "key": "dmca",
+                "title": "DMCA认证",
+                "value": "2323123213"
+            }
+        ]
+    }
+]

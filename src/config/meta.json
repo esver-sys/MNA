@@ -1,0 +1,6302 @@
+{
+    "name": "测试基本流程",
+    "id": "9246",
+    "template": "template-range-xtd",
+    "setting": {
+        "packageNum": 4,
+        "packages": [
+            {
+                "key": "7362981-0",
+                "index": 0,
+                "image": "https://cdn.wshopon.com/image/7b2649ba1b61e0a9944f6e94bc4c636e2e9f53c5.jpeg",
+                "quantity": 1,
+                "recommend_sale": false
+            },
+            {
+                "key": "93026c3-1",
+                "index": 1,
+                "image": "https://cdn.wshopon.com/image/bf405fe366dc120c570a9b750ec39837f71068d7.jpeg",
+                "quantity": 2,
+                "recommend_sale": false
+            },
+            {
+                "key": "c51aa86-2",
+                "index": 2,
+                "image": "https://cdn.wshopon.com/image/7b4442640954803cf22f37dcc6f4f49cec30a728.jpeg",
+                "quantity": 3,
+                "recommend_sale": false
+            },
+            {
+                "key": "9a1c02c-3",
+                "index": 3,
+                "image": "https://cdn.wshopon.com/image/cbed90cb4957d6d0b185b0a1cd68f7eb68bd1bb7.jpeg",
+                "quantity": 4,
+                "recommend_sale": true
+            }
+        ],
+        "productShowMode": "sku",
+        "skuConfig": [
+            {
+                "sku": "sku-0001",
+                "imageUrl": "https://cdn.wshopon.com/image/7b2649ba1b61e0a9944f6e94bc4c636e2e9f53c5.jpeg",
+                "titleTags": [
+                    {
+                        "text": "热销1",
+                        "color": "#ff0000",
+                        "bgColor": "#fff0f0"
+                    },
+                    {
+                        "text": "新品1",
+                        "color": "#00aa00",
+                        "bgColor": "#f0fff0"
+                    }
+                ],
+                "priceTags": "限时89折,立减19元",
+                "key": "9f6ef4b-sku_0002",
+                "index": "sku_0002"
+            },
+            {
+                "sku": "sku-0002",
+                "imageUrl": "https://cdn.wshopon.com/image/7b2649ba1b61e0a9944f6e94bc4c636e2e9f53c5.jpeg",
+                "titleTags": [
+                    {
+                        "text": "热销",
+                        "color": "#ff0000",
+                        "bgColor": "#fff0f0"
+                    },
+                    {
+                        "text": "新品",
+                        "color": "#00aa00",
+                        "bgColor": "#f0fff0"
+                    }
+                ],
+                "priceTags": "限时19折,立减89元",
+                "key": "d2320e7-sku_0001",
+                "index": "sku_0001"
+            }
+        ]
+    },
+    "pagePath": "pages/test-shang-pin-tu-2-212",
+    "seoTitle": "test商品图1",
+    "seoDescription": "",
+    "shop": "podiatrist7.wshopon.com",
+    "countryCustomsRules": [
+        {
+            "id": 1,
+            "country": "巴西",
+            "name": "CPF/CNPJ",
+            "is_required": 1,
+            "status": 1,
+            "sort_number": 9999,
+            "country_en": "Brazil",
+            "country_code": "BR"
+        },
+        {
+            "id": 2,
+            "country": "智利",
+            "name": "RUT",
+            "is_required": 1,
+            "status": 1,
+            "sort_number": 9999,
+            "country_en": "Chile",
+            "country_code": "CL"
+        },
+        {
+            "id": 4,
+            "country": "韩国",
+            "name": "PCCC",
+            "is_required": 0,
+            "status": 1,
+            "sort_number": 9999,
+            "country_en": "Korea",
+            "country_code": "KR"
+        },
+        {
+            "id": 3,
+            "country": "秘鲁",
+            "name": "DNI",
+            "is_required": 0,
+            "status": 1,
+            "sort_number": 9999,
+            "country_en": "Peru",
+            "country_code": "PE"
+        },
+        {
+            "id": 8,
+            "country": "埃及",
+            "name": "test",
+            "is_required": 1,
+            "status": 1,
+            "sort_number": 0,
+            "country_en": "Egypt",
+            "country_code": "EG"
+        },
+        {
+            "id": 19,
+            "country": "印度",
+            "name": "test",
+            "is_required": 1,
+            "status": 1,
+            "sort_number": 0,
+            "country_en": "India",
+            "country_code": "IN"
+        },
+        {
+            "id": 7,
+            "country": "阿根廷",
+            "name": "阿根廷",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Argentina",
+            "country_code": "AR"
+        },
+        {
+            "id": 35,
+            "country": "巴基斯坦",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Pakistan",
+            "country_code": "PK"
+        },
+        {
+            "id": 27,
+            "country": "巴拉圭",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Paraguay",
+            "country_code": "PY"
+        },
+        {
+            "id": 23,
+            "country": "巴拿马",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Panama",
+            "country_code": "PA"
+        },
+        {
+            "id": 14,
+            "country": "玻利维亚",
+            "name": "test",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Bolivia",
+            "country_code": "BO"
+        },
+        {
+            "id": 32,
+            "country": "多米尼加",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Dominican Republic",
+            "country_code": "DO"
+        },
+        {
+            "id": 16,
+            "country": "厄瓜多尔",
+            "name": "test",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Ecuador",
+            "country_code": "EC"
+        },
+        {
+            "id": 24,
+            "country": "菲律宾",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Philippines",
+            "country_code": "PH"
+        },
+        {
+            "id": 11,
+            "country": "哥伦比亚",
+            "name": "test",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Colombia",
+            "country_code": "CO"
+        },
+        {
+            "id": 13,
+            "country": "哥斯达黎加",
+            "name": "test",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Costa Rica",
+            "country_code": "CR"
+        },
+        {
+            "id": 17,
+            "country": "加纳",
+            "name": "test",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Ghana",
+            "country_code": "GH"
+        },
+        {
+            "id": 12,
+            "country": "喀麦隆",
+            "name": "test",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Cameroon",
+            "country_code": "CM"
+        },
+        {
+            "id": 34,
+            "country": "科特迪瓦",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Ivory Coast",
+            "country_code": "CI"
+        },
+        {
+            "id": 20,
+            "country": "肯尼亚",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Kenya",
+            "country_code": "KE"
+        },
+        {
+            "id": 37,
+            "country": "卢旺达",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Rwanda",
+            "country_code": "RW"
+        },
+        {
+            "id": 22,
+            "country": "马来西亚",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Malaysia",
+            "country_code": "MY"
+        },
+        {
+            "id": 18,
+            "country": "摩洛哥",
+            "name": "test",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Morocco",
+            "country_code": "MA"
+        },
+        {
+            "id": 21,
+            "country": "墨西哥",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Mexico",
+            "country_code": "MX"
+        },
+        {
+            "id": 6,
+            "country": "南非",
+            "name": "dddwefdfadassssssssfffffffffffffffffffffffffffffffffdddwefdfadassssssssffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+            "is_required": 0,
+            "status": 1,
+            "sort_number": 0,
+            "country_en": "South Africa",
+            "country_code": "ZA"
+        },
+        {
+            "id": 25,
+            "country": "尼日利亚",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Nigeria",
+            "country_code": "NG"
+        },
+        {
+            "id": 5,
+            "country": "挪威",
+            "name": "挪威",
+            "is_required": 0,
+            "status": 1,
+            "sort_number": 0,
+            "country_en": "Norway",
+            "country_code": "NO"
+        },
+        {
+            "id": 31,
+            "country": "萨尔瓦多",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "El Salvador",
+            "country_code": "SV"
+        },
+        {
+            "id": 26,
+            "country": "塞内加尔",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Senegal",
+            "country_code": "SN"
+        },
+        {
+            "id": 36,
+            "country": "坦桑尼亚",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Tanzania, United Republic of",
+            "country_code": "TZ"
+        },
+        {
+            "id": 28,
+            "country": "土耳其",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Turkey",
+            "country_code": "TR"
+        },
+        {
+            "id": 15,
+            "country": "危地马拉",
+            "name": "test",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Guatemala",
+            "country_code": "GT"
+        },
+        {
+            "id": 38,
+            "country": "乌干达",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Uganda",
+            "country_code": "UG"
+        },
+        {
+            "id": 29,
+            "country": "乌拉圭",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Uruguay",
+            "country_code": "UY"
+        },
+        {
+            "id": 9,
+            "country": "意大利",
+            "name": "Italy/Italyeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "is_required": 0,
+            "status": 1,
+            "sort_number": 0,
+            "country_en": "Italy",
+            "country_code": "IT"
+        },
+        {
+            "id": 33,
+            "country": "印度尼西亚",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Indonesia",
+            "country_code": "ID"
+        },
+        {
+            "id": 30,
+            "country": "越南",
+            "name": "w",
+            "is_required": 0,
+            "status": 0,
+            "sort_number": 0,
+            "country_en": "Viet Nam",
+            "country_code": "VN"
+        }
+    ],
+    "shippingZonesCounties": [
+        {
+            "code": "AF",
+            "name": "Afghanistan",
+            "states": []
+        },
+        {
+            "code": "AX",
+            "name": "Aland Islands",
+            "states": []
+        },
+        {
+            "code": "AL",
+            "name": "Albania",
+            "states": []
+        },
+        {
+            "code": "DZ",
+            "name": "Algeria",
+            "states": []
+        },
+        {
+            "code": "AS",
+            "name": "American Samoa",
+            "states": []
+        },
+        {
+            "code": "AD",
+            "name": "Andorra",
+            "states": []
+        },
+        {
+            "code": "AO",
+            "name": "Angola",
+            "states": []
+        },
+        {
+            "code": "AI",
+            "name": "Anguilla",
+            "states": []
+        },
+        {
+            "code": "AG",
+            "name": "Antigua and Barbuda",
+            "states": []
+        },
+        {
+            "code": "AR",
+            "name": "Argentina",
+            "states": [
+                {
+                    "code": "B",
+                    "paypal_code": "BUENOS AIRES",
+                    "name": "Buenos Aires"
+                },
+                {
+                    "code": "K",
+                    "paypal_code": "CATAMARCA",
+                    "name": "Catamarca"
+                },
+                {
+                    "code": "H",
+                    "paypal_code": "CHACO",
+                    "name": "Chaco"
+                },
+                {
+                    "code": "U",
+                    "paypal_code": "CHUBUT",
+                    "name": "Chubut"
+                },
+                {
+                    "code": "C",
+                    "paypal_code": "CIUDAD AUTÓNOMA DE BUENOS AIRES",
+                    "name": "Ciudad Autónoma de Buenos Aires"
+                },
+                {
+                    "code": "W",
+                    "paypal_code": "CORRIENTES",
+                    "name": "Corrientes"
+                },
+                {
+                    "code": "X",
+                    "paypal_code": "CÓRDOBA",
+                    "name": "Córdoba"
+                },
+                {
+                    "code": "E",
+                    "paypal_code": "ENTRE RÍOS",
+                    "name": "Entre Ríos"
+                },
+                {
+                    "code": "P",
+                    "paypal_code": "FORMOSA",
+                    "name": "Formosa"
+                },
+                {
+                    "code": "Y",
+                    "paypal_code": "JUJUY",
+                    "name": "Jujuy"
+                },
+                {
+                    "code": "L",
+                    "paypal_code": "LA PAMPA",
+                    "name": "La Pampa"
+                },
+                {
+                    "code": "F",
+                    "paypal_code": "LA RIOJA",
+                    "name": "La Rioja"
+                },
+                {
+                    "code": "M",
+                    "paypal_code": "MENDOZA",
+                    "name": "Mendoza"
+                },
+                {
+                    "code": "N",
+                    "paypal_code": "MISIONES",
+                    "name": "Misiones"
+                },
+                {
+                    "code": "Q",
+                    "paypal_code": "NEUQUÉN",
+                    "name": "Neuquén"
+                },
+                {
+                    "code": "R",
+                    "paypal_code": "RÍO NEGRO",
+                    "name": "Río Negro"
+                },
+                {
+                    "code": "A",
+                    "paypal_code": "SALTA",
+                    "name": "Salta"
+                },
+                {
+                    "code": "J",
+                    "paypal_code": "SAN JUAN",
+                    "name": "San Juan"
+                },
+                {
+                    "code": "D",
+                    "paypal_code": "SAN LUIS",
+                    "name": "San Luis"
+                },
+                {
+                    "code": "Z",
+                    "paypal_code": "SANTA CRUZ",
+                    "name": "Santa Cruz"
+                },
+                {
+                    "code": "S",
+                    "paypal_code": "SANTA FE",
+                    "name": "Santa Fe"
+                },
+                {
+                    "code": "G",
+                    "paypal_code": "SANTIAGO DEL ESTERO",
+                    "name": "Santiago del Estero"
+                },
+                {
+                    "code": "V",
+                    "paypal_code": "TIERRA DEL FUEGO",
+                    "name": "Tierra del Fuego"
+                },
+                {
+                    "code": "T",
+                    "paypal_code": "TUCUMÁN",
+                    "name": "Tucumán"
+                }
+            ]
+        },
+        {
+            "code": "AM",
+            "name": "Armenia",
+            "states": []
+        },
+        {
+            "code": "AW",
+            "name": "Aruba",
+            "states": []
+        },
+        {
+            "code": "AU",
+            "name": "Australia",
+            "states": [
+                {
+                    "code": "ACT",
+                    "name": "Australian Capital Territory"
+                },
+                {
+                    "code": "NSW",
+                    "name": "New South Wales"
+                },
+                {
+                    "code": "NT",
+                    "name": "Northern Territory"
+                },
+                {
+                    "code": "QLD",
+                    "name": "Queensland"
+                },
+                {
+                    "code": "SA",
+                    "name": "South Australia"
+                },
+                {
+                    "code": "TAS",
+                    "name": "Tasmania"
+                },
+                {
+                    "code": "VIC",
+                    "name": "Victoria"
+                },
+                {
+                    "code": "WA",
+                    "name": "Western Australia"
+                }
+            ]
+        },
+        {
+            "code": "AT",
+            "name": "Austria",
+            "states": []
+        },
+        {
+            "code": "AZ",
+            "name": "Azerbaijan",
+            "states": []
+        },
+        {
+            "code": "BS",
+            "name": "Bahamas",
+            "states": []
+        },
+        {
+            "code": "BH",
+            "name": "Bahrain",
+            "states": []
+        },
+        {
+            "code": "BD",
+            "name": "Bangladesh",
+            "states": []
+        },
+        {
+            "code": "BB",
+            "name": "Barbados",
+            "states": []
+        },
+        {
+            "code": "BY",
+            "name": "Belarus",
+            "states": []
+        },
+        {
+            "code": "PW",
+            "name": "Belau",
+            "states": []
+        },
+        {
+            "code": "BE",
+            "name": "Belgium",
+            "states": []
+        },
+        {
+            "code": "BZ",
+            "name": "Belize",
+            "states": []
+        },
+        {
+            "code": "BJ",
+            "name": "Benin",
+            "states": []
+        },
+        {
+            "code": "BM",
+            "name": "Bermuda",
+            "states": []
+        },
+        {
+            "code": "BT",
+            "name": "Bhutan",
+            "states": []
+        },
+        {
+            "code": "BO",
+            "name": "Bolivia",
+            "states": []
+        },
+        {
+            "code": "BQ",
+            "name": "Bonaire, Saint Eustatius and Saba",
+            "states": []
+        },
+        {
+            "code": "BA",
+            "name": "Bosnia and Herzegovina",
+            "states": []
+        },
+        {
+            "code": "BW",
+            "name": "Botswana",
+            "states": []
+        },
+        {
+            "code": "BV",
+            "name": "Bouvet Island",
+            "states": []
+        },
+        {
+            "code": "BR",
+            "name": "Brazil",
+            "states": [
+                {
+                    "code": "AC",
+                    "name": "Acre"
+                },
+                {
+                    "code": "AL",
+                    "name": "Alagoas"
+                },
+                {
+                    "code": "AP",
+                    "name": "Amapá"
+                },
+                {
+                    "code": "AM",
+                    "name": "Amazonas"
+                },
+                {
+                    "code": "BA",
+                    "name": "Bahia"
+                },
+                {
+                    "code": "CE",
+                    "name": "Ceará"
+                },
+                {
+                    "code": "DF",
+                    "name": "Distrito Federal"
+                },
+                {
+                    "code": "ES",
+                    "name": "Espírito Santo"
+                },
+                {
+                    "code": "GO",
+                    "name": "Goiás"
+                },
+                {
+                    "code": "MA",
+                    "name": "Maranhão"
+                },
+                {
+                    "code": "MT",
+                    "name": "Mato Grosso"
+                },
+                {
+                    "code": "MS",
+                    "name": "Mato Grosso do Sul"
+                },
+                {
+                    "code": "MG",
+                    "name": "Minas Gerais"
+                },
+                {
+                    "code": "PR",
+                    "name": "Paraná"
+                },
+                {
+                    "code": "PB",
+                    "name": "Paraíba"
+                },
+                {
+                    "code": "PA",
+                    "name": "Pará"
+                },
+                {
+                    "code": "PE",
+                    "name": "Pernambuco"
+                },
+                {
+                    "code": "PI",
+                    "name": "Piauí"
+                },
+                {
+                    "code": "RN",
+                    "name": "Rio Grande do Norte"
+                },
+                {
+                    "code": "RS",
+                    "name": "Rio Grande do Sul"
+                },
+                {
+                    "code": "RJ",
+                    "name": "Rio de Janeiro"
+                },
+                {
+                    "code": "RO",
+                    "name": "Rondônia"
+                },
+                {
+                    "code": "RR",
+                    "name": "Roraima"
+                },
+                {
+                    "code": "SC",
+                    "name": "Santa Catarina"
+                },
+                {
+                    "code": "SE",
+                    "name": "Sergipe"
+                },
+                {
+                    "code": "SP",
+                    "name": "São Paulo"
+                },
+                {
+                    "code": "TO",
+                    "name": "Tocantins"
+                }
+            ]
+        },
+        {
+            "code": "IO",
+            "name": "British Indian Ocean Territory",
+            "states": []
+        },
+        {
+            "code": "BN",
+            "name": "Brunei",
+            "states": []
+        },
+        {
+            "code": "BG",
+            "name": "Bulgaria",
+            "states": []
+        },
+        {
+            "code": "BF",
+            "name": "Burkina Faso",
+            "states": []
+        },
+        {
+            "code": "BI",
+            "name": "Burundi",
+            "states": []
+        },
+        {
+            "code": "KH",
+            "name": "Cambodia",
+            "states": []
+        },
+        {
+            "code": "CM",
+            "name": "Cameroon",
+            "states": []
+        },
+        {
+            "code": "CA",
+            "name": "Canada",
+            "states": [
+                {
+                    "code": "AB",
+                    "name": "Alberta"
+                },
+                {
+                    "code": "BC",
+                    "name": "British Columbia"
+                },
+                {
+                    "code": "MB",
+                    "name": "Manitoba"
+                },
+                {
+                    "code": "NB",
+                    "name": "New Brunswick"
+                },
+                {
+                    "code": "NL",
+                    "name": "Newfoundland and Labrador"
+                },
+                {
+                    "code": "NT",
+                    "name": "Northwest Territories"
+                },
+                {
+                    "code": "NS",
+                    "name": "Nova Scotia"
+                },
+                {
+                    "code": "NU",
+                    "name": "Nunavut"
+                },
+                {
+                    "code": "ON",
+                    "name": "Ontario"
+                },
+                {
+                    "code": "PE",
+                    "name": "Prince Edward Island"
+                },
+                {
+                    "code": "QC",
+                    "name": "Quebec"
+                },
+                {
+                    "code": "SK",
+                    "name": "Saskatchewan"
+                },
+                {
+                    "code": "YT",
+                    "name": "Yukon Territory"
+                }
+            ]
+        },
+        {
+            "code": "CV",
+            "name": "Cape Verde",
+            "states": []
+        },
+        {
+            "code": "KY",
+            "name": "Cayman Islands",
+            "states": []
+        },
+        {
+            "code": "CF",
+            "name": "Central African Republic",
+            "states": []
+        },
+        {
+            "code": "TD",
+            "name": "Chad",
+            "states": []
+        },
+        {
+            "code": "CL",
+            "name": "Chile",
+            "states": [
+                {
+                    "code": "AN",
+                    "paypal_code": "II REGIÓN DE ANTOFAGASTA",
+                    "name": "Antofagasta"
+                },
+                {
+                    "code": "AR",
+                    "paypal_code": "IX REGIÓN DE LA ARAUCANÍA",
+                    "name": "Araucanía"
+                },
+                {
+                    "code": "AP",
+                    "paypal_code": "XV REGIÓN DE ARICA Y PARINACOTA",
+                    "name": "Arica y Parinacota"
+                },
+                {
+                    "code": "AT",
+                    "paypal_code": "III REGIÓN DE ATACAMA",
+                    "name": "Atacama"
+                },
+                {
+                    "code": "AI",
+                    "paypal_code": "XI REGIÓN DE AYSÉN",
+                    "name": "Aysén"
+                },
+                {
+                    "code": "BI",
+                    "paypal_code": "VIII REGIÓN DEL BIOBÍO",
+                    "name": "Bío Bío"
+                },
+                {
+                    "code": "CO",
+                    "paypal_code": "IV REGIÓN DE COQUIMBO",
+                    "name": "Coquimbo"
+                },
+                {
+                    "code": "LI",
+                    "paypal_code": "VI REGIÓN DE O'HIGGINS",
+                    "name": "Libertador General Bernardo O’Higgins"
+                },
+                {
+                    "code": "LL",
+                    "paypal_code": "X REGIÓN DE LOS LAGOS",
+                    "name": "Los Lagos"
+                },
+                {
+                    "code": "LR",
+                    "paypal_code": "XIV REGIÓN DE LOS RÍOS",
+                    "name": "Los Ríos"
+                },
+                {
+                    "code": "MA",
+                    "paypal_code": "XII REGIÓN DE MAGALLANES",
+                    "name": "Magellans Region"
+                },
+                {
+                    "code": "ML",
+                    "paypal_code": "VII REGIÓN DEL MAULE",
+                    "name": "Maule"
+                },
+                {
+                    "code": "RM",
+                    "paypal_code": "REGIÓN METROPOLITANA",
+                    "name": "Santiago Metropolitan"
+                },
+                {
+                    "code": "TA",
+                    "paypal_code": "I REGIÓN DE TARAPACÁ",
+                    "name": "Tarapacá"
+                },
+                {
+                    "code": "VS",
+                    "paypal_code": "V REGIÓN DE VALPARAÍSO",
+                    "name": "Valparaíso"
+                },
+                {
+                    "code": "NB",
+                    "name": "Ñuble"
+                }
+            ]
+        },
+        {
+            "code": "CN",
+            "name": "China",
+            "states": [
+                {
+                    "code": "CN13",
+                    "name": "Anhui / 安徽"
+                },
+                {
+                    "code": "CN-MO",
+                    "name": "Aomen / 澳门特别行政区"
+                },
+                {
+                    "code": "CN2",
+                    "name": "Beijing / 北京"
+                },
+                {
+                    "code": "CN23",
+                    "name": "Chongqing / 重庆"
+                },
+                {
+                    "code": "CN14",
+                    "name": "Fujian / 福建"
+                },
+                {
+                    "code": "CN27",
+                    "name": "Gansu / 甘肃"
+                },
+                {
+                    "code": "CN20",
+                    "name": "Guangdong / 广东"
+                },
+                {
+                    "code": "CN21",
+                    "name": "Guangxi Zhuang / 广西壮族"
+                },
+                {
+                    "code": "CN25",
+                    "name": "Guizhou / 贵州"
+                },
+                {
+                    "code": "CN22",
+                    "name": "Hainan / 海南"
+                },
+                {
+                    "code": "CN4",
+                    "name": "Hebei / 河北"
+                },
+                {
+                    "code": "CN9",
+                    "name": "Heilongjiang / 黑龙江"
+                },
+                {
+                    "code": "CN17",
+                    "name": "Henan / 河南"
+                },
+                {
+                    "code": "CN18",
+                    "name": "Hubei / 湖北"
+                },
+                {
+                    "code": "CN19",
+                    "name": "Hunan / 湖南"
+                },
+                {
+                    "code": "CN6",
+                    "name": "Inner Mongolia / 內蒙古"
+                },
+                {
+                    "code": "CN11",
+                    "name": "Jiangsu / 江苏"
+                },
+                {
+                    "code": "CN15",
+                    "name": "Jiangxi / 江西"
+                },
+                {
+                    "code": "CN8",
+                    "name": "Jilin / 吉林"
+                },
+                {
+                    "code": "CN7",
+                    "name": "Liaoning / 辽宁"
+                },
+                {
+                    "code": "CN29",
+                    "name": "Ningxia Hui / 宁夏"
+                },
+                {
+                    "code": "CN28",
+                    "name": "Qinghai / 青海"
+                },
+                {
+                    "code": "CN26",
+                    "name": "Shaanxi / 陕西"
+                },
+                {
+                    "code": "CN16",
+                    "name": "Shandong / 山东"
+                },
+                {
+                    "code": "CN10",
+                    "name": "Shanghai / 上海"
+                },
+                {
+                    "code": "CN5",
+                    "name": "Shanxi / 山西"
+                },
+                {
+                    "code": "CN24",
+                    "name": "Sichuan / 四川"
+                },
+                {
+                    "code": "CN-TW",
+                    "name": "Taiwan / 台湾省"
+                },
+                {
+                    "code": "CN3",
+                    "name": "Tianjin / 天津"
+                },
+                {
+                    "code": "CN31",
+                    "name": "Tibet / 西藏"
+                },
+                {
+                    "code": "CN-HK",
+                    "name": "Xianggang / 香港特别行政区"
+                },
+                {
+                    "code": "CN32",
+                    "name": "Xinjiang / 新疆"
+                },
+                {
+                    "code": "CN1",
+                    "name": "Yunnan / 云南"
+                },
+                {
+                    "code": "CN12",
+                    "name": "Zhejiang / 浙江"
+                }
+            ],
+            "paypal_code": "C2"
+        },
+        {
+            "code": "CX",
+            "name": "Christmas Island",
+            "states": []
+        },
+        {
+            "code": "CC",
+            "name": "Cocos (Keeling) Islands",
+            "states": []
+        },
+        {
+            "code": "CO",
+            "name": "Colombia",
+            "states": [
+                {
+                    "code": "AMA",
+                    "paypal_code": "AMAZONAS",
+                    "name": "Amazonas"
+                },
+                {
+                    "code": "ANT",
+                    "paypal_code": "ANTIOQUIA",
+                    "name": "Antioquia"
+                },
+                {
+                    "code": "ARA",
+                    "paypal_code": "ARAUCA",
+                    "name": "Arauca"
+                },
+                {
+                    "code": "SAP",
+                    "paypal_code": "ARCHIPIÉLAGO DE SAN ANDRÉS",
+                    "name": "Archipelago of Saint Andréws, Providence and Saint Catalina"
+                },
+                {
+                    "code": "ATL",
+                    "paypal_code": "ATLÁNTICO",
+                    "name": "Atlántico"
+                },
+                {
+                    "code": "BOL",
+                    "paypal_code": "BOLÍVAR",
+                    "name": "Bolívar"
+                },
+                {
+                    "code": "BOY",
+                    "paypal_code": "BOYACÁ",
+                    "name": "Boyacá"
+                },
+                {
+                    "code": "CAL",
+                    "paypal_code": "CALDAS",
+                    "name": "Caldas"
+                },
+                {
+                    "code": "CPD",
+                    "paypal_code": "DISTRITO CAPITAL DE BOGOTÁ",
+                    "name": "Capital District"
+                },
+                {
+                    "code": "CAQ",
+                    "paypal_code": "CAQUETÁ",
+                    "name": "Caquetá"
+                },
+                {
+                    "code": "CAS",
+                    "paypal_code": "CASANARE",
+                    "name": "Casanare"
+                },
+                {
+                    "code": "CAU",
+                    "paypal_code": "CAUCA",
+                    "name": "Cauca"
+                },
+                {
+                    "code": "CES",
+                    "paypal_code": "CESAR",
+                    "name": "Cesar"
+                },
+                {
+                    "code": "CHO",
+                    "paypal_code": "CHOCÓ",
+                    "name": "Chocó"
+                },
+                {
+                    "code": "CUN",
+                    "paypal_code": "CUNDINAMARCA",
+                    "name": "Cundinamarca"
+                },
+                {
+                    "code": "COR",
+                    "paypal_code": "CÓRDOBA",
+                    "name": "Córdoba"
+                },
+                {
+                    "code": "GUA",
+                    "paypal_code": "GUAINÍA",
+                    "name": "Guainía"
+                },
+                {
+                    "code": "GUV",
+                    "paypal_code": "GUAVIARE",
+                    "name": "Guaviare"
+                },
+                {
+                    "code": "HUI",
+                    "paypal_code": "HUILA",
+                    "name": "Huila"
+                },
+                {
+                    "code": "LAG",
+                    "paypal_code": "LA GUAJIRA",
+                    "name": "La Guajira"
+                },
+                {
+                    "code": "MAG",
+                    "paypal_code": "MAGDALENA",
+                    "name": "Magdalena"
+                },
+                {
+                    "code": "MET",
+                    "paypal_code": "META",
+                    "name": "Meta"
+                },
+                {
+                    "code": "NAR",
+                    "paypal_code": "NARIÑO",
+                    "name": "Nariño"
+                },
+                {
+                    "code": "NSA",
+                    "paypal_code": "NORTE DE SANTANDER",
+                    "name": "Norte de Santander"
+                },
+                {
+                    "code": "PUT",
+                    "paypal_code": "PUTUMAYO",
+                    "name": "Putumayo"
+                },
+                {
+                    "code": "QUI",
+                    "paypal_code": "QUINDÍO",
+                    "name": "Quindío"
+                },
+                {
+                    "code": "RIS",
+                    "paypal_code": "Risaralda",
+                    "name": "Risaralda"
+                },
+                {
+                    "code": "SAN",
+                    "paypal_code": "SANTANDER",
+                    "name": "Santander"
+                },
+                {
+                    "code": "SUC",
+                    "paypal_code": "SUCRE",
+                    "name": "Sucre"
+                },
+                {
+                    "code": "TOL",
+                    "paypal_code": "TOLIMA",
+                    "name": "Tolima"
+                },
+                {
+                    "code": "VAC",
+                    "paypal_code": "VALLE DEL CAUCA",
+                    "name": "Valle del Cauca"
+                },
+                {
+                    "code": "VAU",
+                    "paypal_code": "VAUPÉS",
+                    "name": "Vaupés"
+                },
+                {
+                    "code": "VID",
+                    "paypal_code": "VICHADA",
+                    "name": "Vichada"
+                }
+            ]
+        },
+        {
+            "code": "KM",
+            "name": "Comoros",
+            "states": []
+        },
+        {
+            "code": "CG",
+            "name": "Congo (Brazzaville)",
+            "states": []
+        },
+        {
+            "code": "CD",
+            "name": "Congo (Kinshasa)",
+            "states": []
+        },
+        {
+            "code": "CK",
+            "name": "Cook Islands",
+            "states": []
+        },
+        {
+            "code": "CR",
+            "name": "Costa Rica",
+            "states": []
+        },
+        {
+            "code": "HR",
+            "name": "Croatia",
+            "states": []
+        },
+        {
+            "code": "CU",
+            "name": "Cuba",
+            "states": []
+        },
+        {
+            "code": "CW",
+            "name": "Curaçao",
+            "states": []
+        },
+        {
+            "code": "CY",
+            "name": "Cyprus",
+            "states": []
+        },
+        {
+            "code": "CZ",
+            "name": "Czech Republic",
+            "states": []
+        },
+        {
+            "code": "DK",
+            "name": "Denmark",
+            "states": []
+        },
+        {
+            "code": "DJ",
+            "name": "Djibouti",
+            "states": []
+        },
+        {
+            "code": "DM",
+            "name": "Dominica",
+            "states": []
+        },
+        {
+            "code": "DO",
+            "name": "Dominican Republic",
+            "states": []
+        },
+        {
+            "code": "EC",
+            "name": "Ecuador",
+            "states": []
+        },
+        {
+            "code": "EG",
+            "name": "Egypt",
+            "states": [
+                {
+                    "code": "SOO",
+                    "name": "6th of October"
+                },
+                {
+                    "code": "ALS",
+                    "name": "Al Sharqia"
+                },
+                {
+                    "code": "ALX",
+                    "name": "Alexandria"
+                },
+                {
+                    "code": "ASN",
+                    "name": "Aswan"
+                },
+                {
+                    "code": "AST",
+                    "name": "Asyut"
+                },
+                {
+                    "code": "BH",
+                    "name": "Beheira"
+                },
+                {
+                    "code": "BNS",
+                    "name": "Beni Suef"
+                },
+                {
+                    "code": "C",
+                    "name": "Cairo"
+                },
+                {
+                    "code": "DK",
+                    "name": "Dakahlia"
+                },
+                {
+                    "code": "DT",
+                    "name": "Damietta"
+                },
+                {
+                    "code": "FYM",
+                    "name": "Faiyum"
+                },
+                {
+                    "code": "GH",
+                    "name": "Gharbia"
+                },
+                {
+                    "code": "GZ",
+                    "name": "Giza"
+                },
+                {
+                    "code": "HL",
+                    "name": "Helwan"
+                },
+                {
+                    "code": "IS",
+                    "name": "Ismailia"
+                },
+                {
+                    "code": "KFS",
+                    "name": "Kafr el-Sheikh"
+                },
+                {
+                    "code": "LX",
+                    "name": "Luxor"
+                },
+                {
+                    "code": "MT",
+                    "name": "Matrouh"
+                },
+                {
+                    "code": "MN",
+                    "name": "Minya"
+                },
+                {
+                    "code": "MNF",
+                    "name": "Monufia"
+                },
+                {
+                    "code": "WAD",
+                    "name": "New Valley"
+                },
+                {
+                    "code": "SIN",
+                    "name": "North Sinai"
+                },
+                {
+                    "code": "PTS",
+                    "name": "Port Said"
+                },
+                {
+                    "code": "KB",
+                    "name": "Qalyubia"
+                },
+                {
+                    "code": "KN",
+                    "name": "Qena"
+                },
+                {
+                    "code": "BA",
+                    "name": "Red Sea"
+                },
+                {
+                    "code": "SHG",
+                    "name": "Sohag"
+                },
+                {
+                    "code": "JS",
+                    "name": "South Sinai"
+                },
+                {
+                    "code": "SUZ",
+                    "name": "Suez"
+                }
+            ]
+        },
+        {
+            "code": "SV",
+            "name": "El Salvador",
+            "states": []
+        },
+        {
+            "code": "GQ",
+            "name": "Equatorial Guinea",
+            "states": []
+        },
+        {
+            "code": "ER",
+            "name": "Eritrea",
+            "states": []
+        },
+        {
+            "code": "EE",
+            "name": "Estonia",
+            "states": []
+        },
+        {
+            "code": "SZ",
+            "name": "Eswatini",
+            "states": []
+        },
+        {
+            "code": "ET",
+            "name": "Ethiopia",
+            "states": []
+        },
+        {
+            "code": "FK",
+            "name": "Falkland Islands",
+            "states": []
+        },
+        {
+            "code": "FO",
+            "name": "Faroe Islands",
+            "states": []
+        },
+        {
+            "code": "FJ",
+            "name": "Fiji",
+            "states": []
+        },
+        {
+            "code": "FI",
+            "name": "Finland",
+            "states": []
+        },
+        {
+            "code": "FR",
+            "name": "France",
+            "states": []
+        },
+        {
+            "code": "GF",
+            "name": "French Guiana",
+            "states": []
+        },
+        {
+            "code": "PF",
+            "name": "French Polynesia",
+            "states": []
+        },
+        {
+            "code": "TF",
+            "name": "French Southern Territories",
+            "states": []
+        },
+        {
+            "code": "GA",
+            "name": "Gabon",
+            "states": []
+        },
+        {
+            "code": "GM",
+            "name": "Gambia",
+            "states": []
+        },
+        {
+            "code": "GE",
+            "name": "Georgia",
+            "states": []
+        },
+        {
+            "code": "DE",
+            "name": "Germany",
+            "states": []
+        },
+        {
+            "code": "GH",
+            "name": "Ghana",
+            "states": []
+        },
+        {
+            "code": "GI",
+            "name": "Gibraltar",
+            "states": []
+        },
+        {
+            "code": "GR",
+            "name": "Greece",
+            "states": []
+        },
+        {
+            "code": "GL",
+            "name": "Greenland",
+            "states": []
+        },
+        {
+            "code": "GD",
+            "name": "Grenada",
+            "states": []
+        },
+        {
+            "code": "GP",
+            "name": "Guadeloupe",
+            "states": []
+        },
+        {
+            "code": "GU",
+            "name": "Guam",
+            "states": []
+        },
+        {
+            "code": "GT",
+            "name": "Guatemala",
+            "states": [
+                {
+                    "code": "AV",
+                    "name": "Alta Verapaz"
+                },
+                {
+                    "code": "BV",
+                    "name": "Baja Verapaz"
+                },
+                {
+                    "code": "CM",
+                    "name": "Chimaltenango"
+                },
+                {
+                    "code": "CQ",
+                    "name": "Chiquimula"
+                },
+                {
+                    "code": "PR",
+                    "name": "El Progreso"
+                },
+                {
+                    "code": "ES",
+                    "name": "Escuintla"
+                },
+                {
+                    "code": "GU",
+                    "name": "Guatemala"
+                },
+                {
+                    "code": "HU",
+                    "name": "Huehuetenango"
+                },
+                {
+                    "code": "IZ",
+                    "name": "Izabal"
+                },
+                {
+                    "code": "JA",
+                    "name": "Jalapa"
+                },
+                {
+                    "code": "JU",
+                    "name": "Jutiapa"
+                },
+                {
+                    "code": "PE",
+                    "name": "Petén"
+                },
+                {
+                    "code": "QZ",
+                    "name": "Quetzaltenango"
+                },
+                {
+                    "code": "QC",
+                    "name": "Quiché"
+                },
+                {
+                    "code": "RE",
+                    "name": "Retalhuleu"
+                },
+                {
+                    "code": "SA",
+                    "name": "Sacatepéquez"
+                },
+                {
+                    "code": "SM",
+                    "name": "San Marcos"
+                },
+                {
+                    "code": "SR",
+                    "name": "Santa Rosa"
+                },
+                {
+                    "code": "SO",
+                    "name": "Sololá"
+                },
+                {
+                    "code": "SU",
+                    "name": "Suchitepéquez"
+                },
+                {
+                    "code": "TO",
+                    "name": "Totonicapán"
+                },
+                {
+                    "code": "ZA",
+                    "name": "Zacapa"
+                }
+            ]
+        },
+        {
+            "code": "GG",
+            "name": "Guernsey",
+            "states": []
+        },
+        {
+            "code": "GN",
+            "name": "Guinea",
+            "states": []
+        },
+        {
+            "code": "GW",
+            "name": "Guinea-Bissau",
+            "states": []
+        },
+        {
+            "code": "GY",
+            "name": "Guyana",
+            "states": []
+        },
+        {
+            "code": "HT",
+            "name": "Haiti",
+            "states": []
+        },
+        {
+            "code": "HM",
+            "name": "Heard Island and McDonald Islands",
+            "states": []
+        },
+        {
+            "code": "HN",
+            "name": "Honduras",
+            "states": []
+        },
+        {
+            "code": "HK",
+            "name": "Hong Kong",
+            "states": [
+                {
+                    "code": "HONG KONG",
+                    "name": "Hong Kong Island"
+                },
+                {
+                    "code": "KOWLOON",
+                    "name": "Kowloon"
+                },
+                {
+                    "code": "NEW TERRITORIES",
+                    "name": "New Territories"
+                }
+            ]
+        },
+        {
+            "code": "HU",
+            "name": "Hungary",
+            "states": []
+        },
+        {
+            "code": "IS",
+            "name": "Iceland",
+            "states": []
+        },
+        {
+            "code": "IN",
+            "name": "India",
+            "states": [
+                {
+                    "code": "AN",
+                    "paypal_code": "Andaman and Nicobar Islands",
+                    "name": "Andaman and Nicobar Islands"
+                },
+                {
+                    "code": "AP",
+                    "paypal_code": "Andhra Pradesh",
+                    "name": "Andhra Pradesh"
+                },
+                {
+                    "code": "AR",
+                    "paypal_code": "Arunachal Pradesh",
+                    "name": "Arunachal Pradesh"
+                },
+                {
+                    "code": "AS",
+                    "paypal_code": "Assam",
+                    "name": "Assam"
+                },
+                {
+                    "code": "BR",
+                    "paypal_code": "Bihar",
+                    "name": "Bihar"
+                },
+                {
+                    "code": "CH",
+                    "paypal_code": "Chandigarh",
+                    "name": "Chandigarh"
+                },
+                {
+                    "code": "CT",
+                    "paypal_code": "Chhattisgarh",
+                    "name": "Chhattisgarh"
+                },
+                {
+                    "code": "DN",
+                    "paypal_code": "Dadra and Nagar Haveli",
+                    "name": "Dadra and Nagar Haveli"
+                },
+                {
+                    "code": "DD",
+                    "paypal_code": "Daman and Diu",
+                    "name": "Daman and Diu"
+                },
+                {
+                    "code": "DL",
+                    "paypal_code": "Delhi (NCT)",
+                    "name": "Delhi"
+                },
+                {
+                    "code": "GA",
+                    "paypal_code": "Goa",
+                    "name": "Goa"
+                },
+                {
+                    "code": "GJ",
+                    "paypal_code": "Gujarat",
+                    "name": "Gujarat"
+                },
+                {
+                    "code": "HR",
+                    "paypal_code": "Haryana",
+                    "name": "Haryana"
+                },
+                {
+                    "code": "HP",
+                    "paypal_code": "Himachal Pradesh",
+                    "name": "Himachal Pradesh"
+                },
+                {
+                    "code": "JK",
+                    "paypal_code": "Jammu and Kashmir",
+                    "name": "Jammu and Kashmir"
+                },
+                {
+                    "code": "JH",
+                    "paypal_code": "Jharkhand",
+                    "name": "Jharkhand"
+                },
+                {
+                    "code": "KA",
+                    "paypal_code": "Karnataka",
+                    "name": "Karnataka"
+                },
+                {
+                    "code": "KL",
+                    "paypal_code": "Kerala",
+                    "name": "Kerala"
+                },
+                {
+                    "code": "LD",
+                    "paypal_code": "Lakshadweep",
+                    "name": "Lakshadweep"
+                },
+                {
+                    "code": "MP",
+                    "paypal_code": "Madhya Pradesh",
+                    "name": "Madhya Pradesh"
+                },
+                {
+                    "code": "MH",
+                    "paypal_code": "Maharashtra",
+                    "name": "Maharashtra"
+                },
+                {
+                    "code": "MN",
+                    "paypal_code": "Manipur",
+                    "name": "Manipur"
+                },
+                {
+                    "code": "ML",
+                    "paypal_code": "Meghalaya",
+                    "name": "Meghalaya"
+                },
+                {
+                    "code": "MZ",
+                    "paypal_code": "Mizoram",
+                    "name": "Mizoram"
+                },
+                {
+                    "code": "NL",
+                    "paypal_code": "Nagaland",
+                    "name": "Nagaland"
+                },
+                {
+                    "code": "OR",
+                    "paypal_code": "Odisha",
+                    "name": "Orissa"
+                },
+                {
+                    "code": "PY",
+                    "paypal_code": "Puducherry",
+                    "name": "Pondicherry (Puducherry)"
+                },
+                {
+                    "code": "PB",
+                    "paypal_code": "Punjab",
+                    "name": "Punjab"
+                },
+                {
+                    "code": "RJ",
+                    "paypal_code": "Rajasthan",
+                    "name": "Rajasthan"
+                },
+                {
+                    "code": "SK",
+                    "paypal_code": "Sikkim",
+                    "name": "Sikkim"
+                },
+                {
+                    "code": "TN",
+                    "paypal_code": "Tamil Nadu",
+                    "name": "Tamil Nadu"
+                },
+                {
+                    "code": "TS",
+                    "paypal_code": "Telangana",
+                    "name": "Telangana"
+                },
+                {
+                    "code": "TR",
+                    "paypal_code": "Tripura",
+                    "name": "Tripura"
+                },
+                {
+                    "code": "UP",
+                    "paypal_code": "Uttar Pradesh",
+                    "name": "Uttar Pradesh"
+                },
+                {
+                    "code": "UK",
+                    "paypal_code": "Uttarakhand",
+                    "name": "Uttarakhand"
+                },
+                {
+                    "code": "WB",
+                    "paypal_code": "West Bengal",
+                    "name": "West Bengal"
+                }
+            ]
+        },
+        {
+            "code": "ID",
+            "name": "Indonesia",
+            "states": [
+                {
+                    "code": "BA",
+                    "paypal_code": "BALI",
+                    "name": "Bali"
+                },
+                {
+                    "code": "BB",
+                    "paypal_code": "BANGKA BELITUNG ISLANDS",
+                    "name": "Bangka Belitung"
+                },
+                {
+                    "code": "BT",
+                    "paypal_code": "BANTEN",
+                    "name": "Banten"
+                },
+                {
+                    "code": "BE",
+                    "paypal_code": "BENGKULU",
+                    "name": "Bengkulu"
+                },
+                {
+                    "code": "JK",
+                    "paypal_code": "DKI JAKARTA",
+                    "name": "DKI Jakarta"
+                },
+                {
+                    "code": "YO",
+                    "paypal_code": "YOGYAKARTA",
+                    "name": "Daerah Istimewa Yogyakarta"
+                },
+                {
+                    "code": "GO",
+                    "paypal_code": "GORONTALO",
+                    "name": "Gorontalo"
+                },
+                {
+                    "code": "JA",
+                    "paypal_code": "JAMBI",
+                    "name": "Jambi"
+                },
+                {
+                    "code": "JB",
+                    "paypal_code": "WEST JAVA",
+                    "name": "Jawa Barat"
+                },
+                {
+                    "code": "JT",
+                    "paypal_code": "CENTRAL JAVA",
+                    "name": "Jawa Tengah"
+                },
+                {
+                    "code": "JI",
+                    "paypal_code": "EAST JAVA",
+                    "name": "Jawa Timur"
+                },
+                {
+                    "code": "KB",
+                    "paypal_code": "WEST KALIMANTAN",
+                    "name": "Kalimantan Barat"
+                },
+                {
+                    "code": "KS",
+                    "paypal_code": "SOUTH KALIMANTAN",
+                    "name": "Kalimantan Selatan"
+                },
+                {
+                    "code": "KT",
+                    "paypal_code": "CENTRAL KALIMANTAN",
+                    "name": "Kalimantan Tengah"
+                },
+                {
+                    "code": "KI",
+                    "paypal_code": "EAST KALIMANTAN",
+                    "name": "Kalimantan Timur"
+                },
+                {
+                    "code": "KU",
+                    "paypal_code": "NORTH KALIMANTAN",
+                    "name": "Kalimantan Utara"
+                },
+                {
+                    "code": "KR",
+                    "paypal_code": "RIAU ISLANDS",
+                    "name": "Kepulauan Riau"
+                },
+                {
+                    "code": "LA",
+                    "paypal_code": "LAMPUNG",
+                    "name": "Lampung"
+                },
+                {
+                    "code": "MA",
+                    "paypal_code": "MALUKU",
+                    "name": "Maluku"
+                },
+                {
+                    "code": "MU",
+                    "paypal_code": "NORTH MALUKU",
+                    "name": "Maluku Utara"
+                },
+                {
+                    "code": "NB",
+                    "paypal_code": "WEST NUSA TENGGARA",
+                    "name": "Nusa Tenggara Barat"
+                },
+                {
+                    "code": "NT",
+                    "paypal_code": "EAST NUSA TENGGARA",
+                    "name": "Nusa Tenggara Timur"
+                },
+                {
+                    "code": "PA",
+                    "paypal_code": "PAPUA",
+                    "name": "Papua"
+                },
+                {
+                    "code": "PB",
+                    "paypal_code": "WEST PAPUA",
+                    "name": "Papua Barat"
+                },
+                {
+                    "code": "RI",
+                    "paypal_code": "RIAU",
+                    "name": "Riau"
+                },
+                {
+                    "code": "SR",
+                    "paypal_code": "WEST SULAWESI",
+                    "name": "Sulawesi Barat"
+                },
+                {
+                    "code": "SN",
+                    "paypal_code": "SOUTH SULAWESI",
+                    "name": "Sulawesi Selatan"
+                },
+                {
+                    "code": "ST",
+                    "paypal_code": "CENTRAL SULAWESI",
+                    "name": "Sulawesi Tengah"
+                },
+                {
+                    "code": "SG",
+                    "paypal_code": "SOUTHEAST SULAWESI",
+                    "name": "Sulawesi Tenggara"
+                },
+                {
+                    "code": "SA",
+                    "paypal_code": "NORTH SULAWESI",
+                    "name": "Sulawesi Utara"
+                },
+                {
+                    "code": "SB",
+                    "paypal_code": "WEST SUMATRA",
+                    "name": "Sumatera Barat"
+                },
+                {
+                    "code": "SS",
+                    "paypal_code": "SOUTH SUMATRA",
+                    "name": "Sumatera Selatan"
+                },
+                {
+                    "code": "SU",
+                    "paypal_code": "NORTH SUMATRA",
+                    "name": "Sumatera Utara"
+                },
+                {
+                    "code": "AC",
+                    "paypal_code": "ACEH",
+                    "name": "Wan Chai"
+                }
+            ]
+        },
+        {
+            "code": "IR",
+            "name": "Iran",
+            "states": []
+        },
+        {
+            "code": "IQ",
+            "name": "Iraq",
+            "states": []
+        },
+        {
+            "code": "IE",
+            "name": "Ireland",
+            "states": [
+                {
+                    "code": "CW",
+                    "paypal_code": "CO CARLOW",
+                    "name": "Carlow"
+                },
+                {
+                    "code": "CN",
+                    "paypal_code": "CO CAVAN",
+                    "name": "Cavan"
+                },
+                {
+                    "code": "CE",
+                    "paypal_code": "CO CLARE",
+                    "name": "Clare"
+                },
+                {
+                    "code": "CO",
+                    "paypal_code": "CO CORK",
+                    "name": "Cork"
+                },
+                {
+                    "code": "DL",
+                    "paypal_code": "CO DONEGAL",
+                    "name": "Donegal"
+                },
+                {
+                    "code": "DN",
+                    "paypal_code": "CO DUBLIN",
+                    "name": "Dublin"
+                },
+                {
+                    "code": "G",
+                    "paypal_code": "CO GALWAY",
+                    "name": "Galway"
+                },
+                {
+                    "code": "KY",
+                    "paypal_code": "CO KERRY",
+                    "name": "Kerry"
+                },
+                {
+                    "code": "KE",
+                    "paypal_code": "CO KILDARE",
+                    "name": "Kildare"
+                },
+                {
+                    "code": "KK",
+                    "paypal_code": "CO KILKENNY",
+                    "name": "Kilkenny"
+                },
+                {
+                    "code": "LS",
+                    "paypal_code": "CO LAOIS",
+                    "name": "Laois"
+                },
+                {
+                    "code": "LM",
+                    "paypal_code": "CO LEITRIM",
+                    "name": "Leitrim"
+                },
+                {
+                    "code": "LK",
+                    "paypal_code": "CO LIMERICK",
+                    "name": "Limerick"
+                },
+                {
+                    "code": "LD",
+                    "paypal_code": "CO LONGFORD",
+                    "name": "Longford"
+                },
+                {
+                    "code": "LH",
+                    "paypal_code": "CO LOUTH",
+                    "name": "Louth"
+                },
+                {
+                    "code": "MO",
+                    "paypal_code": "CO MAYO",
+                    "name": "Mayo"
+                },
+                {
+                    "code": "MH",
+                    "paypal_code": "CO MEATH",
+                    "name": "Meath"
+                },
+                {
+                    "code": "MN",
+                    "paypal_code": "CO MONAGHAN",
+                    "name": "Monaghan"
+                },
+                {
+                    "code": "OY",
+                    "paypal_code": "CO OFFALY",
+                    "name": "Offaly"
+                },
+                {
+                    "code": "RN",
+                    "paypal_code": "CO ROSCOMMON",
+                    "name": "Roscommon"
+                },
+                {
+                    "code": "SO",
+                    "paypal_code": "CO SLIGO",
+                    "name": "Sligo"
+                },
+                {
+                    "code": "TA",
+                    "paypal_code": "CO TIPPERARY",
+                    "name": "Tipperary"
+                },
+                {
+                    "code": "WD",
+                    "paypal_code": "CO WATERFORD",
+                    "name": "Waterford"
+                },
+                {
+                    "code": "WH",
+                    "paypal_code": "CO WESTMEATH",
+                    "name": "Westmeath"
+                },
+                {
+                    "code": "WX",
+                    "paypal_code": "CO WEXFORD",
+                    "name": "Wexford"
+                },
+                {
+                    "code": "WW",
+                    "paypal_code": "CO WICKLOW",
+                    "name": "Wicklow"
+                }
+            ]
+        },
+        {
+            "code": "IM",
+            "name": "Isle of Man",
+            "states": []
+        },
+        {
+            "code": "IL",
+            "name": "Israel",
+            "states": []
+        },
+        {
+            "code": "IT",
+            "name": "Italy",
+            "states": [
+                {
+                    "code": "AG",
+                    "name": "Agrigento"
+                },
+                {
+                    "code": "AL",
+                    "name": "Alessandria"
+                },
+                {
+                    "code": "AN",
+                    "name": "Ancona"
+                },
+                {
+                    "code": "AO",
+                    "name": "Aosta"
+                },
+                {
+                    "code": "AR",
+                    "name": "Arezzo"
+                },
+                {
+                    "code": "AP",
+                    "name": "Ascoli Piceno"
+                },
+                {
+                    "code": "AT",
+                    "name": "Asti"
+                },
+                {
+                    "code": "AV",
+                    "name": "Avellino"
+                },
+                {
+                    "code": "BA",
+                    "name": "Bari"
+                },
+                {
+                    "code": "BT",
+                    "name": "Barletta-Andria-Trani"
+                },
+                {
+                    "code": "BL",
+                    "name": "Belluno"
+                },
+                {
+                    "code": "BN",
+                    "name": "Benevento"
+                },
+                {
+                    "code": "BG",
+                    "name": "Bergamo"
+                },
+                {
+                    "code": "BI",
+                    "name": "Biella"
+                },
+                {
+                    "code": "BO",
+                    "name": "Bologna"
+                },
+                {
+                    "code": "BZ",
+                    "name": "Bolzano"
+                },
+                {
+                    "code": "BS",
+                    "name": "Brescia"
+                },
+                {
+                    "code": "BR",
+                    "name": "Brindisi"
+                },
+                {
+                    "code": "CA",
+                    "name": "Cagliari"
+                },
+                {
+                    "code": "CL",
+                    "name": "Caltanissetta"
+                },
+                {
+                    "code": "CB",
+                    "name": "Campobasso"
+                },
+                {
+                    "code": "CIP",
+                    "paypal_code": "CI",
+                    "name": "Carbonia-Iglesias"
+                },
+                {
+                    "code": "CE",
+                    "name": "Caserta"
+                },
+                {
+                    "code": "CT",
+                    "name": "Catania"
+                },
+                {
+                    "code": "CZ",
+                    "name": "Catanzaro"
+                },
+                {
+                    "code": "CH",
+                    "name": "Chieti"
+                },
+                {
+                    "code": "CO",
+                    "name": "Como"
+                },
+                {
+                    "code": "CS",
+                    "name": "Cosenza"
+                },
+                {
+                    "code": "CR",
+                    "name": "Cremona"
+                },
+                {
+                    "code": "KR",
+                    "name": "Crotone"
+                },
+                {
+                    "code": "CN",
+                    "name": "Cuneo"
+                },
+                {
+                    "code": "EN",
+                    "name": "Enna"
+                },
+                {
+                    "code": "FM",
+                    "name": "Fermo"
+                },
+                {
+                    "code": "FE",
+                    "name": "Ferrara"
+                },
+                {
+                    "code": "FI",
+                    "name": "Firenze"
+                },
+                {
+                    "code": "FLP",
+                    "name": "Florence"
+                },
+                {
+                    "code": "FG",
+                    "name": "Foggia"
+                },
+                {
+                    "code": "FC",
+                    "name": "Forlì-Cesena"
+                },
+                {
+                    "code": "FR",
+                    "name": "Frosinone"
+                },
+                {
+                    "code": "GE",
+                    "name": "Genova"
+                },
+                {
+                    "code": "GO",
+                    "name": "Gorizia"
+                },
+                {
+                    "code": "GR",
+                    "name": "Grosseto"
+                },
+                {
+                    "code": "IM",
+                    "name": "Imperia"
+                },
+                {
+                    "code": "IS",
+                    "name": "Isernia"
+                },
+                {
+                    "code": "AQ",
+                    "name": "L'Aquila"
+                },
+                {
+                    "code": "SP",
+                    "name": "La Spezia"
+                },
+                {
+                    "code": "LT",
+                    "name": "Latina"
+                },
+                {
+                    "code": "LE",
+                    "name": "Lecce"
+                },
+                {
+                    "code": "LC",
+                    "name": "Lecco"
+                },
+                {
+                    "code": "LI",
+                    "name": "Livorno"
+                },
+                {
+                    "code": "LO",
+                    "name": "Lodi"
+                },
+                {
+                    "code": "LU",
+                    "name": "Lucca"
+                },
+                {
+                    "code": "MC",
+                    "name": "Macerata"
+                },
+                {
+                    "code": "MN",
+                    "name": "Mantova"
+                },
+                {
+                    "code": "MS",
+                    "name": "Massa-Carrara"
+                },
+                {
+                    "code": "MT",
+                    "name": "Matera"
+                },
+                {
+                    "code": "MCP",
+                    "paypal_code": "VS",
+                    "name": "Medio Campidano"
+                },
+                {
+                    "code": "ME",
+                    "name": "Messina"
+                },
+                {
+                    "code": "MI",
+                    "name": "Milano"
+                },
+                {
+                    "code": "MO",
+                    "name": "Modena"
+                },
+                {
+                    "code": "MB",
+                    "name": "Monza e della Brianza"
+                },
+                {
+                    "code": "NA",
+                    "name": "Napoli"
+                },
+                {
+                    "code": "NO",
+                    "name": "Novara"
+                },
+                {
+                    "code": "NU",
+                    "name": "Nuoro"
+                },
+                {
+                    "code": "OG",
+                    "name": "Ogliastra"
+                },
+                {
+                    "code": "OT",
+                    "name": "Olbia-Tempio"
+                },
+                {
+                    "code": "OR",
+                    "name": "Oristano"
+                },
+                {
+                    "code": "PD",
+                    "name": "Padova"
+                },
+                {
+                    "code": "PA",
+                    "name": "Palermo"
+                },
+                {
+                    "code": "PR",
+                    "name": "Parma"
+                },
+                {
+                    "code": "PV",
+                    "name": "Pavia"
+                },
+                {
+                    "code": "PG",
+                    "name": "Perugia"
+                },
+                {
+                    "code": "PU",
+                    "name": "Pesaro e Urbino"
+                },
+                {
+                    "code": "PE",
+                    "name": "Pescara"
+                },
+                {
+                    "code": "PC",
+                    "name": "Piacenza"
+                },
+                {
+                    "code": "PI",
+                    "name": "Pisa"
+                },
+                {
+                    "code": "PT",
+                    "name": "Pistoia"
+                },
+                {
+                    "code": "PN",
+                    "name": "Pordenone"
+                },
+                {
+                    "code": "PZ",
+                    "name": "Potenza"
+                },
+                {
+                    "code": "PO",
+                    "name": "Prato"
+                },
+                {
+                    "code": "RG",
+                    "name": "Ragusa"
+                },
+                {
+                    "code": "RA",
+                    "name": "Ravenna"
+                },
+                {
+                    "code": "RC",
+                    "name": "Reggio Calabria"
+                },
+                {
+                    "code": "RE",
+                    "name": "Reggio Emilia"
+                },
+                {
+                    "code": "RI",
+                    "name": "Rieti"
+                },
+                {
+                    "code": "RN",
+                    "name": "Rimini"
+                },
+                {
+                    "code": "RM",
+                    "name": "Roma"
+                },
+                {
+                    "code": "RO",
+                    "name": "Rovigo"
+                },
+                {
+                    "code": "SA",
+                    "name": "Salerno"
+                },
+                {
+                    "code": "SS",
+                    "name": "Sassari"
+                },
+                {
+                    "code": "SV",
+                    "name": "Savona"
+                },
+                {
+                    "code": "SI",
+                    "name": "Siena"
+                },
+                {
+                    "code": "SR",
+                    "name": "Siracusa"
+                },
+                {
+                    "code": "SO",
+                    "name": "Sondrio"
+                },
+                {
+                    "code": "STP",
+                    "name": "South Tyrol"
+                },
+                {
+                    "code": "SU",
+                    "name": "Sud Sardegna"
+                },
+                {
+                    "code": "TA",
+                    "name": "Taranto"
+                },
+                {
+                    "code": "TE",
+                    "name": "Teramo"
+                },
+                {
+                    "code": "TR",
+                    "name": "Terni"
+                },
+                {
+                    "code": "TO",
+                    "name": "Torino"
+                },
+                {
+                    "code": "TP",
+                    "name": "Trapani"
+                },
+                {
+                    "code": "TN",
+                    "name": "Trento"
+                },
+                {
+                    "code": "TV",
+                    "name": "Treviso"
+                },
+                {
+                    "code": "TS",
+                    "name": "Trieste"
+                },
+                {
+                    "code": "UD",
+                    "name": "Udine"
+                },
+                {
+                    "code": "VA",
+                    "name": "Varese"
+                },
+                {
+                    "code": "VE",
+                    "name": "Venezia"
+                },
+                {
+                    "code": "VB",
+                    "name": "Verbano-Cusio-Ossola"
+                },
+                {
+                    "code": "VC",
+                    "name": "Vercelli"
+                },
+                {
+                    "code": "VR",
+                    "name": "Verona"
+                },
+                {
+                    "code": "VV",
+                    "name": "Vibo Valentia"
+                },
+                {
+                    "code": "VI",
+                    "name": "Vicenza"
+                },
+                {
+                    "code": "VT",
+                    "name": "Viterbo"
+                }
+            ]
+        },
+        {
+            "code": "CI",
+            "name": "Ivory Coast",
+            "states": []
+        },
+        {
+            "code": "JM",
+            "name": "Jamaica",
+            "states": []
+        },
+        {
+            "code": "JP",
+            "name": "Japan",
+            "states": [
+                {
+                    "code": "JP23",
+                    "paypal_code": "AICHI-KEN",
+                    "name": "Aichi"
+                },
+                {
+                    "code": "JP05",
+                    "paypal_code": "AKITA-KEN",
+                    "name": "Akita"
+                },
+                {
+                    "code": "JP02",
+                    "paypal_code": "AOMORI-KEN",
+                    "name": "Aomori"
+                },
+                {
+                    "code": "JP12",
+                    "paypal_code": "CHIBA-KEN",
+                    "name": "Chiba"
+                },
+                {
+                    "code": "JP38",
+                    "paypal_code": "EHIME-KEN",
+                    "name": "Ehime"
+                },
+                {
+                    "code": "JP18",
+                    "paypal_code": "FUKUI-KEN",
+                    "name": "Fukui"
+                },
+                {
+                    "code": "JP40",
+                    "paypal_code": "FUKUOKA-KEN",
+                    "name": "Fukuoka"
+                },
+                {
+                    "code": "JP07",
+                    "paypal_code": "FUKUSHIMA-KEN",
+                    "name": "Fukushima"
+                },
+                {
+                    "code": "JP21",
+                    "paypal_code": "GIFU-KEN",
+                    "name": "Gifu"
+                },
+                {
+                    "code": "JP10",
+                    "paypal_code": "GUNMA-KEN",
+                    "name": "Gunma"
+                },
+                {
+                    "code": "JP34",
+                    "paypal_code": "HIROSHIMA-KEN",
+                    "name": "Hiroshima"
+                },
+                {
+                    "code": "JP01",
+                    "paypal_code": "HOKKAIDO",
+                    "name": "Hokkaido"
+                },
+                {
+                    "code": "JP28",
+                    "paypal_code": "HYOGO-KEN",
+                    "name": "Hyogo"
+                },
+                {
+                    "code": "JP08",
+                    "paypal_code": "IBARAKI-KEN",
+                    "name": "Ibaraki"
+                },
+                {
+                    "code": "JP17",
+                    "paypal_code": "ISHIKAWA-KEN",
+                    "name": "Ishikawa"
+                },
+                {
+                    "code": "JP03",
+                    "paypal_code": "IWATE-KEN",
+                    "name": "Iwate"
+                },
+                {
+                    "code": "JP37",
+                    "paypal_code": "KAGAWA-KEN",
+                    "name": "Kagawa"
+                },
+                {
+                    "code": "JP46",
+                    "paypal_code": "KAGOSHIMA-KEN",
+                    "name": "Kagoshima"
+                },
+                {
+                    "code": "JP14",
+                    "paypal_code": "KANAGAWA-KEN",
+                    "name": "Kanagawa"
+                },
+                {
+                    "code": "JP39",
+                    "paypal_code": "KOCHI-KEN",
+                    "name": "Kochi"
+                },
+                {
+                    "code": "JP43",
+                    "paypal_code": "KUMAMOTO-KEN",
+                    "name": "Kumamoto"
+                },
+                {
+                    "code": "JP26",
+                    "paypal_code": "KYOTO-FU",
+                    "name": "Kyoto"
+                },
+                {
+                    "code": "JP24",
+                    "paypal_code": "MIE-KEN",
+                    "name": "Mie"
+                },
+                {
+                    "code": "JP04",
+                    "paypal_code": "MIYAGI-KEN",
+                    "name": "Miyagi"
+                },
+                {
+                    "code": "JP45",
+                    "paypal_code": "MIYAZAKI-KEN",
+                    "name": "Miyazaki"
+                },
+                {
+                    "code": "JP20",
+                    "paypal_code": "NAGANO-KEN",
+                    "name": "Nagano"
+                },
+                {
+                    "code": "JP42",
+                    "paypal_code": "NAGASAKI-KEN",
+                    "name": "Nagasaki"
+                },
+                {
+                    "code": "JP29",
+                    "paypal_code": "NARA-KEN",
+                    "name": "Nara"
+                },
+                {
+                    "code": "JP15",
+                    "paypal_code": "NIIGATA-KEN",
+                    "name": "Niigata"
+                },
+                {
+                    "code": "JP44",
+                    "paypal_code": "OITA-KEN",
+                    "name": "Oita"
+                },
+                {
+                    "code": "JP33",
+                    "paypal_code": "OKAYAMA-KEN",
+                    "name": "Okayama"
+                },
+                {
+                    "code": "JP47",
+                    "paypal_code": "OKINAWA-KEN",
+                    "name": "Okinawa"
+                },
+                {
+                    "code": "JP27",
+                    "paypal_code": "OSAKA-FU",
+                    "name": "Osaka"
+                },
+                {
+                    "code": "JP41",
+                    "paypal_code": "SAGA-KEN",
+                    "name": "Saga"
+                },
+                {
+                    "code": "JP11",
+                    "paypal_code": "SAITAMA-KEN",
+                    "name": "Saitama"
+                },
+                {
+                    "code": "JP25",
+                    "paypal_code": "SHIGA-KEN",
+                    "name": "Shiga"
+                },
+                {
+                    "code": "JP32",
+                    "paypal_code": "SHIMANE-KEN",
+                    "name": "Shimane"
+                },
+                {
+                    "code": "JP22",
+                    "paypal_code": "SHIZUOKA-KEN",
+                    "name": "Shizuoka"
+                },
+                {
+                    "code": "JP09",
+                    "paypal_code": "TOCHIGI-KEN",
+                    "name": "Tochigi"
+                },
+                {
+                    "code": "JP36",
+                    "paypal_code": "TOKUSHIMA-KEN",
+                    "name": "Tokushima"
+                },
+                {
+                    "code": "JP13",
+                    "paypal_code": "TOKYO-TO",
+                    "name": "Tokyo"
+                },
+                {
+                    "code": "JP31",
+                    "paypal_code": "TOTTORI-KEN",
+                    "name": "Tottori"
+                },
+                {
+                    "code": "JP16",
+                    "paypal_code": "TOYAMA-KEN",
+                    "name": "Toyama"
+                },
+                {
+                    "code": "JP30",
+                    "paypal_code": "WAKAYAMA-KEN",
+                    "name": "Wakayama"
+                },
+                {
+                    "code": "JP06",
+                    "paypal_code": "YAMAGATA-KEN",
+                    "name": "Yamagata"
+                },
+                {
+                    "code": "JP35",
+                    "paypal_code": "YAMAGUCHI-KEN",
+                    "name": "Yamaguchi"
+                },
+                {
+                    "code": "JP19",
+                    "paypal_code": "YAMANASHI-KEN",
+                    "name": "Yamanashi"
+                }
+            ]
+        },
+        {
+            "code": "JE",
+            "name": "Jersey",
+            "states": []
+        },
+        {
+            "code": "JO",
+            "name": "Jordan",
+            "states": []
+        },
+        {
+            "code": "KZ",
+            "name": "Kazakhstan",
+            "states": []
+        },
+        {
+            "code": "KE",
+            "name": "Kenya",
+            "states": []
+        },
+        {
+            "code": "KI",
+            "name": "Kiribati",
+            "states": []
+        },
+        {
+            "code": "KW",
+            "name": "Kuwait",
+            "states": []
+        },
+        {
+            "code": "KG",
+            "name": "Kyrgyzstan",
+            "states": []
+        },
+        {
+            "code": "LA",
+            "name": "Laos",
+            "states": []
+        },
+        {
+            "code": "LV",
+            "name": "Latvia",
+            "states": []
+        },
+        {
+            "code": "LB",
+            "name": "Lebanon",
+            "states": []
+        },
+        {
+            "code": "LS",
+            "name": "Lesotho",
+            "states": []
+        },
+        {
+            "code": "LR",
+            "name": "Liberia",
+            "states": []
+        },
+        {
+            "code": "LY",
+            "name": "Libya",
+            "states": []
+        },
+        {
+            "code": "LI",
+            "name": "Liechtenstein",
+            "states": []
+        },
+        {
+            "code": "LT",
+            "name": "Lithuania",
+            "states": []
+        },
+        {
+            "code": "LU",
+            "name": "Luxembourg",
+            "states": []
+        },
+        {
+            "code": "MO",
+            "name": "Macao",
+            "states": []
+        },
+        {
+            "code": "MG",
+            "name": "Madagascar",
+            "states": []
+        },
+        {
+            "code": "MW",
+            "name": "Malawi",
+            "states": []
+        },
+        {
+            "code": "MY",
+            "name": "Malaysia",
+            "states": [
+                {
+                    "code": "JHR",
+                    "paypal_code": "Johor",
+                    "name": "Johor"
+                },
+                {
+                    "code": "KDH",
+                    "paypal_code": "Kedah",
+                    "name": "Kedah"
+                },
+                {
+                    "code": "KTN",
+                    "paypal_code": "Kelantan",
+                    "name": "Kelantan"
+                },
+                {
+                    "code": "KUL",
+                    "paypal_code": "Kuala Lumpur",
+                    "name": "Kuala Lumpur"
+                },
+                {
+                    "code": "LBN",
+                    "paypal_code": "Labuan",
+                    "name": "Labuan"
+                },
+                {
+                    "code": "MLK",
+                    "paypal_code": "Melaka",
+                    "name": "Malacca (Melaka)"
+                },
+                {
+                    "code": "NSN",
+                    "paypal_code": "Negeri Sembilan",
+                    "name": "Negeri Sembilan"
+                },
+                {
+                    "code": "PHG",
+                    "paypal_code": "Pahang",
+                    "name": "Pahang"
+                },
+                {
+                    "code": "PNG",
+                    "paypal_code": "Pulau Pinang",
+                    "name": "Penang (Pulau Pinang)"
+                },
+                {
+                    "code": "PRK",
+                    "paypal_code": "Perak",
+                    "name": "Perak"
+                },
+                {
+                    "code": "PLS",
+                    "paypal_code": "Perlis",
+                    "name": "Perlis"
+                },
+                {
+                    "code": "PJY",
+                    "paypal_code": "Putrajaya",
+                    "name": "Putrajaya"
+                },
+                {
+                    "code": "SBH",
+                    "paypal_code": "Sabah",
+                    "name": "Sabah"
+                },
+                {
+                    "code": "SWK",
+                    "paypal_code": "Sarawak",
+                    "name": "Sarawak"
+                },
+                {
+                    "code": "SGR",
+                    "paypal_code": "Selangor",
+                    "name": "Selangor"
+                },
+                {
+                    "code": "TRG",
+                    "paypal_code": "Terengganu",
+                    "name": "Terengganu"
+                }
+            ]
+        },
+        {
+            "code": "MV",
+            "name": "Maldives",
+            "states": []
+        },
+        {
+            "code": "ML",
+            "name": "Mali",
+            "states": []
+        },
+        {
+            "code": "MT",
+            "name": "Malta",
+            "states": []
+        },
+        {
+            "code": "MH",
+            "name": "Marshall Islands",
+            "states": []
+        },
+        {
+            "code": "MQ",
+            "name": "Martinique",
+            "states": []
+        },
+        {
+            "code": "MR",
+            "name": "Mauritania",
+            "states": []
+        },
+        {
+            "code": "MU",
+            "name": "Mauritius",
+            "states": []
+        },
+        {
+            "code": "YT",
+            "name": "Mayotte",
+            "states": []
+        },
+        {
+            "code": "MX",
+            "name": "Mexico",
+            "states": [
+                {
+                    "code": "AG",
+                    "paypal_code": "AGS",
+                    "name": "Aguascalientes"
+                },
+                {
+                    "code": "BC",
+                    "name": "Baja California"
+                },
+                {
+                    "code": "BS",
+                    "paypal_code": "BCS",
+                    "name": "Baja California Sur"
+                },
+                {
+                    "code": "CM",
+                    "paypal_code": "CAMP",
+                    "name": "Campeche"
+                },
+                {
+                    "code": "CS",
+                    "paypal_code": "CHIS",
+                    "name": "Chiapas"
+                },
+                {
+                    "code": "CH",
+                    "paypal_code": "CHIH",
+                    "name": "Chihuahua"
+                },
+                {
+                    "code": "DF",
+                    "name": "Ciudad de México"
+                },
+                {
+                    "code": "CO",
+                    "paypal_code": "COAH",
+                    "name": "Coahuila"
+                },
+                {
+                    "code": "CL",
+                    "paypal_code": "COL",
+                    "name": "Colima"
+                },
+                {
+                    "code": "DG",
+                    "paypal_code": "DGO",
+                    "name": "Durango"
+                },
+                {
+                    "code": "MX",
+                    "paypal_code": "MEX",
+                    "name": "Estado de México"
+                },
+                {
+                    "code": "GT",
+                    "paypal_code": "GTO",
+                    "name": "Guanajuato"
+                },
+                {
+                    "code": "GR",
+                    "paypal_code": "GRO",
+                    "name": "Guerrero"
+                },
+                {
+                    "code": "HG",
+                    "paypal_code": "HGO",
+                    "name": "Hidalgo"
+                },
+                {
+                    "code": "JA",
+                    "paypal_code": "JAL",
+                    "name": "Jalisco"
+                },
+                {
+                    "code": "MI",
+                    "paypal_code": "MICH",
+                    "name": "Michoacán"
+                },
+                {
+                    "code": "MO",
+                    "paypal_code": "MOR",
+                    "name": "Morelos"
+                },
+                {
+                    "code": "NA",
+                    "paypal_code": "NAY",
+                    "name": "Nayarit"
+                },
+                {
+                    "code": "NL",
+                    "name": "Nuevo León"
+                },
+                {
+                    "code": "OA",
+                    "paypal_code": "OAX",
+                    "name": "Oaxaca"
+                },
+                {
+                    "code": "PU",
+                    "paypal_code": "PUE",
+                    "name": "Puebla"
+                },
+                {
+                    "code": "QT",
+                    "paypal_code": "QRO",
+                    "name": "Querétaro"
+                },
+                {
+                    "code": "QR",
+                    "paypal_code": "Q ROO",
+                    "name": "Quintana Roo"
+                },
+                {
+                    "code": "SL",
+                    "paypal_code": "SLP",
+                    "name": "San Luis Potosí"
+                },
+                {
+                    "code": "SI",
+                    "paypal_code": "SIN",
+                    "name": "Sinaloa"
+                },
+                {
+                    "code": "SO",
+                    "paypal_code": "SON",
+                    "name": "Sonora"
+                },
+                {
+                    "code": "TB",
+                    "paypal_code": "TAB",
+                    "name": "Tabasco"
+                },
+                {
+                    "code": "TM",
+                    "paypal_code": "TAMPS",
+                    "name": "Tamaulipas"
+                },
+                {
+                    "code": "TL",
+                    "paypal_code": "TLAX",
+                    "name": "Tlaxcala"
+                },
+                {
+                    "code": "VE",
+                    "paypal_code": "VER",
+                    "name": "Veracruz"
+                },
+                {
+                    "code": "YU",
+                    "paypal_code": "YUC",
+                    "name": "Yucatán"
+                },
+                {
+                    "code": "ZA",
+                    "paypal_code": "ZAC",
+                    "name": "Zacatecas"
+                }
+            ]
+        },
+        {
+            "code": "FM",
+            "name": "Micronesia",
+            "states": []
+        },
+        {
+            "code": "MD",
+            "name": "Moldova",
+            "states": []
+        },
+        {
+            "code": "MC",
+            "name": "Monaco",
+            "states": []
+        },
+        {
+            "code": "MN",
+            "name": "Mongolia",
+            "states": []
+        },
+        {
+            "code": "ME",
+            "name": "Montenegro",
+            "states": []
+        },
+        {
+            "code": "MS",
+            "name": "Montserrat",
+            "states": []
+        },
+        {
+            "code": "MA",
+            "name": "Morocco",
+            "states": []
+        },
+        {
+            "code": "MZ",
+            "name": "Mozambique",
+            "states": []
+        },
+        {
+            "code": "MM",
+            "name": "Myanmar",
+            "states": []
+        },
+        {
+            "code": "NA",
+            "name": "Namibia",
+            "states": []
+        },
+        {
+            "code": "NR",
+            "name": "Nauru",
+            "states": []
+        },
+        {
+            "code": "NP",
+            "name": "Nepal",
+            "states": []
+        },
+        {
+            "code": "NL",
+            "name": "Netherlands",
+            "states": []
+        },
+        {
+            "code": "NC",
+            "name": "New Caledonia",
+            "states": []
+        },
+        {
+            "code": "NZ",
+            "name": "New Zealand",
+            "states": [
+                {
+                    "code": "AK",
+                    "name": "Auckland"
+                },
+                {
+                    "code": "BP",
+                    "name": "Bay of Plenty"
+                },
+                {
+                    "code": "CT",
+                    "name": "Canterbury"
+                },
+                {
+                    "code": "CI",
+                    "name": "Chatham Islands"
+                },
+                {
+                    "code": "GI",
+                    "name": "Gisborne"
+                },
+                {
+                    "code": "HB",
+                    "name": "Hawke’s Bay"
+                },
+                {
+                    "code": "MW",
+                    "name": "Manawatu-Wanganui"
+                },
+                {
+                    "code": "MB",
+                    "name": "Marlborough"
+                },
+                {
+                    "code": "NS",
+                    "name": "Nelson"
+                },
+                {
+                    "code": "NL",
+                    "name": "Northland"
+                },
+                {
+                    "code": "OT",
+                    "name": "Otago"
+                },
+                {
+                    "code": "SL",
+                    "name": "Southland"
+                },
+                {
+                    "code": "TK",
+                    "name": "Taranaki"
+                },
+                {
+                    "code": "TM",
+                    "name": "Tasman"
+                },
+                {
+                    "code": "WA",
+                    "name": "Waikato"
+                },
+                {
+                    "code": "WE",
+                    "name": "Wellington"
+                },
+                {
+                    "code": "WC",
+                    "name": "West Coast"
+                }
+            ]
+        },
+        {
+            "code": "NI",
+            "name": "Nicaragua",
+            "states": []
+        },
+        {
+            "code": "NE",
+            "name": "Niger",
+            "states": []
+        },
+        {
+            "code": "NG",
+            "name": "Nigeria",
+            "states": [
+                {
+                    "code": "AB",
+                    "paypal_code": "ABIA STATE",
+                    "name": "Abia"
+                },
+                {
+                    "code": "FC",
+                    "paypal_code": "FCT",
+                    "name": "Abuja"
+                },
+                {
+                    "code": "AD",
+                    "paypal_code": "ADAMAWA STATE",
+                    "name": "Adamawa"
+                },
+                {
+                    "code": "AK",
+                    "paypal_code": "AKWA IBOM STATE",
+                    "name": "Akwa Ibom"
+                },
+                {
+                    "code": "AN",
+                    "paypal_code": "ANAMBRA STATE",
+                    "name": "Anambra"
+                },
+                {
+                    "code": "BA",
+                    "paypal_code": "BAUCHI STATE",
+                    "name": "Bauchi"
+                },
+                {
+                    "code": "BY",
+                    "paypal_code": "BAYELSA STATE",
+                    "name": "Bayelsa"
+                },
+                {
+                    "code": "BE",
+                    "paypal_code": "BENUE STATE",
+                    "name": "Benue"
+                },
+                {
+                    "code": "BO",
+                    "paypal_code": "BORNO STATE",
+                    "name": "Borno"
+                },
+                {
+                    "code": "CR",
+                    "paypal_code": "CROSS RIVER STATE",
+                    "name": "Cross River"
+                },
+                {
+                    "code": "DE",
+                    "paypal_code": "DELTA STATE",
+                    "name": "Delta"
+                },
+                {
+                    "code": "EB",
+                    "paypal_code": "EBONYI STATE",
+                    "name": "Ebonyi"
+                },
+                {
+                    "code": "ED",
+                    "paypal_code": "EDO STATE",
+                    "name": "Edo"
+                },
+                {
+                    "code": "EK",
+                    "paypal_code": "EKITI STATE",
+                    "name": "Ekiti"
+                },
+                {
+                    "code": "EN",
+                    "paypal_code": "ENUGU STATE",
+                    "name": "Enugu"
+                },
+                {
+                    "code": "GO",
+                    "paypal_code": "GOMBE STATE",
+                    "name": "Gombe"
+                },
+                {
+                    "code": "IM",
+                    "paypal_code": "IMO STATE",
+                    "name": "Imo"
+                },
+                {
+                    "code": "JI",
+                    "paypal_code": "JIGAWA STATE",
+                    "name": "Jigawa"
+                },
+                {
+                    "code": "KD",
+                    "paypal_code": "KADUNA STATE",
+                    "name": "Kaduna"
+                },
+                {
+                    "code": "KN",
+                    "paypal_code": "KANO STATE",
+                    "name": "Kano"
+                },
+                {
+                    "code": "KT",
+                    "paypal_code": "KATSINA STATE",
+                    "name": "Katsina"
+                },
+                {
+                    "code": "KE",
+                    "paypal_code": "KEBBI STATE",
+                    "name": "Kebbi"
+                },
+                {
+                    "code": "KO",
+                    "paypal_code": "KOGI STATE",
+                    "name": "Kogi"
+                },
+                {
+                    "code": "KW",
+                    "paypal_code": "KWARA STATE",
+                    "name": "Kwara"
+                },
+                {
+                    "code": "LA",
+                    "paypal_code": "LAGOS STATE",
+                    "name": "Lagos"
+                },
+                {
+                    "code": "NA",
+                    "paypal_code": "NASARAWA STATE",
+                    "name": "Nasarawa"
+                },
+                {
+                    "code": "NI",
+                    "paypal_code": "NIGER STATE",
+                    "name": "Niger"
+                },
+                {
+                    "code": "OG",
+                    "paypal_code": "OGUN STATE",
+                    "name": "Ogun"
+                },
+                {
+                    "code": "ON",
+                    "paypal_code": "ONDO STATE",
+                    "name": "Ondo"
+                },
+                {
+                    "code": "OS",
+                    "paypal_code": "OSUN STATE",
+                    "name": "Osun"
+                },
+                {
+                    "code": "OY",
+                    "paypal_code": "OYO STATE",
+                    "name": "Oyo"
+                },
+                {
+                    "code": "PL",
+                    "paypal_code": "PLATEAU STATE",
+                    "name": "Plateau"
+                },
+                {
+                    "code": "RI",
+                    "paypal_code": "RIVERS STATE",
+                    "name": "Rivers"
+                },
+                {
+                    "code": "SO",
+                    "paypal_code": "SOKOTO STATE",
+                    "name": "Sokoto"
+                },
+                {
+                    "code": "TA",
+                    "paypal_code": "TARABA STATE",
+                    "name": "Taraba"
+                },
+                {
+                    "code": "YO",
+                    "paypal_code": "YOBE STATE",
+                    "name": "Yobe"
+                },
+                {
+                    "code": "ZA",
+                    "paypal_code": "ZAMFARA STATE",
+                    "name": "Zamfara"
+                }
+            ]
+        },
+        {
+            "code": "NU",
+            "name": "Niue",
+            "states": []
+        },
+        {
+            "code": "NF",
+            "name": "Norfolk Island",
+            "states": []
+        },
+        {
+            "code": "KP",
+            "name": "North Korea",
+            "states": []
+        },
+        {
+            "code": "MK",
+            "name": "North Macedonia",
+            "states": []
+        },
+        {
+            "code": "MP",
+            "name": "Northern Mariana Islands",
+            "states": []
+        },
+        {
+            "code": "NO",
+            "name": "Norway",
+            "states": []
+        },
+        {
+            "code": "OM",
+            "name": "Oman",
+            "states": []
+        },
+        {
+            "code": "PK",
+            "name": "Pakistan",
+            "states": []
+        },
+        {
+            "code": "PS",
+            "name": "Palestinian Territory",
+            "states": []
+        },
+        {
+            "code": "PA",
+            "name": "Panama",
+            "states": [
+                {
+                    "code": "1",
+                    "paypal_code": "Provincia de Bocas del Toro",
+                    "name": "Bocas del Toro"
+                },
+                {
+                    "code": "4",
+                    "paypal_code": "Provincia de Chiriquí",
+                    "name": "Chiriquí"
+                },
+                {
+                    "code": "2",
+                    "paypal_code": "Provincia de Coclé",
+                    "name": "Coclé"
+                },
+                {
+                    "code": "3",
+                    "paypal_code": "Provincia de Colón",
+                    "name": "Colón"
+                },
+                {
+                    "code": "5",
+                    "paypal_code": "Provincia del Darién",
+                    "name": "Darién"
+                },
+                {
+                    "code": "EM",
+                    "paypal_code": "Emberá-Wounaan",
+                    "name": "Emberá"
+                },
+                {
+                    "code": "KY",
+                    "paypal_code": "Guna Yala",
+                    "name": "Guna Yala"
+                },
+                {
+                    "code": "6",
+                    "paypal_code": "Provincia de Herrera",
+                    "name": "Herrera"
+                },
+                {
+                    "code": "7",
+                    "paypal_code": "Provincia de Los Santos",
+                    "name": "Los Santos"
+                },
+                {
+                    "code": "NB",
+                    "paypal_code": "Ngöbe-Buglé",
+                    "name": "Ngöbe-Buglé"
+                },
+                {
+                    "code": "8",
+                    "paypal_code": "Provincia de Panamá",
+                    "name": "Panamá"
+                },
+                {
+                    "code": "9",
+                    "paypal_code": "Provincia de Veraguas",
+                    "name": "Veraguas"
+                },
+                {
+                    "code": "10",
+                    "paypal_code": "Provincia de Panamá Oeste",
+                    "name": "West Panamá"
+                }
+            ]
+        },
+        {
+            "code": "PG",
+            "name": "Papua New Guinea",
+            "states": []
+        },
+        {
+            "code": "PY",
+            "name": "Paraguay",
+            "states": []
+        },
+        {
+            "code": "PE",
+            "name": "Peru",
+            "states": [
+                {
+                    "code": "AMA",
+                    "name": "Amazonas"
+                },
+                {
+                    "code": "ANC",
+                    "name": "Ancash"
+                },
+                {
+                    "code": "APU",
+                    "name": "Apurímac"
+                },
+                {
+                    "code": "ARE",
+                    "name": "Arequipa"
+                },
+                {
+                    "code": "AYA",
+                    "name": "Ayacucho"
+                },
+                {
+                    "code": "CAJ",
+                    "name": "Cajamarca"
+                },
+                {
+                    "code": "CUS",
+                    "name": "Cusco"
+                },
+                {
+                    "code": "CAL",
+                    "name": "El Callao"
+                },
+                {
+                    "code": "HUV",
+                    "name": "Huancavelica"
+                },
+                {
+                    "code": "HUC",
+                    "name": "Huánuco"
+                },
+                {
+                    "code": "ICA",
+                    "name": "Ica"
+                },
+                {
+                    "code": "JUN",
+                    "name": "Junín"
+                },
+                {
+                    "code": "LAL",
+                    "name": "La Libertad"
+                },
+                {
+                    "code": "LAM",
+                    "name": "Lambayeque"
+                },
+                {
+                    "code": "LIM",
+                    "name": "Lima"
+                },
+                {
+                    "code": "LOR",
+                    "name": "Loreto"
+                },
+                {
+                    "code": "MDD",
+                    "name": "Madre de Dios"
+                },
+                {
+                    "code": "MOQ",
+                    "name": "Moquegua"
+                },
+                {
+                    "code": "LMA",
+                    "name": "Municipalidad Metropolitana de Lima"
+                },
+                {
+                    "code": "PAS",
+                    "name": "Pasco"
+                },
+                {
+                    "code": "PIU",
+                    "name": "Piura"
+                },
+                {
+                    "code": "PUN",
+                    "name": "Puno"
+                },
+                {
+                    "code": "SAM",
+                    "name": "San Martín"
+                },
+                {
+                    "code": "TAC",
+                    "name": "Tacna"
+                },
+                {
+                    "code": "TUM",
+                    "name": "Tumbes"
+                },
+                {
+                    "code": "UCA",
+                    "name": "Ucayali"
+                }
+            ]
+        },
+        {
+            "code": "PH",
+            "name": "Philippines",
+            "states": []
+        },
+        {
+            "code": "PN",
+            "name": "Pitcairn",
+            "states": []
+        },
+        {
+            "code": "PL",
+            "name": "Poland",
+            "states": []
+        },
+        {
+            "code": "PT",
+            "name": "Portugal",
+            "states": [
+                {
+                    "code": "01",
+                    "name": "Aveiro"
+                },
+                {
+                    "code": "20",
+                    "name": "Azores"
+                },
+                {
+                    "code": "02",
+                    "name": "Beja"
+                },
+                {
+                    "code": "03",
+                    "name": "Braga"
+                },
+                {
+                    "code": "04",
+                    "name": "Bragança"
+                },
+                {
+                    "code": "05",
+                    "name": "Castelo Branco"
+                },
+                {
+                    "code": "06",
+                    "name": "Coimbra"
+                },
+                {
+                    "code": "08",
+                    "name": "Faro"
+                },
+                {
+                    "code": "09",
+                    "name": "Guarda"
+                },
+                {
+                    "code": "10",
+                    "name": "Leiria"
+                },
+                {
+                    "code": "11",
+                    "name": "Lisbon"
+                },
+                {
+                    "code": "30",
+                    "name": "Madeira"
+                },
+                {
+                    "code": "12",
+                    "name": "Portalegre"
+                },
+                {
+                    "code": "13",
+                    "name": "Porto"
+                },
+                {
+                    "code": "14",
+                    "name": "Santarém"
+                },
+                {
+                    "code": "15",
+                    "name": "Setúbal"
+                },
+                {
+                    "code": "16",
+                    "name": "Viana do Castelo"
+                },
+                {
+                    "code": "17",
+                    "name": "Vila Real"
+                },
+                {
+                    "code": "18",
+                    "name": "Viseu"
+                },
+                {
+                    "code": "07",
+                    "name": "Évora"
+                }
+            ]
+        },
+        {
+            "code": "PR",
+            "name": "Puerto Rico",
+            "states": []
+        },
+        {
+            "code": "QA",
+            "name": "Qatar",
+            "states": []
+        },
+        {
+            "code": "RE",
+            "name": "Reunion",
+            "states": []
+        },
+        {
+            "code": "RO",
+            "name": "Romania",
+            "states": [
+                {
+                    "code": "AB",
+                    "name": "Alba"
+                },
+                {
+                    "code": "AR",
+                    "name": "Arad"
+                },
+                {
+                    "code": "AG",
+                    "name": "Argeș"
+                },
+                {
+                    "code": "BC",
+                    "name": "Bacău"
+                },
+                {
+                    "code": "BH",
+                    "name": "Bihor"
+                },
+                {
+                    "code": "BN",
+                    "name": "Bistrița-Năsăud"
+                },
+                {
+                    "code": "BT",
+                    "name": "Botoșani"
+                },
+                {
+                    "code": "BV",
+                    "name": "Brașov"
+                },
+                {
+                    "code": "BR",
+                    "name": "Brăila"
+                },
+                {
+                    "code": "B",
+                    "name": "București"
+                },
+                {
+                    "code": "BZ",
+                    "name": "Buzău"
+                },
+                {
+                    "code": "CS",
+                    "name": "Caraș-Severin"
+                },
+                {
+                    "code": "CJ",
+                    "name": "Cluj"
+                },
+                {
+                    "code": "CT",
+                    "name": "Constanța"
+                },
+                {
+                    "code": "CV",
+                    "name": "Covasna"
+                },
+                {
+                    "code": "CL",
+                    "name": "Călărași"
+                },
+                {
+                    "code": "DJ",
+                    "name": "Dolj"
+                },
+                {
+                    "code": "DB",
+                    "name": "Dâmbovița"
+                },
+                {
+                    "code": "GL",
+                    "name": "Galați"
+                },
+                {
+                    "code": "GR",
+                    "name": "Giurgiu"
+                },
+                {
+                    "code": "GJ",
+                    "name": "Gorj"
+                },
+                {
+                    "code": "HR",
+                    "name": "Harghita"
+                },
+                {
+                    "code": "HD",
+                    "name": "Hunedoara"
+                },
+                {
+                    "code": "IL",
+                    "name": "Ialomița"
+                },
+                {
+                    "code": "IS",
+                    "name": "Iași"
+                },
+                {
+                    "code": "IF",
+                    "name": "Ilfov"
+                },
+                {
+                    "code": "MM",
+                    "name": "Maramureș"
+                },
+                {
+                    "code": "MH",
+                    "name": "Mehedinți"
+                },
+                {
+                    "code": "MS",
+                    "name": "Mureș"
+                },
+                {
+                    "code": "NT",
+                    "name": "Neamț"
+                },
+                {
+                    "code": "OT",
+                    "name": "Olt"
+                },
+                {
+                    "code": "PH",
+                    "name": "Prahova"
+                },
+                {
+                    "code": "SM",
+                    "name": "Satu Mare"
+                },
+                {
+                    "code": "SB",
+                    "name": "Sibiu"
+                },
+                {
+                    "code": "SV",
+                    "name": "Suceava"
+                },
+                {
+                    "code": "SJ",
+                    "name": "Sălaj"
+                },
+                {
+                    "code": "TR",
+                    "name": "Teleorman"
+                },
+                {
+                    "code": "TM",
+                    "name": "Timiș"
+                },
+                {
+                    "code": "TL",
+                    "name": "Tulcea"
+                },
+                {
+                    "code": "VS",
+                    "name": "Vaslui"
+                },
+                {
+                    "code": "VN",
+                    "name": "Vrancea"
+                },
+                {
+                    "code": "VL",
+                    "name": "Vâlcea"
+                }
+            ]
+        },
+        {
+            "code": "RU",
+            "name": "Russia",
+            "states": [
+                {
+                    "code": "ALT",
+                    "name": "Altai Krai"
+                },
+                {
+                    "code": "AL",
+                    "name": "Altai Republic"
+                },
+                {
+                    "code": "AMU",
+                    "name": "Amur Oblast"
+                },
+                {
+                    "code": "ARK",
+                    "name": "Arkhangelsk"
+                },
+                {
+                    "code": "AST",
+                    "name": "Astrakhan Oblast"
+                },
+                {
+                    "code": "BEL",
+                    "name": "Belgorod Oblast"
+                },
+                {
+                    "code": "BRY",
+                    "name": "Bryansk Oblast"
+                },
+                {
+                    "code": "CE",
+                    "name": "Chechen Republic"
+                },
+                {
+                    "code": "CHE",
+                    "name": "Chelyabinsk Oblast"
+                },
+                {
+                    "code": "CHU",
+                    "name": "Chukotka Autonomous Okrug"
+                },
+                {
+                    "code": "CU",
+                    "name": "Chuvash Republic"
+                },
+                {
+                    "code": "IRK",
+                    "name": "Irkutsk"
+                },
+                {
+                    "code": "IVA",
+                    "name": "Ivanovo Oblast"
+                },
+                {
+                    "code": "YEV",
+                    "name": "Jewish Autonomous Oblast"
+                },
+                {
+                    "code": "KB",
+                    "name": "Kabardino-Balkar Republic"
+                },
+                {
+                    "code": "KGD",
+                    "name": "Kaliningrad"
+                },
+                {
+                    "code": "KLU",
+                    "name": "Kaluga Oblast"
+                },
+                {
+                    "code": "KAM",
+                    "name": "Kamchatka Krai"
+                },
+                {
+                    "code": "KC",
+                    "name": "Karachay-Cherkess Republic"
+                },
+                {
+                    "code": "KEM",
+                    "name": "Kemerovo Oblast"
+                },
+                {
+                    "code": "KHA",
+                    "name": "Khabarovsk Krai"
+                },
+                {
+                    "code": "KHM",
+                    "name": "Khanty-Mansi Autonomous Okrug"
+                },
+                {
+                    "code": "KIR",
+                    "name": "Kirov Oblast"
+                },
+                {
+                    "code": "KO",
+                    "name": "Komi Republic"
+                },
+                {
+                    "code": "KOS",
+                    "name": "Kostroma Oblast"
+                },
+                {
+                    "code": "KDA",
+                    "name": "Krasnodar Krai"
+                },
+                {
+                    "code": "KYA",
+                    "name": "Krasnoyarsk Krai"
+                },
+                {
+                    "code": "KGN",
+                    "name": "Kurgan Oblast"
+                },
+                {
+                    "code": "KRS",
+                    "name": "Kursk Oblast"
+                },
+                {
+                    "code": "LEN",
+                    "name": "Leningrad Oblast"
+                },
+                {
+                    "code": "LIP",
+                    "name": "Lipetsk Oblast"
+                },
+                {
+                    "code": "MAG",
+                    "name": "Magadan Oblast"
+                },
+                {
+                    "code": "ME",
+                    "name": "Mari El Republic"
+                },
+                {
+                    "code": "MOW",
+                    "name": "Moscow"
+                },
+                {
+                    "code": "MOS",
+                    "name": "Moscow Oblast"
+                },
+                {
+                    "code": "MUR",
+                    "name": "Murmansk Oblast"
+                },
+                {
+                    "code": "NEN",
+                    "name": "Nenets Autonomous Okrug"
+                },
+                {
+                    "code": "NIZ",
+                    "name": "Nizhny Novgorod Oblast"
+                },
+                {
+                    "code": "NGR",
+                    "name": "Novgorod Oblast"
+                },
+                {
+                    "code": "NVS",
+                    "name": "Novosibirsk"
+                },
+                {
+                    "code": "OMS",
+                    "name": "Omsk Oblast"
+                },
+                {
+                    "code": "ORE",
+                    "name": "Orenburg Oblast"
+                },
+                {
+                    "code": "ORL",
+                    "name": "Oryol Oblast"
+                },
+                {
+                    "code": "PNZ",
+                    "name": "Penza Oblast"
+                },
+                {
+                    "code": "PER",
+                    "name": "Perm Krai"
+                },
+                {
+                    "code": "PRI",
+                    "name": "Primorsky Krai"
+                },
+                {
+                    "code": "PSK",
+                    "name": "Pskov Oblast"
+                },
+                {
+                    "code": "AD",
+                    "name": "Republic of Adygea"
+                },
+                {
+                    "code": "BA",
+                    "name": "Republic of Bashkortostan"
+                },
+                {
+                    "code": "BU",
+                    "name": "Republic of Buryatia"
+                },
+                {
+                    "code": "DA",
+                    "name": "Republic of Dagestan"
+                },
+                {
+                    "code": "IN",
+                    "name": "Republic of Ingushetia"
+                },
+                {
+                    "code": "KL",
+                    "name": "Republic of Kalmykia"
+                },
+                {
+                    "code": "KR",
+                    "name": "Republic of Karelia"
+                },
+                {
+                    "code": "KK",
+                    "name": "Republic of Khakassia"
+                },
+                {
+                    "code": "MO",
+                    "name": "Republic of Mordovia"
+                },
+                {
+                    "code": "SE",
+                    "name": "Republic of North Ossetia-Alania"
+                },
+                {
+                    "code": "TA",
+                    "name": "Republic of Tatarstan"
+                },
+                {
+                    "code": "ROS",
+                    "name": "Rostov Oblast"
+                },
+                {
+                    "code": "RYA",
+                    "name": "Ryazan Oblast"
+                },
+                {
+                    "code": "SPE",
+                    "name": "Saint Petersburg"
+                },
+                {
+                    "code": "SA",
+                    "name": "Sakha Republic"
+                },
+                {
+                    "code": "SAK",
+                    "name": "Sakhalin"
+                },
+                {
+                    "code": "SAM",
+                    "name": "Samara Oblast"
+                },
+                {
+                    "code": "SAR",
+                    "name": "Saratov Oblast"
+                },
+                {
+                    "code": "UA-40",
+                    "name": "Sevastopol"
+                },
+                {
+                    "code": "SMO",
+                    "name": "Smolensk Oblast"
+                },
+                {
+                    "code": "STA",
+                    "name": "Stavropol Krai"
+                },
+                {
+                    "code": "SVE",
+                    "name": "Sverdlovsk"
+                },
+                {
+                    "code": "TAM",
+                    "name": "Tambov Oblast"
+                },
+                {
+                    "code": "TOM",
+                    "name": "Tomsk Oblast"
+                },
+                {
+                    "code": "TUL",
+                    "name": "Tula Oblast"
+                },
+                {
+                    "code": "TY",
+                    "name": "Tuva Republic"
+                },
+                {
+                    "code": "TVE",
+                    "name": "Tver Oblast"
+                },
+                {
+                    "code": "TYU",
+                    "name": "Tyumen Oblast"
+                },
+                {
+                    "code": "UD",
+                    "name": "Udmurt Republic"
+                },
+                {
+                    "code": "ULY",
+                    "name": "Ulyanovsk Oblast"
+                },
+                {
+                    "code": "VLA",
+                    "name": "Vladimir Oblast"
+                },
+                {
+                    "code": "VLG",
+                    "name": "Vologda Oblast"
+                },
+                {
+                    "code": "VOR",
+                    "name": "Voronezh Oblast"
+                },
+                {
+                    "code": "YAN",
+                    "name": "Yamalo-Nenets Autonomous Okrug"
+                },
+                {
+                    "code": "YAR",
+                    "name": "Yaroslavl Oblast"
+                },
+                {
+                    "code": "ZAB",
+                    "name": "Zabaykalsky Krai"
+                }
+            ]
+        },
+        {
+            "code": "RW",
+            "name": "Rwanda",
+            "states": []
+        },
+        {
+            "code": "BL",
+            "name": "Saint Barthélemy",
+            "states": []
+        },
+        {
+            "code": "SH",
+            "name": "Saint Helena",
+            "states": []
+        },
+        {
+            "code": "KN",
+            "name": "Saint Kitts and Nevis",
+            "states": []
+        },
+        {
+            "code": "LC",
+            "name": "Saint Lucia",
+            "states": []
+        },
+        {
+            "code": "SX",
+            "name": "Saint Martin (Dutch part)",
+            "states": []
+        },
+        {
+            "code": "MF",
+            "name": "Saint Martin (French part)",
+            "states": []
+        },
+        {
+            "code": "PM",
+            "name": "Saint Pierre and Miquelon",
+            "states": []
+        },
+        {
+            "code": "VC",
+            "name": "Saint Vincent and the Grenadines",
+            "states": []
+        },
+        {
+            "code": "WS",
+            "name": "Samoa",
+            "states": []
+        },
+        {
+            "code": "SM",
+            "name": "San Marino",
+            "states": []
+        },
+        {
+            "code": "SA",
+            "name": "Saudi Arabia",
+            "states": []
+        },
+        {
+            "code": "SN",
+            "name": "Senegal",
+            "states": []
+        },
+        {
+            "code": "RS",
+            "name": "Serbia",
+            "states": []
+        },
+        {
+            "code": "SC",
+            "name": "Seychelles",
+            "states": []
+        },
+        {
+            "code": "SL",
+            "name": "Sierra Leone",
+            "states": []
+        },
+        {
+            "code": "SG",
+            "name": "Singapore",
+            "states": []
+        },
+        {
+            "code": "SK",
+            "name": "Slovakia",
+            "states": []
+        },
+        {
+            "code": "SI",
+            "name": "Slovenia",
+            "states": []
+        },
+        {
+            "code": "SB",
+            "name": "Solomon Islands",
+            "states": []
+        },
+        {
+            "code": "SO",
+            "name": "Somalia",
+            "states": []
+        },
+        {
+            "code": "ZA",
+            "name": "South Africa",
+            "states": [
+                {
+                    "code": "EC",
+                    "name": "Eastern Cape"
+                },
+                {
+                    "code": "FS",
+                    "name": "Free State"
+                },
+                {
+                    "code": "GP",
+                    "name": "Gauteng"
+                },
+                {
+                    "code": "KZN",
+                    "name": "KwaZulu-Natal"
+                },
+                {
+                    "code": "LP",
+                    "name": "Limpopo"
+                },
+                {
+                    "code": "MP",
+                    "name": "Mpumalanga"
+                },
+                {
+                    "code": "NW",
+                    "name": "North West"
+                },
+                {
+                    "code": "NC",
+                    "name": "Northern Cape"
+                },
+                {
+                    "code": "WC",
+                    "name": "Western Cape"
+                }
+            ]
+        },
+        {
+            "code": "GS",
+            "name": "South Georgia/Sandwich Islands",
+            "states": []
+        },
+        {
+            "code": "KR",
+            "name": "South Korea",
+            "states": [
+                {
+                    "code": "26",
+                    "paypal_code": "Busan",
+                    "name": "Busan"
+                },
+                {
+                    "code": "27",
+                    "paypal_code": "Daegu",
+                    "name": "Daegu"
+                },
+                {
+                    "code": "30",
+                    "paypal_code": "Daejeon",
+                    "name": "Daejeon"
+                },
+                {
+                    "code": "42",
+                    "paypal_code": "Gangwon-do",
+                    "name": "Gangwon Province"
+                },
+                {
+                    "code": "29",
+                    "paypal_code": "Gwangju",
+                    "name": "Gwangju"
+                },
+                {
+                    "code": "41",
+                    "paypal_code": "Gyeonggi-do",
+                    "name": "Gyeonggi Province"
+                },
+                {
+                    "code": "28",
+                    "paypal_code": "Incheon",
+                    "name": "Incheon"
+                },
+                {
+                    "code": "49",
+                    "paypal_code": "Jeju-do",
+                    "name": "Jeju"
+                },
+                {
+                    "code": "43",
+                    "paypal_code": "Chungcheongbuk-do",
+                    "name": "North Chungcheong Province"
+                },
+                {
+                    "code": "47",
+                    "paypal_code": "Gyeongsangbuk-do",
+                    "name": "North Gyeongsang Province"
+                },
+                {
+                    "code": "45",
+                    "paypal_code": "Jeollabuk-do",
+                    "name": "North Jeolla Province"
+                },
+                {
+                    "code": "50",
+                    "paypal_code": "Sejong",
+                    "name": "Sejong City"
+                },
+                {
+                    "code": "11",
+                    "paypal_code": "Seoul",
+                    "name": "Seoul"
+                },
+                {
+                    "code": "44",
+                    "paypal_code": "Chungcheongnam-do",
+                    "name": "South Chungcheong Province"
+                },
+                {
+                    "code": "48",
+                    "paypal_code": "Gyeongsangnam-do",
+                    "name": "South Gyeongsang Province"
+                },
+                {
+                    "code": "46",
+                    "paypal_code": "Jeollanam-do",
+                    "name": "South Jeolla Province"
+                },
+                {
+                    "code": "31",
+                    "paypal_code": "Ulsan",
+                    "name": "Ulsan"
+                }
+            ]
+        },
+        {
+            "code": "ES",
+            "name": "Spain",
+            "states": [
+                {
+                    "code": "C",
+                    "paypal_code": "A CORUÑA",
+                    "name": "A Coruña"
+                },
+                {
+                    "code": "AB",
+                    "paypal_code": "ALBACETE",
+                    "name": "Albacete"
+                },
+                {
+                    "code": "A",
+                    "paypal_code": "ALICANTE",
+                    "name": "Alicante"
+                },
+                {
+                    "code": "AL",
+                    "paypal_code": "ALMERÍA",
+                    "name": "Almería"
+                },
+                {
+                    "code": "VI",
+                    "paypal_code": "ARABA/ÁLAVA",
+                    "name": "Araba/Álava"
+                },
+                {
+                    "code": "O",
+                    "paypal_code": "ASTURIAS",
+                    "name": "Asturias"
+                },
+                {
+                    "code": "BA",
+                    "paypal_code": "BADAJOZ",
+                    "name": "Badajoz"
+                },
+                {
+                    "code": "PM",
+                    "paypal_code": "ILLES BALEARS",
+                    "name": "Baleares"
+                },
+                {
+                    "code": "B",
+                    "paypal_code": "BARCELONA",
+                    "name": "Barcelona"
+                },
+                {
+                    "code": "BI",
+                    "paypal_code": "BIZKAIA",
+                    "name": "Bizkaia"
+                },
+                {
+                    "code": "BU",
+                    "paypal_code": "BURGOS",
+                    "name": "Burgos"
+                },
+                {
+                    "code": "S",
+                    "paypal_code": "CANTABRIA",
+                    "name": "Cantabria"
+                },
+                {
+                    "code": "CS",
+                    "paypal_code": "CASTELLÓN",
+                    "name": "Castellón"
+                },
+                {
+                    "code": "CE",
+                    "paypal_code": "CEUTA",
+                    "name": "Ceuta"
+                },
+                {
+                    "code": "CR",
+                    "paypal_code": "CIUDAD REAL",
+                    "name": "Ciudad Real"
+                },
+                {
+                    "code": "CU",
+                    "paypal_code": "CUENCA",
+                    "name": "Cuenca"
+                },
+                {
+                    "code": "CC",
+                    "paypal_code": "CÁCERES",
+                    "name": "Cáceres"
+                },
+                {
+                    "code": "CA",
+                    "paypal_code": "CÁDIZ",
+                    "name": "Cádiz"
+                },
+                {
+                    "code": "CO",
+                    "paypal_code": "CÓRDOBA",
+                    "name": "Córdoba"
+                },
+                {
+                    "code": "SS",
+                    "paypal_code": "GIPUZKOA",
+                    "name": "Gipuzkoa"
+                },
+                {
+                    "code": "GI",
+                    "paypal_code": "GIRONA",
+                    "name": "Girona"
+                },
+                {
+                    "code": "GR",
+                    "paypal_code": "GRANADA",
+                    "name": "Granada"
+                },
+                {
+                    "code": "GU",
+                    "paypal_code": "GUADALAJARA",
+                    "name": "Guadalajara"
+                },
+                {
+                    "code": "H",
+                    "paypal_code": "HUELVA",
+                    "name": "Huelva"
+                },
+                {
+                    "code": "HU",
+                    "paypal_code": "HUESCA",
+                    "name": "Huesca"
+                },
+                {
+                    "code": "IB",
+                    "paypal_code": "ILLES BALEARS",
+                    "name": "Illes Balears"
+                },
+                {
+                    "code": "J",
+                    "paypal_code": "JAÉN",
+                    "name": "Jaén"
+                },
+                {
+                    "code": "LO",
+                    "paypal_code": "LA RIOJA",
+                    "name": "La Rioja"
+                },
+                {
+                    "code": "GC",
+                    "paypal_code": "LAS PALMAS",
+                    "name": "Las Palmas"
+                },
+                {
+                    "code": "LE",
+                    "paypal_code": "LEÓN",
+                    "name": "León"
+                },
+                {
+                    "code": "L",
+                    "paypal_code": "LLEIDA",
+                    "name": "Lleida"
+                },
+                {
+                    "code": "LU",
+                    "paypal_code": "LUGO",
+                    "name": "Lugo"
+                },
+                {
+                    "code": "M",
+                    "paypal_code": "MADRID",
+                    "name": "Madrid"
+                },
+                {
+                    "code": "ML",
+                    "paypal_code": "MELILLA",
+                    "name": "Melilla"
+                },
+                {
+                    "code": "MU",
+                    "paypal_code": "MURCIA",
+                    "name": "Murcia"
+                },
+                {
+                    "code": "MA",
+                    "paypal_code": "MÁLAGA",
+                    "name": "Málaga"
+                },
+                {
+                    "code": "NA",
+                    "paypal_code": "NAVARRA",
+                    "name": "Navarra"
+                },
+                {
+                    "code": "OR",
+                    "paypal_code": "OURENSE",
+                    "name": "Ourense"
+                },
+                {
+                    "code": "P",
+                    "paypal_code": "PALENCIA",
+                    "name": "Palencia"
+                },
+                {
+                    "code": "PO",
+                    "paypal_code": "PONTEVEDRA",
+                    "name": "Pontevedra"
+                },
+                {
+                    "code": "SA",
+                    "paypal_code": "SALAMANCA",
+                    "name": "Salamanca"
+                },
+                {
+                    "code": "TF",
+                    "paypal_code": "SANTA CRUZ DE TENERIFE",
+                    "name": "Santa Cruz de Tenerife"
+                },
+                {
+                    "code": "SG",
+                    "paypal_code": "SEGOVIA",
+                    "name": "Segovia"
+                },
+                {
+                    "code": "SE",
+                    "paypal_code": "SEVILLA",
+                    "name": "Sevilla"
+                },
+                {
+                    "code": "SO",
+                    "paypal_code": "SORIA",
+                    "name": "Soria"
+                },
+                {
+                    "code": "T",
+                    "paypal_code": "TARRAGONA",
+                    "name": "Tarragona"
+                },
+                {
+                    "code": "TE",
+                    "paypal_code": "TERUEL",
+                    "name": "Teruel"
+                },
+                {
+                    "code": "TO",
+                    "paypal_code": "TOLEDO",
+                    "name": "Toledo"
+                },
+                {
+                    "code": "V",
+                    "paypal_code": "VALENCIA",
+                    "name": "Valencia"
+                },
+                {
+                    "code": "VA",
+                    "paypal_code": "VALLADOLID",
+                    "name": "Valladolid"
+                },
+                {
+                    "code": "ZA",
+                    "paypal_code": "ZAMORA",
+                    "name": "Zamora"
+                },
+                {
+                    "code": "Z",
+                    "paypal_code": "ZARAGOZA",
+                    "name": "Zaragoza"
+                },
+                {
+                    "code": "AV",
+                    "paypal_code": "ÁVILA",
+                    "name": "Ávila"
+                }
+            ]
+        },
+        {
+            "code": "LK",
+            "name": "Sri Lanka",
+            "states": []
+        },
+        {
+            "code": "SD",
+            "name": "Sudan",
+            "states": []
+        },
+        {
+            "code": "SR",
+            "name": "Suriname",
+            "states": []
+        },
+        {
+            "code": "SJ",
+            "name": "Svalbard and Jan Mayen",
+            "states": []
+        },
+        {
+            "code": "SE",
+            "name": "Sweden",
+            "states": []
+        },
+        {
+            "code": "CH",
+            "name": "Switzerland",
+            "states": []
+        },
+        {
+            "code": "SY",
+            "name": "Syria",
+            "states": []
+        },
+        {
+            "code": "ST",
+            "name": "São Tomé and Príncipe",
+            "states": []
+        },
+        {
+            "code": "TW",
+            "name": "Taiwan",
+            "states": []
+        },
+        {
+            "code": "TJ",
+            "name": "Tajikistan",
+            "states": []
+        },
+        {
+            "code": "TZ",
+            "name": "Tanzania",
+            "states": []
+        },
+        {
+            "code": "TH",
+            "name": "Thailand",
+            "states": [
+                {
+                    "code": "TH-37",
+                    "paypal_code": "Amnat Charoen",
+                    "name": "Amnat Charoen"
+                },
+                {
+                    "code": "TH-15",
+                    "paypal_code": "Ang Thong",
+                    "name": "Ang Thong"
+                },
+                {
+                    "code": "TH-10",
+                    "paypal_code": "Bangkok",
+                    "name": "Bangkok"
+                },
+                {
+                    "code": "TH-38",
+                    "paypal_code": "Bueng Kan",
+                    "name": "Bueng Kan"
+                },
+                {
+                    "code": "TH-31",
+                    "paypal_code": "Buri Ram",
+                    "name": "Buri Ram"
+                },
+                {
+                    "code": "TH-24",
+                    "paypal_code": "Chachoengsao",
+                    "name": "Chachoengsao"
+                },
+                {
+                    "code": "TH-18",
+                    "paypal_code": "Chai Nat",
+                    "name": "Chai Nat"
+                },
+                {
+                    "code": "TH-36",
+                    "paypal_code": "Chaiyaphum",
+                    "name": "Chaiyaphum"
+                },
+                {
+                    "code": "TH-22",
+                    "paypal_code": "Chanthaburi",
+                    "name": "Chanthaburi"
+                },
+                {
+                    "code": "TH-50",
+                    "paypal_code": "Chiang Mai",
+                    "name": "Chiang Mai"
+                },
+                {
+                    "code": "TH-57",
+                    "paypal_code": "Chiang Rai",
+                    "name": "Chiang Rai"
+                },
+                {
+                    "code": "TH-20",
+                    "paypal_code": "Chon Buri",
+                    "name": "Chon Buri"
+                },
+                {
+                    "code": "TH-86",
+                    "paypal_code": "Chumphon",
+                    "name": "Chumphon"
+                },
+                {
+                    "code": "TH-46",
+                    "paypal_code": "Kalasin",
+                    "name": "Kalasin"
+                },
+                {
+                    "code": "TH-62",
+                    "paypal_code": "Kamphaeng Phet",
+                    "name": "Kamphaeng Phet"
+                },
+                {
+                    "code": "TH-71",
+                    "paypal_code": "Kanchanaburi",
+                    "name": "Kanchanaburi"
+                },
+                {
+                    "code": "TH-40",
+                    "paypal_code": "Khon Kaen",
+                    "name": "Khon Kaen"
+                },
+                {
+                    "code": "TH-81",
+                    "paypal_code": "Krabi",
+                    "name": "Krabi"
+                },
+                {
+                    "code": "TH-52",
+                    "paypal_code": "Lampang",
+                    "name": "Lampang"
+                },
+                {
+                    "code": "TH-51",
+                    "paypal_code": "Lamphun",
+                    "name": "Lamphun"
+                },
+                {
+                    "code": "TH-42",
+                    "paypal_code": "Loei",
+                    "name": "Loei"
+                },
+                {
+                    "code": "TH-16",
+                    "paypal_code": "Lop Buri",
+                    "name": "Lop Buri"
+                },
+                {
+                    "code": "TH-58",
+                    "paypal_code": "Mae Hong Son",
+                    "name": "Mae Hong Son"
+                },
+                {
+                    "code": "TH-44",
+                    "paypal_code": "Maha Sarakham",
+                    "name": "Maha Sarakham"
+                },
+                {
+                    "code": "TH-49",
+                    "paypal_code": "Mukdahan",
+                    "name": "Mukdahan"
+                },
+                {
+                    "code": "TH-26",
+                    "paypal_code": "Nakhon Nayok",
+                    "name": "Nakhon Nayok"
+                },
+                {
+                    "code": "TH-73",
+                    "paypal_code": "Nakhon Pathom",
+                    "name": "Nakhon Pathom"
+                },
+                {
+                    "code": "TH-48",
+                    "paypal_code": "Nakhon Phanom",
+                    "name": "Nakhon Phanom"
+                },
+                {
+                    "code": "TH-30",
+                    "paypal_code": "Nakhon Ratchasima",
+                    "name": "Nakhon Ratchasima"
+                },
+                {
+                    "code": "TH-60",
+                    "paypal_code": "Nakhon Sawan",
+                    "name": "Nakhon Sawan"
+                },
+                {
+                    "code": "TH-80",
+                    "paypal_code": "Nakhon Si Thammarat",
+                    "name": "Nakhon Si Thammarat"
+                },
+                {
+                    "code": "TH-55",
+                    "paypal_code": "Nan",
+                    "name": "Nan"
+                },
+                {
+                    "code": "TH-96",
+                    "paypal_code": "Narathiwat",
+                    "name": "Narathiwat"
+                },
+                {
+                    "code": "TH-39",
+                    "paypal_code": "Nong Bua Lamphu",
+                    "name": "Nong Bua Lam Phu"
+                },
+                {
+                    "code": "TH-43",
+                    "paypal_code": "Nong Khai",
+                    "name": "Nong Khai"
+                },
+                {
+                    "code": "TH-12",
+                    "paypal_code": "Nonthaburi",
+                    "name": "Nonthaburi"
+                },
+                {
+                    "code": "TH-13",
+                    "paypal_code": "Pathum Thani",
+                    "name": "Pathum Thani"
+                },
+                {
+                    "code": "TH-94",
+                    "paypal_code": "Pattani",
+                    "name": "Pattani"
+                },
+                {
+                    "code": "TH-S",
+                    "paypal_code": "Phatthaya",
+                    "name": "Pattaya"
+                },
+                {
+                    "code": "TH-82",
+                    "paypal_code": "Phang Nga",
+                    "name": "Phang Nga"
+                },
+                {
+                    "code": "TH-93",
+                    "paypal_code": "Phatthalung",
+                    "name": "Phatthalung"
+                },
+                {
+                    "code": "TH-56",
+                    "paypal_code": "Phayao",
+                    "name": "Phayao"
+                },
+                {
+                    "code": "TH-67",
+                    "paypal_code": "Phetchabun",
+                    "name": "Phetchabun"
+                },
+                {
+                    "code": "TH-76",
+                    "paypal_code": "Phetchaburi",
+                    "name": "Phetchaburi"
+                },
+                {
+                    "code": "TH-66",
+                    "paypal_code": "Phichit",
+                    "name": "Phichit"
+                },
+                {
+                    "code": "TH-65",
+                    "paypal_code": "Phitsanulok",
+                    "name": "Phitsanulok"
+                },
+                {
+                    "code": "TH-14",
+                    "paypal_code": "Phra Nakhon Si Ayutthaya",
+                    "name": "Phra Nakhon Si Ayutthaya"
+                },
+                {
+                    "code": "TH-54",
+                    "paypal_code": "Phrae",
+                    "name": "Phrae"
+                },
+                {
+                    "code": "TH-83",
+                    "paypal_code": "Phuket",
+                    "name": "Phuket"
+                },
+                {
+                    "code": "TH-25",
+                    "paypal_code": "Prachin Buri",
+                    "name": "Prachin Buri"
+                },
+                {
+                    "code": "TH-77",
+                    "paypal_code": "Prachuap Khiri Khan",
+                    "name": "Prachuap Khiri Khan"
+                },
+                {
+                    "code": "TH-85",
+                    "paypal_code": "Ranong",
+                    "name": "Ranong"
+                },
+                {
+                    "code": "TH-70",
+                    "paypal_code": "Ratchaburi",
+                    "name": "Ratchaburi"
+                },
+                {
+                    "code": "TH-21",
+                    "paypal_code": "Rayong",
+                    "name": "Rayong"
+                },
+                {
+                    "code": "TH-45",
+                    "paypal_code": "Roi Et",
+                    "name": "Roi Et"
+                },
+                {
+                    "code": "TH-27",
+                    "paypal_code": "Sa Kaeo",
+                    "name": "Sa Kaeo"
+                },
+                {
+                    "code": "TH-47",
+                    "paypal_code": "Sakon Nakhon",
+                    "name": "Sakon Nakhon"
+                },
+                {
+                    "code": "TH-11",
+                    "paypal_code": "Samut Prakan",
+                    "name": "Samut Prakan"
+                },
+                {
+                    "code": "TH-74",
+                    "paypal_code": "Samut Sakhon",
+                    "name": "Samut Sakhon"
+                },
+                {
+                    "code": "TH-75",
+                    "paypal_code": "Samut Songkhram",
+                    "name": "Samut Songkhram"
+                },
+                {
+                    "code": "TH-19",
+                    "paypal_code": "Saraburi",
+                    "name": "Saraburi"
+                },
+                {
+                    "code": "TH-91",
+                    "paypal_code": "Satun",
+                    "name": "Satun"
+                },
+                {
+                    "code": "TH-33",
+                    "paypal_code": "Si Sa Ket",
+                    "name": "Si Sa Ket"
+                },
+                {
+                    "code": "TH-17",
+                    "paypal_code": "Sing Buri",
+                    "name": "Sing Buri"
+                },
+                {
+                    "code": "TH-90",
+                    "paypal_code": "Songkhla",
+                    "name": "Songkhla"
+                },
+                {
+                    "code": "TH-64",
+                    "paypal_code": "Sukhothai",
+                    "name": "Sukhothai"
+                },
+                {
+                    "code": "TH-72",
+                    "paypal_code": "Suphan Buri",
+                    "name": "Suphan Buri"
+                },
+                {
+                    "code": "TH-84",
+                    "paypal_code": "Surat Thani",
+                    "name": "Surat Thani"
+                },
+                {
+                    "code": "TH-32",
+                    "paypal_code": "Surin",
+                    "name": "Surin"
+                },
+                {
+                    "code": "TH-63",
+                    "paypal_code": "Tak",
+                    "name": "Tak"
+                },
+                {
+                    "code": "TH-92",
+                    "paypal_code": "Trang",
+                    "name": "Trang"
+                },
+                {
+                    "code": "TH-23",
+                    "paypal_code": "Trat",
+                    "name": "Trat"
+                },
+                {
+                    "code": "TH-34",
+                    "paypal_code": "Ubon Ratchathani",
+                    "name": "Ubon Ratchathani"
+                },
+                {
+                    "code": "TH-41",
+                    "paypal_code": "Udon Thani",
+                    "name": "Udon Thani"
+                },
+                {
+                    "code": "TH-61",
+                    "paypal_code": "Uthai Thani",
+                    "name": "Uthai Thani"
+                },
+                {
+                    "code": "TH-53",
+                    "paypal_code": "Uttaradit",
+                    "name": "Uttaradit"
+                },
+                {
+                    "code": "TH-95",
+                    "paypal_code": "Yala",
+                    "name": "Yala"
+                },
+                {
+                    "code": "TH-35",
+                    "paypal_code": "Yasothon",
+                    "name": "Yasothon"
+                }
+            ]
+        },
+        {
+            "code": "TL",
+            "name": "Timor-Leste",
+            "states": []
+        },
+        {
+            "code": "TG",
+            "name": "Togo",
+            "states": []
+        },
+        {
+            "code": "TK",
+            "name": "Tokelau",
+            "states": []
+        },
+        {
+            "code": "TO",
+            "name": "Tonga",
+            "states": []
+        },
+        {
+            "code": "TT",
+            "name": "Trinidad and Tobago",
+            "states": []
+        },
+        {
+            "code": "TN",
+            "name": "Tunisia",
+            "states": []
+        },
+        {
+            "code": "TR",
+            "name": "Turkey",
+            "states": []
+        },
+        {
+            "code": "TM",
+            "name": "Turkmenistan",
+            "states": []
+        },
+        {
+            "code": "TC",
+            "name": "Turks and Caicos Islands",
+            "states": []
+        },
+        {
+            "code": "TV",
+            "name": "Tuvalu",
+            "states": []
+        },
+        {
+            "code": "UG",
+            "name": "Uganda",
+            "states": []
+        },
+        {
+            "code": "UA",
+            "name": "Ukraine",
+            "states": []
+        },
+        {
+            "code": "AE",
+            "name": "United Arab Emirates",
+            "states": [
+                {
+                    "code": "AZ",
+                    "paypal_code": "Abu Dhabi",
+                    "name": "Abu Dhabi Emirate"
+                },
+                {
+                    "code": "AJ",
+                    "paypal_code": "Ajman",
+                    "name": "Ajman Emirate"
+                },
+                {
+                    "code": "DU",
+                    "paypal_code": "Dubai",
+                    "name": "Dubai"
+                },
+                {
+                    "code": "FU",
+                    "paypal_code": "Fujairah",
+                    "name": "Fujairah"
+                },
+                {
+                    "code": "RK",
+                    "paypal_code": "Ras al-Khaimah",
+                    "name": "Ras al-Khaimah"
+                },
+                {
+                    "code": "SH",
+                    "paypal_code": "Sharjah",
+                    "name": "Sharjah Emirate"
+                },
+                {
+                    "code": "UQ",
+                    "paypal_code": "Umm al-Quwain",
+                    "name": "Umm al-Quwain"
+                }
+            ]
+        },
+        {
+            "code": "GB",
+            "name": "United Kingdom (UK)",
+            "states": []
+        },
+        {
+            "code": "US",
+            "name": "United States (US)",
+            "states": [
+                {
+                    "code": "AL",
+                    "name": "Alabama"
+                },
+                {
+                    "code": "AK",
+                    "name": "Alaska"
+                },
+                {
+                    "code": "AS",
+                    "name": "American Samoa"
+                },
+                {
+                    "code": "AZ",
+                    "name": "Arizona"
+                },
+                {
+                    "code": "AR",
+                    "name": "Arkansas"
+                },
+                {
+                    "code": "AA",
+                    "name": "Armed Forces (AA)"
+                },
+                {
+                    "code": "AE",
+                    "name": "Armed Forces (AE)"
+                },
+                {
+                    "code": "AP",
+                    "name": "Armed Forces (AP)"
+                },
+                {
+                    "code": "CA",
+                    "name": "California"
+                },
+                {
+                    "code": "CO",
+                    "name": "Colorado"
+                },
+                {
+                    "code": "CT",
+                    "name": "Connecticut"
+                },
+                {
+                    "code": "DE",
+                    "name": "Delaware"
+                },
+                {
+                    "code": "DC",
+                    "name": "District Of Columbia"
+                },
+                {
+                    "code": "FL",
+                    "name": "Florida"
+                },
+                {
+                    "code": "GA",
+                    "name": "Georgia"
+                },
+                {
+                    "code": "GU",
+                    "name": "Guam"
+                },
+                {
+                    "code": "HI",
+                    "name": "Hawaii"
+                },
+                {
+                    "code": "ID",
+                    "name": "Idaho"
+                },
+                {
+                    "code": "IL",
+                    "name": "Illinois"
+                },
+                {
+                    "code": "IN",
+                    "name": "Indiana"
+                },
+                {
+                    "code": "IA",
+                    "name": "Iowa"
+                },
+                {
+                    "code": "KS",
+                    "name": "Kansas"
+                },
+                {
+                    "code": "KY",
+                    "name": "Kentucky"
+                },
+                {
+                    "code": "LA",
+                    "name": "Louisiana"
+                },
+                {
+                    "code": "ME",
+                    "name": "Maine"
+                },
+                {
+                    "code": "MH",
+                    "name": "Marshall Islands"
+                },
+                {
+                    "code": "MD",
+                    "name": "Maryland"
+                },
+                {
+                    "code": "MA",
+                    "name": "Massachusetts"
+                },
+                {
+                    "code": "MI",
+                    "name": "Michigan"
+                },
+                {
+                    "code": "FM",
+                    "name": "Micronesia"
+                },
+                {
+                    "code": "MN",
+                    "name": "Minnesota"
+                },
+                {
+                    "code": "MS",
+                    "name": "Mississippi"
+                },
+                {
+                    "code": "MO",
+                    "name": "Missouri"
+                },
+                {
+                    "code": "MT",
+                    "name": "Montana"
+                },
+                {
+                    "code": "NE",
+                    "name": "Nebraska"
+                },
+                {
+                    "code": "NV",
+                    "name": "Nevada"
+                },
+                {
+                    "code": "NH",
+                    "name": "New Hampshire"
+                },
+                {
+                    "code": "NJ",
+                    "name": "New Jersey"
+                },
+                {
+                    "code": "NM",
+                    "name": "New Mexico"
+                },
+                {
+                    "code": "NY",
+                    "name": "New York"
+                },
+                {
+                    "code": "NC",
+                    "name": "North Carolina"
+                },
+                {
+                    "code": "ND",
+                    "name": "North Dakota"
+                },
+                {
+                    "code": "MP",
+                    "name": "Northern Mariana Islands"
+                },
+                {
+                    "code": "OH",
+                    "name": "Ohio"
+                },
+                {
+                    "code": "OK",
+                    "name": "Oklahoma"
+                },
+                {
+                    "code": "OR",
+                    "name": "Oregon"
+                },
+                {
+                    "code": "PP",
+                    "name": "Palau"
+                },
+                {
+                    "code": "PA",
+                    "name": "Pennsylvania"
+                },
+                {
+                    "code": "PR",
+                    "name": "Puerto Rico"
+                },
+                {
+                    "code": "RI",
+                    "name": "Rhode Island"
+                },
+                {
+                    "code": "SC",
+                    "name": "South Carolina"
+                },
+                {
+                    "code": "SD",
+                    "name": "South Dakota"
+                },
+                {
+                    "code": "TN",
+                    "name": "Tennessee"
+                },
+                {
+                    "code": "TX",
+                    "name": "Texas"
+                },
+                {
+                    "code": "VI",
+                    "name": "U.S. Virgin Islands"
+                },
+                {
+                    "code": "UT",
+                    "name": "Utah"
+                },
+                {
+                    "code": "VT",
+                    "name": "Vermont"
+                },
+                {
+                    "code": "VA",
+                    "name": "Virginia"
+                },
+                {
+                    "code": "WA",
+                    "name": "Washington"
+                },
+                {
+                    "code": "WDP",
+                    "name": "Washington DC"
+                },
+                {
+                    "code": "WV",
+                    "name": "West Virginia"
+                },
+                {
+                    "code": "WI",
+                    "name": "Wisconsin"
+                },
+                {
+                    "code": "WY",
+                    "name": "Wyoming"
+                }
+            ]
+        },
+        {
+            "code": "UM",
+            "name": "United States (US) Minor Outlying Islands",
+            "states": [
+                {
+                    "code": 81,
+                    "name": "Baker Island"
+                },
+                {
+                    "code": 84,
+                    "name": "Howland Island"
+                },
+                {
+                    "code": 86,
+                    "name": "Jarvis Island"
+                },
+                {
+                    "code": 67,
+                    "name": "Johnston Atoll"
+                },
+                {
+                    "code": 89,
+                    "name": "Kingman Reef"
+                },
+                {
+                    "code": 71,
+                    "name": "Midway Atoll"
+                },
+                {
+                    "code": 76,
+                    "name": "Navassa Island"
+                },
+                {
+                    "code": 95,
+                    "name": "Palmyra Atoll"
+                },
+                {
+                    "code": 79,
+                    "name": "Wake Island"
+                }
+            ]
+        },
+        {
+            "code": "UY",
+            "name": "Uruguay",
+            "states": []
+        },
+        {
+            "code": "UZ",
+            "name": "Uzbekistan",
+            "states": []
+        },
+        {
+            "code": "VU",
+            "name": "Vanuatu",
+            "states": []
+        },
+        {
+            "code": "VA",
+            "name": "Vatican",
+            "states": []
+        },
+        {
+            "code": "VE",
+            "name": "Venezuela",
+            "states": []
+        },
+        {
+            "code": "VN",
+            "name": "Vietnam",
+            "states": []
+        },
+        {
+            "code": "VG",
+            "name": "Virgin Islands (British)",
+            "states": []
+        },
+        {
+            "code": "VI",
+            "name": "Virgin Islands (US)",
+            "states": []
+        },
+        {
+            "code": "WF",
+            "name": "Wallis and Futuna",
+            "states": []
+        },
+        {
+            "code": "EH",
+            "name": "Western Sahara",
+            "states": []
+        },
+        {
+            "code": "YE",
+            "name": "Yemen",
+            "states": []
+        },
+        {
+            "code": "ZM",
+            "name": "Zambia",
+            "states": []
+        },
+        {
+            "code": "ZW",
+            "name": "Zimbabwe",
+            "states": []
+        }
+    ],
+    "shipping_insurance_enable": true,
+    "shipping_insurance_rate": 0.03,
+    "store_id": "16584",
+    "product": {
+        "title": "test商品图a",
+        "slug": "test-shang-pin-tu",
+        "spu": "",
+        "sku": null,
+        "weight": "0.00",
+        "weight_unit": "kg",
+        "weight_local": "0.000",
+        "price": null,
+        "regular_price": null,
+        "max_discount": 0,
+        "min_price": 8.99,
+        "max_price": 8.99,
+        "manage_stock": "no",
+        "backorders": "no",
+        "stock": 0,
+        "available_map": true,
+        "available_store_show": true,
+        "bar_code": "",
+        "subtitle": "",
+        "supplier": "",
+        "total_sales": 26,
+        "gallery": [
+            {
+                "alt": "",
+                "ID": 9436,
+                "file_id": 785,
+                "url": "https://cdn.wshopon.com/image/fadf86988b6cd3b2473f1dd3806d670f80bac666.jpeg",
+                "thumbnail": "https://cdn.wshopon.com/image/fadf86988b6cd3b2473f1dd3806d670f80bac666.jpeg",
+                "media_content_type": "image",
+                "width": "800",
+                "height": "800"
+            }
+        ],
+        "seo_title": "",
+        "seo_description": "",
+        "source": null,
+        "store_id": 16584,
+        "snow_flake_id": "501291912813084672",
+        "wp_product_id": 9246,
+        "comment_status": "open",
+        "product_order": 0,
+        "published_at_gmt": "2024-08-15 06:42:55",
+        "type": 2,
+        "min_purchase_quantity": 1,
+        "is_overseas_depot": 0,
+        "ID": 9246,
+        "post_title": "test商品图a",
+        "post_date": "2023-05-22 15:23:13",
+        "post_date_gmt": "2023-05-22 07:23:13",
+        "post_content": "",
+        "post_status": "publish",
+        "review_status": "open",
+        "post_name": "test-shang-pin-tu",
+        "post_modified": "2024-11-19 11:14:29",
+        "post_modified_gmt": "2024-11-19 03:14:29",
+        "image": "https://cdn.wshopon.com/image/fadf86988b6cd3b2473f1dd3806d670f80bac666.jpeg",
+        "review_count": 0,
+        "variant_attrs": [
+            {
+                "name": "color",
+                "value": [
+                    "BLACK",
+                    "WHITE"
+                ]
+            }
+        ],
+        "shop_id": 9246,
+        "published_at": "2024-08-15 14:42:55",
+        "public_url": "https://podiatrist7.exooolj.email/products/test-shang-pin-tu",
+        "path": "/products/test-shang-pin-tu",
+        "short_content": "",
+        "average_rating": 0,
+        "comment_count": 0,
+        "rating_count": [
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "buy_able": true,
+        "categories": [],
+        "tags": [],
+        "feature_image": {
+            "alt": "",
+            "ID": 9436,
+            "file_id": 785,
+            "url": "https://cdn.wshopon.com/image/fadf86988b6cd3b2473f1dd3806d670f80bac666.jpeg",
+            "thumbnail": "https://cdn.wshopon.com/image/fadf86988b6cd3b2473f1dd3806d670f80bac666.jpeg",
+            "media_content_type": "image",
+            "width": 800,
+            "height": 800
+        },
+        "variants": [
+            {
+                "title": "test商品图a - BLACK",
+                "sku": "BLACK",
+                "weight": "0.00",
+                "weight_unit": "kg",
+                "weight_local": "0.000",
+                "price": 8.99,
+                "regular_price": 8.99,
+                "manage_stock": "yes",
+                "backorders": "yes",
+                "stock": -455,
+                "bar_code": "",
+                "attrs": [
+                    {
+                        "name": "color",
+                        "value": "BLACK"
+                    }
+                ],
+                "wp_variant_id": 9510,
+                "menu_order": 0,
+                "ID": 9510,
+                "post_title": "test商品图a - BLACK",
+                "post_date": "2023-07-07 16:55:17",
+                "post_date_gmt": "2023-07-07 08:55:17",
+                "post_modified": "2024-12-11 18:29:22",
+                "post_modified_gmt": "2024-12-11 10:29:22",
+                "post_parent": 9246,
+                "image": "",
+                "buy_able": true,
+                "feature_image": null
+            },
+            {
+                "title": "test商品图a - WHITE",
+                "sku": "WHITE",
+                "weight": "0.00",
+                "weight_unit": "kg",
+                "weight_local": "0.000",
+                "price": 8.99,
+                "regular_price": 8.99,
+                "manage_stock": "yes",
+                "backorders": "yes",
+                "stock": -551,
+                "bar_code": "",
+                "attrs": [
+                    {
+                        "name": "color",
+                        "value": "WHITE"
+                    }
+                ],
+                "wp_variant_id": 9511,
+                "menu_order": 1,
+                "ID": 9511,
+                "post_title": "test商品图a - WHITE",
+                "post_date": "2023-07-07 16:55:17",
+                "post_date_gmt": "2023-07-07 08:55:17",
+                "post_modified": "2024-11-19 11:14:29",
+                "post_modified_gmt": "2024-11-19 03:14:29",
+                "post_parent": 9246,
+                "image": "",
+                "buy_able": true,
+                "feature_image": null
+            }
+        ]
+    },
+    "templateVersion": "v1.42.1-rc.1"
+}
