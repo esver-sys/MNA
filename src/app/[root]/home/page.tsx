@@ -1,6 +1,8 @@
+import { logs1 } from '@/decorator/log';
 import React from 'react'
 
 export default function Home() {
+
   return (
     <div className="p-6 space-y-6">
       {/* 欢迎区域 */}

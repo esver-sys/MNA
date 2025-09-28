@@ -1,10 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import JSON5 from 'json5';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 /**
  * 递归扫描目录，查找所有的json5配置文件

@@ -8,4 +8,5 @@
         "turbopack"
     ],
     "i18n-ally.displayLanguage": "zh",
+    "liveServer.settings.port": 5501,
 }
