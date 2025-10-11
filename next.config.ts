@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
-import routes from "./src/config/routes/routes.json";
+import routes from "./src/routes/routes.json";
 import path from "path";
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');

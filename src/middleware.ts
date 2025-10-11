@@ -3,7 +3,7 @@ import createMiddleware from "next-intl/middleware";
 // 导入国际化配置中的语言列表和默认语言
 import { locales, defaultLocale } from "./i18n/config";
 import { NextRequest, NextResponse } from "next/server";
-import routes from "./config/routes/routes.json";
+import routes from "./routes/routes.json";
 
 // 创建国际化中间件
 const intlMiddleware = createMiddleware({

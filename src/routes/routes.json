@@ -11,10 +11,6 @@
       "keywords": [],
       "auth": true,
       "cache": true
-    },
-    "_source": {
-      "filePath": "src\\app\\[root]\\home\\page.json5",
-      "relativePath": "src\\app\\[root]\\home\\page.json5"
     }
   },
   {
@@ -29,10 +25,6 @@
       "keywords": [],
       "auth": true,
       "cache": true
-    },
-    "_source": {
-      "filePath": "src\\app\\[root]\\categorize\\page.json5",
-      "relativePath": "src\\app\\[root]\\categorize\\page.json5"
     }
   },
   {
@@ -47,10 +39,6 @@
       "keywords": [],
       "auth": true,
       "cache": true
-    },
-    "_source": {
-      "filePath": "src\\app\\[root]\\dosc\\page.json5",
-      "relativePath": "src\\app\\[root]\\dosc\\page.json5"
     }
   },
   {
@@ -69,10 +57,6 @@
       "auth": true,
       "cache": true
     },
-    "_source": {
-      "filePath": "src\\app\\[root]\\list\\page.json5",
-      "relativePath": "src\\app\\[root]\\list\\page.json5"
-    },
     "children": [
       {
         "name": "链接",
@@ -86,10 +70,6 @@
           "keywords": [],
           "auth": true,
           "cache": true
-        },
-        "_source": {
-          "filePath": "src\\app\\[root]\\list\\links\\page.json5",
-          "relativePath": "src\\app\\[root]\\list\\links\\page.json5"
         }
       },
       {
@@ -103,10 +83,6 @@
           "keywords": [],
           "auth": true,
           "cache": true
-        },
-        "_source": {
-          "filePath": "src\\app\\[root]\\list\\about\\page.json5",
-          "relativePath": "src\\app\\[root]\\list\\about\\page.json5"
         }
       }
     ]
@@ -122,10 +98,6 @@
       "keywords": [],
       "auth": true,
       "cache": true
-    },
-    "_source": {
-      "filePath": "src\\app\\(auth)\\login\\page.json5",
-      "relativePath": "src\\app\\(auth)\\login\\page.json5"
     }
   }
 ]
