@@ -28,6 +28,20 @@
     }
   },
   {
+    "name": "自定义",
+    "path": "/custom",
+    "component": "@/app/[root]/custom/page",
+    "icon": "icon-custom",
+    "rank": 2,
+    "meta": {
+      "title": "自定义",
+      "description": "",
+      "keywords": [],
+      "auth": true,
+      "cache": true
+    }
+  },
+  {
     "name": "文档",
     "path": "/dosc",
     "component": "@/app/[root]/dosc/page",

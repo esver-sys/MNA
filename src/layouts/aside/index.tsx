@@ -10,7 +10,7 @@ import {
   Box,
 } from "@mui/material";
 import { useRouter, usePathname } from "next/navigation";
-import routes from "@/config/routes/routes.json";
+import routes from "@/routes/routes.json";
 import Icon from "@/components/icons/Icon";
 
 interface RouteItem {
