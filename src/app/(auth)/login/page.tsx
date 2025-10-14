@@ -1,7 +1,10 @@
 import React from 'react'
 
-export default function Logo() {
+export default function LoginPage() {
   return (
-    <div>Logo</div>
+    <div>
+      <h1>登录页面</h1>
+      <p>登录表单内容...</p>
+    </div>
   )
 }

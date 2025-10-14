@@ -73,6 +73,19 @@
     },
     "children": [
       {
+        "name": "表格",
+        "path": "/list/table",
+        "component": "@/app/[root]/list/table/page",
+        "icon": "icon-table",
+        "meta": {
+          "title": "表格",
+          "description": "",
+          "keywords": [],
+          "auth": true,
+          "cache": true
+        }
+      },
+      {
         "name": "链接",
         "path": "/list/links",
         "component": "@/app/[root]/list/links/page",

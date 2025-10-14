@@ -24,6 +24,20 @@ const getAllPaths = (routes: any[]): string[] => {
   return paths;
 };
 
+// 查找匹配路径的路由信息
+const findRouteByPath = (routes: any[], pathname: string): any => {
+  for (const route of routes) {
+    if (route.path === pathname) {
+      return route;
+    }
+    if (route.children) {
+      const found = findRouteByPath(route.children, pathname);
+      if (found) return found;
+    }
+  }
+  return null;
+};
+
 const registeredPaths = new Set(getAllPaths(routes));
 
 // 导出组合中间件
@@ -42,9 +56,15 @@ export default function middleware(request: NextRequest) {
   }
   
   // 检查路由是否已注册
-  if (!registeredPaths.has(pathname)) {
-    // 如果路由未注册，返回404
-    return new NextResponse(null, { status: 404 });
+  if (!registeredPaths.has(pathname)) {     
+    // 返回 /404 页面
+    return NextResponse.rewrite(new URL('/404', request.url));
+  }
+  
+  // 检查路径对应的component是否包含"(auth)"
+  const route = findRouteByPath(routes, pathname);
+  if (route && route.component && route.component.includes('(auth)')) {
+    return NextResponse.next();
   }
   
   // 如果路由已注册，继续执行国际化中间件

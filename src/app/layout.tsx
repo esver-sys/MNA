@@ -4,6 +4,7 @@ import { getLocale, getMessages } from "next-intl/server";
 import { getServerTheme } from "@/lib/theme-server";
 
 import "../styles/globals.css";
+import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,7 +36,7 @@ export default async function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <AntdRegistry>{children}</AntdRegistry>
         </NextIntlClientProvider>
       </body>
     </html>

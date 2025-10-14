@@ -8,9 +8,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
-    "@mui/material": "^7.3.1",
+    "@ant-design/nextjs-registry": "^1.1.0",
+    "antd": "^5.27.4",
     "json5": "^2.2.3",
     "next": "15.4.6",
     "next-intl": "^4.3.4",
