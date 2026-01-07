@@ -43,9 +43,9 @@
   },
   {
     "name": "文档",
-    "path": "/dosc",
-    "component": "@/app/[root]/dosc/page",
-    "icon": "icon-dosc",
+    "path": "/docs",
+    "component": "@/app/[root]/docs/page",
+    "icon": "icon-docs",
     "rank": 3,
     "meta": {
       "title": "文档",

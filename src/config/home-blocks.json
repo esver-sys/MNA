@@ -1,0 +1,41 @@
+{
+  "blocks": [
+    {
+      "id": "github-repo",
+      "type": "link-card",
+      "title": "LF Git仓库",
+      "description": "访问我们的前端项目仓库",
+      "url": "https://git.papamk.com/",
+      "icon": "gitlab",
+      "size": "medium"
+    },
+    {
+      "id": "svg-base64",
+      "type": "link-card",
+      "title": "svg图标转base64",
+      "description": "将svg图标转换为base64编码",
+      "url": "/docs",
+      "icon": "book",
+      "size": "medium"
+    },
+    {
+      "id": "spa-version",
+      "type": "link-card",
+      "title": "一页商店版本发布",
+      "description": "访问我们的SPA版本",
+      "url": "/custom",
+      "icon": "progress",
+      "size": "medium"
+    }
+  ],
+  "layout": {
+    "columns": 3,
+    "gap": "6",
+    "maxWidth": "1200px"
+  },
+  "styles": {
+    "cardBase": "rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:scale-105 backdrop-blur-sm",
+    "titleBase": "text-xl font-bold mb-3",
+    "descriptionBase": "text-sm opacity-95"
+  }
+}

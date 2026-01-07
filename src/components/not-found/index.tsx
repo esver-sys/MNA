@@ -1,6 +1,9 @@
+import { metadata } from "@/app/layout";
 import FuzzyText from "@/components/ui/FuzzyText";
 
 export default function NotFound() {
+  metadata.title = "404 Not Found";
+  metadata.description = "404 Not Found";
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black">
       <FuzzyText

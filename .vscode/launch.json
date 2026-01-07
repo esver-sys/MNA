@@ -7,9 +7,39 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "针对 localhost 启动 Chrome",
+            "name": "Next.js 前端调试",
             "url": "http://localhost:3124",
             "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Next.js 服务端调试",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "dev"],
+            "console": "integratedTerminal",
+            "env": {
+                "NODE_OPTIONS": "--inspect"
+            },
+            "cwd": "${workspaceFolder}",
+            "protocol": "inspector",
+            "restart": true,
+            "port": 9229
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "附加到 Next.js 进程",
+            "port": 9229,
+            "restart": true,
+            "protocol": "inspector"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "全栈调试 (前端 + 后端)",
+            "configurations": ["Next.js 前端调试", "Next.js 服务端调试"],
+            "stopAll": true
         }
     ]
 }

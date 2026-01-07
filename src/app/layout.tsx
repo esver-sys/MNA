@@ -1,10 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
-import { getLocale, getMessages } from "next-intl/server";
 import { getServerTheme } from "@/lib/theme-server";
+import setting from "@/config/setting.json";
 
 import "../styles/globals.css";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Next In Admin",
-  description: "Next In Admin 是一个基于 Next.js 的后台管理系统",
+  title: `${setting.name} - 首页`,
+  description: setting.dosc,
 };
 
 export default async function RootLayout({
@@ -26,18 +24,15 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const locale = await getLocale();
-  const messages = await getMessages();
   const theme = await getServerTheme();
 
   return (
-    <html lang={locale} data-theme={theme} suppressHydrationWarning>
+    <html data-theme={theme} suppressHydrationWarning>
+      <link rel="shortcut icon" href={setting.logoUrl} type="image/x-icon" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NextIntlClientProvider messages={messages}>
-          <AntdRegistry>{children}</AntdRegistry>
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
   );
