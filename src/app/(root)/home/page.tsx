@@ -1,5 +1,6 @@
 import React from "react";
 import homeBlocksConfig from "@/config/home-blocks.json";
+import { ImageConverterCard } from "@/components/home/ImageConverterCard";
 
 interface BlockConfig {
   id: string;
@@ -266,6 +267,8 @@ const BlockCard: React.FC<{ block: BlockConfig }> = ({ block }) => {
       return <StatusCard block={block} />;
     case "list-card":
       return <ListCard block={block} />;
+    case "image-converter":
+      return <ImageConverterCard block={block} />;
     default:
       return <LinkCard block={block} />;
   }

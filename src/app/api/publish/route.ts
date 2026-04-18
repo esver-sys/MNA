@@ -8,6 +8,7 @@ const CONFIG = {
     sandbox: 'https://spa-shop-sandbox.eshoptechhub.com/spa-open-api',
     sandbox2: 'https://spa-shop-sandbox2.eshoptechhub.com/spa-open-api',
     sandbox3: 'https://spa-shop-sandbox3.eshoptechhub.com/spa-open-api',
+    sandbox4: 'https://spa-shop-sandbox4.eshoptechhub.com/spa-open-api',
   }
 };
 

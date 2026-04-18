@@ -23,9 +23,17 @@
       "type": "link-card",
       "title": "一页商店版本发布",
       "description": "访问我们的SPA版本",
-      "url": "/custom",
+      "url": "/custom?infoMessage=false",
       "icon": "progress",
       "size": "medium"
+    },
+    {
+      "id": "img-converter",
+      "type": "image-converter",
+      "title": "图片格式转换",
+      "description": "自动扫描并转换文件夹下图片为PNG格式",
+      "size": "large",
+      "url": "/tools/image-converter"
     }
   ],
   "layout": {

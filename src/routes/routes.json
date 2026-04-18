@@ -115,6 +115,22 @@
     ]
   },
   {
+    "name": "图片处理",
+    "path": "/tools/image-converter",
+    "component": "@/app/[root]/tools/image-converter/page",
+    "icon": "icon-settings",
+    "meta": {
+      "title": "图片处理",
+      "description": "图片格式转换工具",
+      "keywords": [
+        "image",
+        "convert"
+      ],
+      "auth": true,
+      "cache": true
+    }
+  },
+  {
     "name": "登录",
     "path": "/login",
     "component": "@/app/(auth)/login/page",

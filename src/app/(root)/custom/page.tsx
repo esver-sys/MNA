@@ -1,16 +1,28 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Settings, Send, Server, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
+import { message } from 'antd';
 
 export default function PublishPage() {
-  const [env, setEnv] = useState<'sandbox' | 'sandbox2' | 'sandbox3'>('sandbox');
+  const [env, setEnv] = useState<'sandbox' | 'sandbox2' | 'sandbox3' | 'sandbox4'>('sandbox');
   const [formData, setFormData] = useState({
     template: 'template-cleaner-product',
     version: 'v1.11.1'
   });
   const [loading, setLoading] = useState(false);
   const [logs, setLogs] = useState<{ type: 'info' | 'success' | 'error', msg: string, time: string }[]>([]);
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(location.search);
+    if (urlParams.get('infoMessage') === 'true') {
+      message.info('存在重复路径，已修正，可前往编辑页查看或修改');
+      // 清除URL参数，确保下次刷新不会再次显示提示
+      // urlParams.delete('infoMessage');
+      // const newUrl = `${location.pathname}${urlParams.toString() ? '?' + urlParams.toString() : ''}`;
+      // window.history.replaceState({}, document.title, newUrl);
+    }
+  })
 
   const handlePublish = async () => {
     setLoading(true);
@@ -59,7 +71,7 @@ export default function PublishPage() {
 
   return (
     <div className="min-h-screen bg-slate-50 p-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-8xl mx-auto">
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-slate-900 flex items-center gap-2">
@@ -71,7 +83,7 @@ export default function PublishPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* 左侧配置面板 */}
-          <div className="lg:col-span-1 space-y-6">
+          <div className="lg:col-span-1 space-y-6 text-center">
             <div className="bg-white rounded-xl shadow-sm border border-slate-200 p-6">
               <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
                 <Server className="w-5 h-5 text-slate-400" />
@@ -82,7 +94,7 @@ export default function PublishPage() {
               <div className="mb-6">
                 <label className="block text-sm font-medium text-slate-700 mb-2">测试环境</label>
                 <div className="flex bg-slate-100 p-1 rounded-lg">
-                  {(['sandbox', 'sandbox2', 'sandbox3'] as const).map((item) => (
+                  {(['sandbox', 'sandbox2', 'sandbox3', 'sandbox4'] as const).map((item) => (
                     <button
                       key={item}
                       onClick={() => setEnv(item)}
