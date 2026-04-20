@@ -4,8 +4,11 @@ import React, { useEffect, useState } from 'react';
 import { Settings, Send, Server, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { message } from 'antd';
 
+type PublishType = 'publish' | 'open-template';
+
 export default function PublishPage() {
   const [env, setEnv] = useState<'sandbox' | 'sandbox2' | 'sandbox3' | 'sandbox4'>('sandbox');
+  const [publishType, setPublishType] = useState<PublishType>('publish');
   const [formData, setFormData] = useState({
     template: 'template-cleaner-product',
     version: 'v1.11.1'
@@ -39,13 +42,14 @@ export default function PublishPage() {
     };
 
     try {
-      addLogImmediate('info', `正在请求环境 ${env} 进行发布...`);
+      const actionLabel = publishType === 'open-template' ? '开放模板' : '版本发布';
+      addLogImmediate('info', `正在请求环境 ${env} 执行${actionLabel}...`);
       
       // 使用服务端 API 路由
       const response = await fetch('/api/publish', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ env, formData })
+        body: JSON.stringify({ env, formData, publishType })
       });
 
       const result = await response.json();
@@ -58,8 +62,12 @@ export default function PublishPage() {
       const status = result.data?.status || 'unknown';
       const template = result.data?.template || formData.template;
       const version = result.data?.version || formData.version;
-      
-      addLogImmediate('success', `发布成功！模板: ${template}, 版本: ${version}, 状态: ${status}`);
+
+      if (publishType === 'open-template') {
+        addLogImmediate('success', `开放模板成功！模板: ${template}, 状态: ${status}`);
+      } else {
+        addLogImmediate('success', `发布成功！模板: ${template}, 版本: ${version}, 状态: ${status}`);
+      }
       
     } catch (error: any) {
       addLogImmediate('error', `操作失败: ${error.message}`);
@@ -113,6 +121,28 @@ export default function PublishPage() {
               {/* 表单输入 */}
               <div className="space-y-4">
                 <div>
+                  <label className="block text-sm font-medium text-slate-700 mb-2">发布类型</label>
+                  <div className="grid grid-cols-2 gap-2">
+                    {([
+                      { value: 'publish', label: '正常发布' },
+                      { value: 'open-template', label: '开放模板' },
+                    ] as const).map((item) => (
+                      <button
+                        key={item.value}
+                        type="button"
+                        onClick={() => setPublishType(item.value)}
+                        className={`py-2 px-4 rounded-lg border text-sm font-medium cursor-pointer transition-all ${
+                          publishType === item.value
+                            ? 'border-blue-500 bg-blue-50 text-blue-600'
+                            : 'border-slate-200 bg-slate-50 text-slate-500 hover:text-slate-700'
+                        }`}
+                      >
+                        {item.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                <div>
                   <label className="block text-sm font-medium text-slate-700 mb-1">Template</label>
                   <input
                     type="text"
@@ -121,15 +151,17 @@ export default function PublishPage() {
                     className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
                   />
                 </div>
-                <div>
-                  <label className="block text-sm font-medium text-slate-700 mb-1">Version</label>
-                  <input
-                    type="text"
-                    value={formData.version}
-                    onChange={(e) => setFormData(prev => ({ ...prev, version: e.target.value }))}
-                    className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-                  />
-                </div>
+                {publishType === 'publish' && (
+                  <div>
+                    <label className="block text-sm font-medium text-slate-700 mb-1">Version</label>
+                    <input
+                      type="text"
+                      value={formData.version}
+                      onChange={(e) => setFormData(prev => ({ ...prev, version: e.target.value }))}
+                      className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                    />
+                  </div>
+                )}
               </div>
 
               {/* 发布按钮 */}

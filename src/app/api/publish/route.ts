@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
     // 添加调试日志
     console.log('API Route: Starting publish request');
     
-    const { env, formData } = await request.json();
+    const { env, formData, publishType = 'publish' } = await request.json();
     
     if (!env || !formData) {
       return NextResponse.json(
@@ -35,6 +35,27 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    if (!formData.template) {
+      return NextResponse.json(
+        { success: false, message: 'Template 不能为空' },
+        { status: 400 }
+      );
+    }
+
+    if (publishType === 'publish' && !formData.version) {
+      return NextResponse.json(
+        { success: false, message: 'Version 不能为空' },
+        { status: 400 }
+      );
+    }
+
+    const isOpenTemplate = publishType === 'open-template';
+    const signBody = isOpenTemplate ? {} : formData;
+    const requestUrl = isOpenTemplate
+      ? `${baseUrl}/templates/${encodeURIComponent(formData.template)}/display-strategy/all-stores`
+      : `${baseUrl}/versions/publish`;
+    const requestBody = isOpenTemplate ? {} : formData;
+
     // 1. 生成签名
     console.log(`API Route: Requesting signature from ${baseUrl}/auth/generate-signature`);
     const signRes = await fetch(`${baseUrl}/auth/generate-signature`, {
@@ -42,7 +63,7 @@ export async function POST(request: NextRequest) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         secret: CONFIG.SECRET,
-        body: formData
+        body: signBody
       })
     });
     
@@ -60,8 +81,8 @@ export async function POST(request: NextRequest) {
     
     const { timestamp, signature } = signData.data;
 
-    // 2. 执行发布
-    const publishRes = await fetch(`${baseUrl}/versions/publish`, {
+    // 2. 执行发布 / 开放模板
+    const publishRes = await fetch(requestUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -69,7 +90,7 @@ export async function POST(request: NextRequest) {
         'x-signature': signature,
         'x-timestamp': timestamp.toString()
       },
-      body: JSON.stringify(formData)
+      body: JSON.stringify(requestBody)
     });
 
     const publishData = await publishRes.json();
@@ -84,8 +105,12 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      data: publishData.data,
-      message: publishData.message || '发布成功'
+      data: publishData.data || {
+        template: formData.template,
+        version: formData.version,
+        status: isOpenTemplate ? 'all-stores-enabled' : 'success'
+      },
+      message: publishData.message || (isOpenTemplate ? '开放模板成功' : '发布成功')
     });
     
   } catch (error: any) {
