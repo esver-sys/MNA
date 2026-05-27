@@ -131,6 +131,22 @@
     }
   },
   {
+    "name": "JS 混淆",
+    "path": "/tools/js-obfuscator",
+    "component": "@/app/[root]/tools/js-obfuscator/page",
+    "icon": "icon-custom",
+    "meta": {
+      "title": "JS 代码混淆",
+      "description": "JS 代码混淆工具",
+      "keywords": [
+        "javascript",
+        "obfuscator"
+      ],
+      "auth": true,
+      "cache": true
+    }
+  },
+  {
     "name": "登录",
     "path": "/login",
     "component": "@/app/(auth)/login/page",

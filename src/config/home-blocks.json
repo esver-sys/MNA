@@ -34,6 +34,15 @@
       "description": "自动扫描并转换文件夹下图片为PNG格式",
       "size": "large",
       "url": "/tools/image-converter"
+    },
+    {
+      "id": "js-obfuscator",
+      "type": "link-card",
+      "title": "JS 代码混淆",
+      "description": "输入 JS 代码并生成混淆后的结果",
+      "url": "/tools/js-obfuscator",
+      "icon": "update",
+      "size": "medium"
     }
   ],
   "layout": {
