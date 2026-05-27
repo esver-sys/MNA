@@ -1,16 +1,41 @@
 export const templateOptions = [
   {
-    label: 'cleaner1',
+    label: "Next",
+    value: "template-next-checkout"
+  },
+  {
+    label: 'Cleaner1',
     value: 'template-cleaner-blog',
   },
   {
-    label: 'cleaner2',
+    label: 'Cleaner2',
     value: 'template-cleaner-product',
   },
   {
-    label: 'single',
-    value: 'template-single'
+    label: "Single",
+    value: "template-range-xtd"
+  },
+  {
+    label: "Echo",
+    value: "template-echo-checkout"
+  },
+  {
+    label: "Motion",
+    value: "template-motion-checkout"
+  },
+  {
+    label: "Gift",
+    value: "template-gift-checkout"
+  },
+  {
+    label: "Blank1",
+    value: "template-blank-blog"
+  },
+  {
+    label: "Blank2",
+    value: "template-blank-product"
   }
 ] as const;
 
 export type TemplateValue = (typeof templateOptions)[number]['value'];
+
