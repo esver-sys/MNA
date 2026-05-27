@@ -1,6 +1,25 @@
 import React from "react";
+import Link from "next/link";
+import {
+  ArrowRight,
+  BookOpen,
+  Boxes,
+  ExternalLink,
+  GitBranch,
+  Image as ImageIcon,
+  RefreshCw,
+  Rocket,
+  ShieldCheck,
+  Sparkles,
+  WandSparkles,
+} from "lucide-react";
+
 import homeBlocksConfig from "@/config/home-blocks.json";
 import { ImageConverterCard } from "@/components/home/ImageConverterCard";
+import {
+  getHomeCardTheme,
+  type HomeCardTheme,
+} from "@/components/home/home-card-theme";
 
 interface BlockConfig {
   id: string;
@@ -37,238 +56,313 @@ interface HomeBlocksConfig {
 
 const config = homeBlocksConfig as HomeBlocksConfig;
 
-const warmColors = [
-  "bg-orange-400 hover:bg-orange-500",
-  "bg-amber-400 hover:bg-amber-500",
-  "bg-yellow-400 hover:bg-yellow-500",
-  "bg-red-400 hover:bg-red-500",
-  "bg-rose-400 hover:bg-rose-500",
-  "bg-pink-400 hover:bg-pink-500",
-  "bg-fuchsia-400 hover:bg-fuchsia-500",
-  "bg-purple-400 hover:bg-purple-500",
-  "bg-violet-400 hover:bg-violet-500",
-  "bg-indigo-400 hover:bg-indigo-500",
+const iconMap: Record<
+  string,
+  React.ComponentType<React.SVGProps<SVGSVGElement>>
+> = {
+  book: BookOpen,
+  gitlab: GitBranch,
+  progress: Rocket,
+  update: WandSparkles,
+};
+
+const sizeClassMap: Record<BlockConfig["size"], string> = {
+  small: "min-h-[148px]",
+  medium: "min-h-[188px]",
+  large: "min-h-[280px] md:col-span-2",
+};
+
+const summaryItems = [
+  {
+    label: "工具入口",
+    value: config.blocks.length,
+    hint: "个",
+  },
+  {
+    label: "本地任务",
+    value: config.blocks.filter((block) => block.url?.startsWith("/tools"))
+      .length,
+    hint: "项",
+  },
+  {
+    label: "快捷导航",
+    value: config.blocks.filter((block) => block.type === "link-card").length,
+    hint: "组",
+  },
 ];
 
-const getRandomWarmColor = () => {
-  return warmColors[Math.floor(Math.random() * warmColors.length)];
+const getIconComponent = (icon?: string) => {
+  return icon ? iconMap[icon] ?? Boxes : Boxes;
 };
 
-const getColorClasses = (color: string) => {
-  const colorMap: Record<string, string> = {
-    blue: "bg-blue-500 hover:bg-blue-600 text-white",
-    green: "bg-green-500 hover:bg-green-600 text-white",
-    purple: "bg-purple-500 hover:bg-purple-600 text-white",
-    orange: "bg-orange-500 hover:bg-orange-600 text-white",
-    indigo: "bg-indigo-500 hover:bg-indigo-600 text-white",
+type HomeMotionStyle = React.CSSProperties & {
+  "--home-motion-delay": string;
+};
+
+const getMotionStyle = (index: number): HomeMotionStyle => {
+  return {
+    "--home-motion-delay": `${Math.min(index * 55, 260)}ms`,
   };
-  return colorMap[color] || "bg-gray-500 hover:bg-gray-600 text-white";
 };
 
-const getSizeClasses = (size: string) => {
-  const sizeMap: Record<string, string> = {
-    small: "p-4 h-32",
-    medium: "p-6 h-40",
-    large: "p-8 h-48",
-  };
-  return sizeMap[size] || "p-6 h-40";
+const getCardShellClassName = (block: BlockConfig, theme: HomeCardTheme) => {
+  return [
+    "home-card-surface home-card-enter group relative isolate h-full overflow-hidden rounded-lg border border-white/70 bg-white/80 p-5",
+    "shadow-[0_24px_60px_-34px_rgba(15,23,42,0.72)] backdrop-blur-xl",
+    "hover:border-white",
+    "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-100",
+    "dark:border-white/10 dark:bg-slate-950/75 dark:shadow-[0_26px_70px_-34px_rgba(0,0,0,0.95)] dark:focus-visible:ring-offset-slate-950",
+    sizeClassMap[block.size],
+    theme.ring,
+    theme.glow,
+  ].join(" ");
 };
 
-const getIconComponent = (icon: string) => {
-  const iconMap: Record<string, JSX.Element> = {
-    gitlab: (
-      <svg className="w-8 h-8 mb-3" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M12 24l-4.09-12.61h8.18L12 24z" />
-        <path d="M12 24L2.47 6.31h19.06L12 24z" />
-        <path d="M2.47 6.31L0 12.61l12 11.39L2.47 6.31z" />
-        <path d="M21.53 6.31L24 12.61l-12 11.39L21.53 6.31z" />
-        <path d="M12 24l4.09-12.61H3.91L12 24z" opacity="0.7" />
-      </svg>
-    ),
-    book: (
-      <svg className="w-8 h-8 mb-3" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2.5a9.5 9.5 0 0 1 9.5 9.5c0 2.5-1 4.8-2.6 6.4l-6.9 6.9-6.9-6.9A9.5 9.5 0 0 1 2.5 12 9.5 9.5 0 0 1 12 2.5m0 2a7.5 7.5 0 0 0-7.5 7.5c0 1.9.7 3.7 2 5l5.5 5.5 5.5-5.5c1.3-1.3 2-3.1 2-5a7.5 7.5 0 0 0-7.5-7.5m0 3a4.5 4.5 0 0 1 4.5 4.5 4.5 4.5 0 0 1-4.5 4.5A4.5 4.5 0 0 1 7.5 12 4.5 4.5 0 0 1 12 7.5z" />
-      </svg>
-    ),
-    users: (
-      <svg className="w-8 h-8 mb-3" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V18c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-1.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V18c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-1.5c0-2.33-4.67-3.5-7-3.5z" />
-      </svg>
-    ),
-    progress: (
-      <svg className="w-8 h-8 mb-3" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53C16.17 17.98 14.21 19 12 19z" />
-      </svg>
-    ),
-    update: (
-      <svg className="w-8 h-8 mb-3" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M21 10.12h-6.34l2.12-2.12-1.41-1.41L12 10.12 7.62 5.73 6.21 7.14l2.12 2.12H3v3h6.34l-2.12 2.12 1.41 1.41L12 13.88l4.38 4.38 1.41-1.41L10.66 13.12H21z" />
-      </svg>
-    ),
-  };
-  return iconMap[icon] || null;
+const CardChrome = ({ theme }: { theme: HomeCardTheme }) => {
+  return (
+    <>
+      {/* 顶部高光和底部阴影共同建立卡片厚度，避免只靠大阴影造成漂浮感。 */}
+      <span
+        aria-hidden="true"
+        className="home-card-shine pointer-events-none absolute -top-12 bottom-[-48px] left-[-42%] z-20 w-[38%]"
+      />
+      <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-white/90 dark:bg-white/20" />
+      <span
+        className={`pointer-events-none absolute inset-x-4 top-0 h-1 rounded-b-full bg-linear-to-r ${theme.accent}`}
+      />
+      <span className="pointer-events-none absolute inset-x-5 bottom-0 h-8 rounded-[50%] bg-slate-950/8 blur-2xl dark:bg-black/45" />
+    </>
+  );
 };
 
-const LinkCard: React.FC<{ block: BlockConfig }> = ({ block }) => {
+const CardBadge = ({
+  children,
+  theme,
+}: {
+  children: React.ReactNode;
+  theme: HomeCardTheme;
+}) => {
+  return (
+    <span
+      className={`inline-flex h-7 items-center rounded-md px-2.5 text-xs font-semibold ${theme.badge}`}
+    >
+      {children}
+    </span>
+  );
+};
+
+const LinkCard: React.FC<{ block: BlockConfig; index: number }> = ({
+  block,
+  index,
+}) => {
+  const theme = getHomeCardTheme(block.id);
+  const IconComponent = getIconComponent(block.icon);
   const isExternal = block.url?.startsWith("http");
-  const cardColor = getRandomWarmColor();
 
   const cardContent = (
-    <div
-      className={`${
-        config.styles.cardBase
-      } ${cardColor} text-white ${getSizeClasses(
-        block.size
-      )} cursor-pointer backdrop-blur-sm bg-opacity-90 border border-white border-opacity-20`}
-    >
-      {block.icon && getIconComponent(block.icon)}
-      <h3
-        className={`${config.styles.titleBase} ${
-          block.icon ? "text-base" : "text-lg"
-        } font-bold`}
-      >
-        {block.title}
-      </h3>
-      <p
-        className={`${config.styles.descriptionBase} text-xs ${
-          block.icon ? "hidden sm:block" : ""
-        } opacity-90`}
-      >
-        {block.description}
-      </p>
-    </div>
+    <article className={getCardShellClassName(block, theme)} style={getMotionStyle(index)}>
+      <CardChrome theme={theme} />
+
+      <div className="relative z-10 flex h-full flex-col justify-between gap-5">
+        <div className="flex items-start justify-between gap-4">
+          <div
+            className={`home-icon-motion grid size-12 shrink-0 place-items-center rounded-lg shadow-lg shadow-slate-950/12 ${theme.iconPanel}`}
+          >
+            <IconComponent aria-hidden="true" className="size-6" />
+          </div>
+          <CardBadge theme={theme}>{isExternal ? "外部" : "内部"}</CardBadge>
+        </div>
+
+        <div>
+          <h3 className="text-lg font-semibold leading-snug text-slate-950 dark:text-white">
+            {block.title}
+          </h3>
+          <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
+            {block.description}
+          </p>
+        </div>
+
+        <div className="flex items-center justify-between border-t border-slate-200/70 pt-4 text-sm font-medium text-slate-700 dark:border-white/10 dark:text-slate-200">
+          <span>立即进入</span>
+          {isExternal ? (
+            <ExternalLink aria-hidden="true" className="size-4" />
+          ) : (
+            <ArrowRight
+              aria-hidden="true"
+              className="size-4 transition-transform duration-300 group-hover:translate-x-1"
+            />
+          )}
+        </div>
+      </div>
+    </article>
   );
 
-  if (block.url) {
-    return isExternal ? (
-      <a href={block.url} target="_blank" rel="noopener noreferrer">
+  if (!block.url) {
+    return cardContent;
+  }
+
+  if (isExternal) {
+    return (
+      <a
+        aria-label={`打开 ${block.title}`}
+        className="block h-full focus-visible:outline-none"
+        href={block.url}
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         {cardContent}
       </a>
-    ) : (
-      <a href={block.url}>{cardContent}</a>
     );
   }
 
-  return cardContent;
-};
-
-const InfoCard: React.FC<{ block: BlockConfig }> = ({ block }) => {
-  const cardColor = getRandomWarmColor();
   return (
-    <div
-      className={`${
-        config.styles.cardBase
-      } ${cardColor} text-white ${getSizeClasses(
-        block.size
-      )} backdrop-blur-sm bg-opacity-90 border border-white border-opacity-20`}
+    <Link
+      aria-label={`打开 ${block.title}`}
+      className="block h-full focus-visible:outline-none"
+      href={block.url}
     >
-      {block.icon && getIconComponent(block.icon)}
-      <h3
-        className={`${config.styles.titleBase} ${
-          block.icon ? "text-base" : "text-lg"
-        } font-bold`}
-      >
-        {block.title}
-      </h3>
-      <p
-        className={`${config.styles.descriptionBase} text-xs ${
-          block.icon ? "hidden sm:block" : ""
-        } opacity-90`}
-      >
-        {block.description}
-      </p>
-      {block.stats && (
-        <div className="mt-3">
-          <div className="text-2xl font-bold">{block.stats.count}</div>
-          <div className="text-xs opacity-90">{block.stats.label}</div>
-        </div>
-      )}
-    </div>
+      {cardContent}
+    </Link>
   );
 };
 
-const StatusCard: React.FC<{ block: BlockConfig }> = ({ block }) => {
-  const cardColor = getRandomWarmColor();
+const InfoCard: React.FC<{ block: BlockConfig; index: number }> = ({
+  block,
+  index,
+}) => {
+  const theme = getHomeCardTheme(block.id);
+  const IconComponent = getIconComponent(block.icon);
+
   return (
-    <div
-      className={`${
-        config.styles.cardBase
-      } ${cardColor} text-white ${getSizeClasses(
-        block.size
-      )} backdrop-blur-sm bg-opacity-90 border border-white border-opacity-20`}
-    >
-      {block.icon && getIconComponent(block.icon)}
-      <h3
-        className={`${config.styles.titleBase} ${
-          block.icon ? "text-base" : "text-lg"
-        } font-bold`}
-      >
-        {block.title}
-      </h3>
-      {block.status && (
-        <div className="mt-3">
-          <div className="flex items-center justify-between mb-1">
-            <span className="text-xs opacity-90">{block.status.label}</span>
-            <span className="text-sm font-semibold">
-              {block.status.progress}%
-            </span>
+    <article className={getCardShellClassName(block, theme)} style={getMotionStyle(index)}>
+      <CardChrome theme={theme} />
+      <div className="relative z-10 flex h-full flex-col gap-4">
+        <div className="flex items-center gap-3">
+          <div className={`home-icon-motion grid size-11 place-items-center rounded-lg ${theme.iconPanel}`}>
+            <IconComponent aria-hidden="true" className="size-5" />
           </div>
-          <div className="w-full bg-white bg-opacity-20 rounded-full h-2">
-            <div
-              className="bg-white h-2 rounded-full transition-all duration-500"
-              style={{ width: `${block.status.progress}%` }}
-            ></div>
-          </div>
+          <h3 className="text-lg font-semibold text-slate-950 dark:text-white">
+            {block.title}
+          </h3>
         </div>
-      )}
-    </div>
+        <p className="text-sm leading-6 text-slate-600 dark:text-slate-300">
+          {block.description}
+        </p>
+        {block.stats && (
+          <div className="mt-auto">
+            <div className="text-3xl font-semibold text-slate-950 dark:text-white">
+              {block.stats.count}
+            </div>
+            <div className="text-sm text-slate-500 dark:text-slate-400">
+              {block.stats.label}
+            </div>
+          </div>
+        )}
+      </div>
+    </article>
   );
 };
 
-const ListCard: React.FC<{ block: BlockConfig }> = ({ block }) => {
-  const cardColor = getRandomWarmColor();
+const StatusCard: React.FC<{ block: BlockConfig; index: number }> = ({
+  block,
+  index,
+}) => {
+  const theme = getHomeCardTheme(block.id);
+  const IconComponent = getIconComponent(block.icon);
+
   return (
-    <div
-      className={`${
-        config.styles.cardBase
-      } ${cardColor} text-white ${getSizeClasses(
-        block.size
-      )} backdrop-blur-sm bg-opacity-90 border border-white border-opacity-20`}
-    >
-      {block.icon && getIconComponent(block.icon)}
-      <h3
-        className={`${config.styles.titleBase} ${
-          block.icon ? "text-base" : "text-lg"
-        } font-bold`}
-      >
-        {block.title}
-      </h3>
-      {block.items && (
-        <ul className="mt-3 space-y-1">
-          {block.items.slice(0, 3).map((item, index) => (
-            <li key={index} className="text-xs opacity-90 flex items-center">
-              <span className="w-1 h-1 bg-white rounded-full mr-2"></span>
-              {item}
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+    <article className={getCardShellClassName(block, theme)} style={getMotionStyle(index)}>
+      <CardChrome theme={theme} />
+      <div className="relative z-10 flex h-full flex-col gap-4">
+        <div className="flex items-center gap-3">
+          <div className={`home-icon-motion grid size-11 place-items-center rounded-lg ${theme.iconPanel}`}>
+            <IconComponent aria-hidden="true" className="size-5" />
+          </div>
+          <h3 className="text-lg font-semibold text-slate-950 dark:text-white">
+            {block.title}
+          </h3>
+        </div>
+        {block.status && (
+          <div className="mt-auto">
+            <div className="mb-2 flex items-center justify-between text-sm text-slate-600 dark:text-slate-300">
+              <span>{block.status.label}</span>
+              <span className="font-semibold text-slate-950 dark:text-white">
+                {block.status.progress}%
+              </span>
+            </div>
+            <div className="h-2 overflow-hidden rounded-full bg-slate-200 dark:bg-white/10">
+              <div
+                className={`h-full rounded-full bg-linear-to-r ${theme.progress} transition-[width] duration-500`}
+                style={{ width: `${block.status.progress}%` }}
+              />
+            </div>
+          </div>
+        )}
+      </div>
+    </article>
   );
 };
 
-const BlockCard: React.FC<{ block: BlockConfig }> = ({ block }) => {
+const ListCard: React.FC<{ block: BlockConfig; index: number }> = ({
+  block,
+  index,
+}) => {
+  const theme = getHomeCardTheme(block.id);
+  const IconComponent = getIconComponent(block.icon);
+
+  return (
+    <article className={getCardShellClassName(block, theme)} style={getMotionStyle(index)}>
+      <CardChrome theme={theme} />
+      <div className="relative z-10 flex h-full flex-col gap-4">
+        <div className="flex items-center gap-3">
+          <div className={`home-icon-motion grid size-11 place-items-center rounded-lg ${theme.iconPanel}`}>
+            <IconComponent aria-hidden="true" className="size-5" />
+          </div>
+          <h3 className="text-lg font-semibold text-slate-950 dark:text-white">
+            {block.title}
+          </h3>
+        </div>
+        {block.items && (
+          <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-300">
+            {block.items.slice(0, 3).map((item) => (
+              <li key={item} className="flex items-center gap-2">
+                <span
+                  className={`size-1.5 rounded-full bg-linear-to-r ${theme.progress}`}
+                />
+                {item}
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </article>
+  );
+};
+
+const BlockCard: React.FC<{ block: BlockConfig; index: number }> = ({
+  block,
+  index,
+}) => {
+  const theme = getHomeCardTheme(block.id);
+
   switch (block.type) {
     case "link-card":
-      return <LinkCard block={block} />;
+      return <LinkCard block={block} index={index} />;
     case "info-card":
-      return <InfoCard block={block} />;
+      return <InfoCard block={block} index={index} />;
     case "status-card":
-      return <StatusCard block={block} />;
+      return <StatusCard block={block} index={index} />;
     case "list-card":
-      return <ListCard block={block} />;
+      return <ListCard block={block} index={index} />;
     case "image-converter":
-      return <ImageConverterCard block={block} />;
+      return (
+        <ImageConverterCard
+          block={block}
+          className={getCardShellClassName(block, theme)}
+          style={getMotionStyle(index)}
+          theme={theme}
+        />
+      );
     default:
       return <LinkCard block={block} />;
   }
@@ -276,14 +370,107 @@ const BlockCard: React.FC<{ block: BlockConfig }> = ({ block }) => {
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-linear-to-r from-orange-50 via-amber-50 to-yellow-50 py-8 px-4">
-      <div className="max-w-[1200px] mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {config.blocks.map((block) => (
-            <BlockCard key={block.id} block={block} />
+    <main className="relative h-full overflow-y-auto bg-slate-50 text-slate-950 dark:bg-slate-950 dark:text-white">
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 opacity-70 dark:opacity-30"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(15,23,42,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(15,23,42,0.05) 1px, transparent 1px)",
+          backgroundSize: "36px 36px",
+          maskImage: "linear-gradient(to bottom, black, transparent 78%)",
+        }}
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(135deg, rgba(248,250,252,0.96) 0%, rgba(240,253,250,0.9) 42%, rgba(245,243,255,0.88) 100%)",
+        }}
+      />
+      <div className="relative z-10 mx-auto flex w-full max-w-[1200px] flex-col gap-8 px-4 py-6 sm:px-6 lg:px-8">
+        <section className="grid gap-5 lg:grid-cols-[1fr_360px] lg:items-end">
+          <div className="home-panel-enter rounded-lg border border-white/70 bg-white/75 p-5 shadow-[0_24px_70px_-42px_rgba(15,23,42,0.75)] backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/75" style={getMotionStyle(0)}>
+            <div className="inline-flex h-8 items-center gap-2 rounded-md bg-slate-950 px-3 text-xs font-semibold text-white shadow-lg shadow-slate-950/20 dark:bg-white dark:text-slate-950">
+              <Sparkles aria-hidden="true" className="size-3.5" />
+              My Next Admin
+            </div>
+            <h1 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight tracking-normal text-slate-950 sm:text-4xl dark:text-white">
+              首页工作台
+            </h1>
+            <p className="mt-3 max-w-2xl text-sm leading-6 text-slate-600 sm:text-base dark:text-slate-300">
+              聚合常用工具、内部入口与本地处理能力，让每个入口都有清晰层级和稳定状态。
+            </p>
+          </div>
+
+          <div className="grid grid-cols-3 gap-3">
+            {summaryItems.map((item, index) => (
+              <div
+                className="home-panel-enter rounded-lg border border-white/70 bg-white/80 p-4 text-center shadow-[0_18px_46px_-34px_rgba(15,23,42,0.7)] backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/70"
+                key={item.label}
+                style={getMotionStyle(index + 1)}
+              >
+                <div className="text-2xl font-semibold tabular-nums text-slate-950 dark:text-white">
+                  {item.value}
+                </div>
+                <div className="mt-1 text-xs text-slate-500 dark:text-slate-400">
+                  {item.label}
+                  {item.hint}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section
+          aria-label="快捷工具"
+          className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3"
+        >
+          {config.blocks.map((block, index) => (
+            <BlockCard key={block.id} block={block} index={index + 3} />
           ))}
-        </div>
+        </section>
+
+        <section className="grid gap-4 pb-8 md:grid-cols-3">
+          <div className="rounded-lg border border-slate-200/70 bg-white/70 p-4 backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
+            <ShieldCheck
+              aria-hidden="true"
+              className="mb-3 size-5 text-emerald-600 dark:text-emerald-300"
+            />
+            <h2 className="text-sm font-semibold text-slate-950 dark:text-white">
+              稳定渲染
+            </h2>
+            <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
+              卡片色彩按 id 固定映射，刷新和水合时保持一致。
+            </p>
+          </div>
+          <div className="rounded-lg border border-slate-200/70 bg-white/70 p-4 backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
+            <RefreshCw
+              aria-hidden="true"
+              className="mb-3 size-5 text-cyan-600 dark:text-cyan-300"
+            />
+            <h2 className="text-sm font-semibold text-slate-950 dark:text-white">
+              即时反馈
+            </h2>
+            <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
+              本地处理类工具保留禁用、加载和结果提示状态。
+            </p>
+          </div>
+          <div className="rounded-lg border border-slate-200/70 bg-white/70 p-4 backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
+            <ImageIcon
+              aria-hidden="true"
+              className="mb-3 size-5 text-amber-600 dark:text-amber-300"
+            />
+            <h2 className="text-sm font-semibold text-slate-950 dark:text-white">
+              视觉层次
+            </h2>
+            <p className="mt-2 text-sm leading-6 text-slate-600 dark:text-slate-300">
+              使用高光、边框和投影建立厚度，不改变原有入口结构。
+            </p>
+          </div>
+        </section>
       </div>
-    </div>
+    </main>
   );
 }

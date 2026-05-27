@@ -82,6 +82,136 @@
     color: var(--color-text);
     transition: background-color 0.2s ease-in-out;
   }
+
+  .home-card-surface {
+    transform: perspective(900px) translate3d(0, 0, 0) rotateX(0deg);
+    transform-style: preserve-3d;
+    touch-action: manipulation;
+    transition:
+      transform 260ms cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 260ms cubic-bezier(0.22, 1, 0.36, 1),
+      border-color 200ms ease-out,
+      background-color 200ms ease-out;
+    will-change: transform, box-shadow;
+  }
+
+  .home-card-enter {
+    animation: home-card-enter 420ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--home-motion-delay, 0ms);
+  }
+
+  .home-panel-enter {
+    animation: home-panel-enter 360ms cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--home-motion-delay, 0ms);
+  }
+
+  .home-card-shine {
+    background: linear-gradient(
+      105deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.08) 28%,
+      rgba(255, 255, 255, 0.68) 50%,
+      rgba(255, 255, 255, 0.08) 72%,
+      transparent 100%
+    );
+    opacity: 0;
+    transform: translate3d(-120%, 0, 0) skewX(-18deg);
+    transition:
+      transform 560ms cubic-bezier(0.22, 1, 0.36, 1),
+      opacity 180ms ease-out;
+  }
+
+  .home-icon-motion {
+    transform: translate3d(0, 0, 0) scale(1);
+    transition: transform 240ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .home-pressable {
+    touch-action: manipulation;
+    transition:
+      transform 160ms cubic-bezier(0.22, 1, 0.36, 1),
+      filter 160ms ease-out,
+      background-color 160ms ease-out,
+      border-color 160ms ease-out;
+  }
+
+  .home-pressable:active:not(:disabled) {
+    transform: scale(0.985);
+  }
+
+  /* 重点动效只作用于支持 hover 的精细指针设备，触屏端保留点击反馈，避免悬停动效失效带来的割裂感。 */
+  @media (hover: hover) and (pointer: fine) {
+    .home-card-surface:hover {
+      box-shadow: 0 34px 82px -38px rgba(15, 23, 42, 0.88);
+      transform: perspective(900px) translate3d(0, -6px, 18px) rotateX(1.2deg);
+    }
+
+    .home-card-surface:hover .home-card-shine {
+      opacity: 0.72;
+      transform: translate3d(250%, 0, 0) skewX(-18deg);
+    }
+
+    .home-card-surface:hover .home-icon-motion {
+      transform: translate3d(0, -2px, 22px) scale(1.04);
+    }
+  }
+
+  .home-card-surface:active {
+    transform: perspective(900px) translate3d(0, -2px, 10px) scale(0.995);
+    transition-duration: 120ms;
+  }
+}
+
+@keyframes home-card-enter {
+  from {
+    filter: blur(6px);
+    opacity: 0;
+    translate: 0 12px;
+  }
+  to {
+    filter: blur(0);
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+@keyframes home-panel-enter {
+  from {
+    opacity: 0;
+    translate: 0 8px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+/* 尊重系统减少动态效果偏好：保留最终视觉层级，但关闭入场、扫光和位移动效。 */
+@media (prefers-reduced-motion: reduce) {
+  .home-card-enter,
+  .home-panel-enter {
+    animation: none;
+  }
+
+  .home-card-surface,
+  .home-card-shine,
+  .home-icon-motion,
+  .home-pressable {
+    transition: none;
+  }
+
+  .home-card-surface,
+  .home-card-surface:hover,
+  .home-card-surface:active,
+  .home-icon-motion,
+  .home-card-surface:hover .home-icon-motion {
+    transform: none;
+  }
+
+  .home-card-shine,
+  .home-card-surface:hover .home-card-shine {
+    opacity: 0;
+  }
 }
 
 @theme inline {
