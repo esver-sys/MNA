@@ -3,14 +3,15 @@
 import React, { useEffect, useState } from 'react';
 import { Settings, Send, Server, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 import { message } from 'antd';
+import { templateOptions } from './template-options';
 
 type PublishType = 'publish' | 'open-template';
 
 export default function PublishPage() {
   const [env, setEnv] = useState<'sandbox' | 'sandbox2' | 'sandbox3' | 'sandbox4'>('sandbox');
   const [publishType, setPublishType] = useState<PublishType>('publish');
-  const [formData, setFormData] = useState({
-    template: 'template-cleaner-product',
+  const [formData, setFormData] = useState<{ template: string, version: string }>({
+    template: templateOptions[0].value,
     version: 'v1.11.1'
   });
   const [loading, setLoading] = useState(false);
@@ -144,12 +145,17 @@ export default function PublishPage() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-slate-700 mb-1">Template</label>
-                  <input
-                    type="text"
+                  <select
                     value={formData.template}
                     onChange={(e) => setFormData(prev => ({ ...prev, template: e.target.value }))}
                     className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
-                  />
+                  >
+                    {templateOptions.map((item) => (
+                      <option key={item.value} value={item.value}>
+                        {item.label}
+                      </option>
+                    ))}
+                  </select>
                 </div>
                 {publishType === 'publish' && (
                   <div>
