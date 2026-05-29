@@ -1,3 +1,5 @@
+import { label } from "motion/react-client";
+
 export const templateOptions = [
   {
     label: "Next",
@@ -26,6 +28,14 @@ export const templateOptions = [
   {
     label: "Gift",
     value: "template-gift-checkout"
+  },
+  {
+    label: 'seed',
+    value: 'template-seed-product',
+  },
+  {
+    label: 'loop',
+    value: 'template-loop-blog',
   },
   {
     label: "Blank1",
