@@ -364,7 +364,7 @@ const BlockCard: React.FC<{ block: BlockConfig; index: number }> = ({
         />
       );
     default:
-      return <LinkCard block={block} />;
+      return <LinkCard block={block} index={index} />;
   }
 };
 

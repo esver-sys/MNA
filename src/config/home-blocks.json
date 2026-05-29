@@ -43,6 +43,15 @@
       "url": "/tools/js-obfuscator",
       "icon": "update",
       "size": "medium"
+    },
+    {
+      "id": "custom-html",
+      "type": "link-card",
+      "title": "自定义Html",
+      "description": "进入自定义 HTML 页面，快速编辑和预览内容",
+      "url": "/custom-html",
+      "icon": "book",
+      "size": "medium"
     }
   ],
   "layout": {

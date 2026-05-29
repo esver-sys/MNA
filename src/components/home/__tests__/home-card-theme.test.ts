@@ -14,3 +14,8 @@ test("getHomeCardTheme 会按卡片 id 返回稳定主题", () => {
 test("getHomeCardTheme 未配置 id 时回退到默认主题", () => {
   assert.equal(getHomeCardTheme("unknown-tool"), homeCardThemes.default);
 });
+
+test("getHomeCardTheme 为 custom-html 提供独立主题", () => {
+  assert.ok(homeCardThemes["custom-html"]);
+  assert.equal(getHomeCardTheme("custom-html"), homeCardThemes["custom-html"]);
+});

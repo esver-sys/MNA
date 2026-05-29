@@ -60,6 +60,14 @@ export const homeCardThemes: Record<string, HomeCardTheme> = {
     progress: "from-rose-400 to-red-500",
     ring: "ring-rose-400/25",
   },
+  "custom-html": {
+    accent: "from-sky-500 to-indigo-600",
+    badge: "bg-sky-50 text-sky-700 dark:bg-sky-400/10 dark:text-sky-200",
+    glow: "shadow-sky-500/20",
+    iconPanel: "bg-sky-600 text-white",
+    progress: "from-sky-400 to-indigo-500",
+    ring: "ring-sky-400/25",
+  },
 };
 
 // 用稳定的 id 映射替代随机色，避免服务端渲染与客户端水合时出现颜色不一致。
